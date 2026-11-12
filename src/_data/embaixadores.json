@@ -1,0 +1,11 @@
+[
+  {"nome": "Gustavo Pereira", "especialidade": "Colorista e formador SALE.ON", "texto": "Formador de colorimetria e coloração avançada da SALE.ON Academy, da GLYNT Discovery ao lançamento O&M.", "marcas": ["glynt", "original-mineral"]},
+  {"nome": "Ana Madureira", "foto": "ana-madureira.webp", "especialidade": "Cabelos cacheados", "texto": "A Ana e os Cachos: formações de cachos e colorimetria na SALE.ON Academy.", "marcas": ["glynt"]},
+  {"nome": "Carla Guedes", "foto": "carla-guedes.webp", "especialidade": "Formadora GLYNT Discovery", "marcas": ["glynt"]},
+  {"nome": "Rute Mafra", "foto": "rute-mafra.webp", "marcas": ["glynt"]},
+  {"nome": "Isa Moita", "foto": "isa-moita.webp", "marcas": ["glynt"]},
+  {"nome": "Catarina Dias"},
+  {"nome": "Rita Duarte", "foto": "rita-duarte.webp", "marcas": ["glynt"]},
+  {"nome": "Vittor Carvalho", "foto": "vittor-carvalho.webp", "marcas": ["glynt"]},
+  {"nome": "Miriam Rocha", "foto": "miriam-rocha.webp", "marcas": ["glynt"]}
+]

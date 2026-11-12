@@ -1,0 +1,138 @@
+---
+pagination:
+  data: catalogo.marcas
+  size: 1
+  addAllPagesToCollections: true
+  alias: marca
+permalink: "{{ marca.url }}"
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}{{ marca.seo.title }}{% endset %}
+{% set descricao %}{{ marca.seo.description }}{% endset %}
+{% block classe %}pg-marca marca-{{ marca.slug }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Brand","name":{{ marca.nome | json | safe }},"description":{{ marca.resumo | json | safe }},"url":"{{ marca.url | absoluto(site.url) }}","slogan":{{ marca.tagline | json | safe }}{% if marca.alternateName %},"alternateName":{{ marca.alternateName | json | safe }}{% endif %}{% set lgx = marca.slug | logo %}{% if lgx %},"logo":"{{ lgx | absoluto(site.url) }}"{% endif %},"keywords":{{ (marca.pesquisas or []) | join(", ") | json | safe }}}
+</script>
+{{ m.schemaMigalhas([{nome: "Marcas", url: "/marcas/"}, {nome: marca.nomeCurto, url: marca.url}], site.url) }}
+{% endblock %}
+{% block conteudo %}
+{% set lg = marca.slug | logo %}{% set fotoMarca = marca.slug | foto %}
+<section class="abertura abertura--marca" style="--c: {{ marca.cor }}">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Marcas", url: "/marcas/"}, {nome: marca.nomeCurto, url: marca.url}]) }}
+    <div class="abertura__grelha">
+      <div class="abertura__texto">
+        <p class="sobretitulo">{% if marca.pais %}{{ marca.pais }}{% endif %}{% if marca.desde %} · desde {{ marca.desde }}{% endif %}</p>
+        <h1>{% if lg %}<img class="abertura__logo" src="{{ lg }}" alt="{{ marca.nome }}"><span class="escondido">{{ marca.nome }}</span>{% else %}{{ marca.nome }}{% endif %}</h1>
+        <p class="abertura__lead">{{ marca.tagline }}</p>
+        <div class="botoes">
+          {% if marca.loja %}<a class="botao" href="/loja/">Comprar na loja online</a>{% endif %}
+          {% if marca.orcamento %}<a class="botao" href="/contacto/?assunto=Orçamento {{ marca.nomeCurto }}">Pedir orçamento</a>{% endif %}
+          <a class="botao botao--contorno-escuro" href="#gama">Ver a gama ({{ marca.totalProdutos }} produtos)</a>
+        </div>
+      </div>
+      <div class="abertura__foto">
+        {% if fotoMarca %}<img src="{{ fotoMarca }}" alt="{{ marca.nome }}: resultado em salão" width="900" height="1100" fetchpriority="high">
+        {% else %}{{ m.montra(marca.imagens, marca.cor, marca.nomeCurto) }}{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% if marca.selos %}
+<section class="selos-faixa">
+  <ul class="envolve selos">
+    {% for x in marca.selos %}<li><img src="/assets/img/icones/{{ x.icone }}.png" alt="" loading="lazy"><div><strong>{{ x.titulo }}</strong><span>{{ x.texto }}</span></div></li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="secao">
+  <div class="envolve duas-colunas">
+    <div class="texto-longo">
+      <h2>Sobre a {{ marca.nomeCurto }}</h2>
+      {% for par in marca.intro %}<p>{{ par }}</p>{% endfor %}
+    </div>
+    <ul class="pilares">
+      {% for p in marca.pilares %}<li><h3>{{ p.titulo }}</h3><p>{{ p.texto }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% if marca.provas %}
+<section class="secao secao--prova">
+  <div class="envolve">
+    <ul class="provas">
+      {% for pv in marca.provas %}<li><p class="provas__num">{{ pv.numero }}</p><p>{{ pv.texto }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+{% if marca.destaqueCor %}
+<section class="secao secao--escura" style="--c: {{ marca.cor }}">
+  <div class="envolve duas-colunas">
+    <div class="texto-longo">
+      <p class="sobretitulo">Foco na cor</p>
+      <h2>{{ marca.destaqueCor.titulo }}</h2>
+      {% for par in marca.destaqueCor.texto %}<p>{{ par }}</p>{% endfor %}
+      <div class="botoes"><a class="botao botao--claro" href="{{ marca.url }}cor-color/">Conhecer a CØR.color</a></div>
+    </div>
+    <ul class="lista-visto">{% for pt in marca.destaqueCor.pontos %}<li>{{ pt }}</li>{% endfor %}</ul>
+  </div>
+</section>
+{% endif %}
+
+{% if marca.ciencia %}
+<section class="secao secao--escura" style="--c: {{ marca.cor }}">
+  <div class="envolve">
+    <p class="sobretitulo">A ciência PTT-6®</p>
+    <h2>Um ativo, resultados medidos.</h2>
+    <ul class="numeros">{% for n in marca.ciencia %}<li><strong>{{ n.valor }}</strong><span>{{ n.texto }}</span></li>{% endfor %}</ul>
+    <p class="nota">{{ marca.notaCiencia }}</p>
+    <div class="botoes"><a class="botao botao--claro" href="/loja/">Ir para a loja CALECIM®</a></div>
+  </div>
+</section>
+{% endif %}
+
+<section class="secao" id="gama">
+  <div class="envolve">
+    <h2>A gama {{ marca.nomeCurto }}</h2>
+    {% for g in marca.grupos %}
+    <h3 class="grupo-titulo">{{ g.nome }}</h3>
+    <div class="grelha grelha--linhas">
+      {% for l in g.linhas %}
+      <a class="linha-cartao" href="{{ l.url }}" style="--c: {{ marca.cor }}">
+        {{ m.visual(("linha-" + marca.slug + "-" + l.slug) | foto, l.imagens, marca.cor, l.nome) }}
+        <span class="linha-cartao__texto">
+        <span class="linha-cartao__nome">{{ l.nome }}</span>
+        <span class="linha-cartao__sub">{{ l.subtitulo }}</span>
+        <span class="linha-cartao__n">{{ l.produtos.length }} {{ "produto" if l.produtos.length == 1 else "produtos" }}</span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+{% set nm = marca.nomeCurto %}
+{% set perguntas = [
+  ["Onde comprar " + nm + " em Portugal?", ("Na loja online SALE.ON, com envio para todo o país. Os salões podem também pedir condições profissionais." if marca.loja else ("A SALE.ON é o distribuidor exclusivo da " + nm + " em Portugal. Pede um orçamento à medida." if marca.orcamento else "A " + nm + " é uma marca profissional, vendida em salões. A SALE.ON, distribuidor exclusivo em Portugal, indica-te o salão mais perto e fornece os profissionais."))],
+  ["Quem é o distribuidor oficial da " + nm + " em Portugal?", "A SALE.ON, em Cascais, é o distribuidor exclusivo da " + nm + " em Portugal, com formação, apoio técnico e marketing para os salões."]
+] %}
+{% set perguntas = perguntas.concat(marca.faq or []) %}
+<section class="secao secao--bege" id="perguntas">
+  <div class="envolve duas-colunas">
+    <div class="texto-longo"><p class="sobretitulo">Perguntas frequentes</p><h2>{{ nm }} em Portugal</h2><p>Tudo o que precisas de saber para encontrar e trabalhar com a {{ nm }}.</p></div>
+    <div class="faq">{% for q in perguntas %}<details class="ajuda__q"{% if loop.first %} open{% endif %}><summary>{{ q[0] }}</summary><p>{{ q[1] }}</p></details>{% endfor %}</div>
+  </div>
+</section>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for q in perguntas %}{"@type":"Question","name":{{ q[0] | json | safe }},"acceptedAnswer":{"@type":"Answer","text":{{ q[1] | json | safe }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+
+{% include "cta-marca.njk" %}
+{% endblock %}

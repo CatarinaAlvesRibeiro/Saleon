@@ -1,0 +1,74 @@
+---
+pagination:
+  data: catalogo.produtos
+  size: 1
+  addAllPagesToCollections: true
+  alias: item
+permalink: "{{ item.produto.url }}"
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set p = item.produto %}{% set linha = item.linha %}{% set marca = item.marca %}
+{% set img = p | imagemProduto %}
+{% set nomeCompleto = p.nome if (marca.nomeCurto | replace("®","") | upper) in (p.nome | upper) else (marca.nomeCurto + " " + p.nome) %}
+{% set titulo %}{{ nomeCompleto }}{% if p.tamanhos.length and p.tamanhos[0] != "Uso profissional" and p.tamanhos[0] != "Unidade" %} {{ p.tamanhos | join(" / ") }}{% endif %} | {% if marca.loja %}Comprar online em Portugal{% else %}{{ marca.nomeCurto }} Portugal{% endif %} | SALE.ON{% endset %}
+{% set descricao %}{{ (nomeCompleto + ", linha " + linha.nome + ". " + p.descricao + " " + (("Compra online em Portugal na SALE.ON, distribuidor oficial.") if marca.loja else ("SALE.ON, distribuidor exclusivo " + marca.nomeCurto + " em Portugal."))) | limitar(160) }}{% endset %}
+{% set ogtipo %}product{% endset %}
+{% set ogimagem %}{% if img %}{{ img | absoluto(site.url) }}{% else %}{{ site.ogImage | absoluto(site.url) }}{% endif %}{% endset %}
+{% block classe %}pg-produto marca-{{ marca.slug }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":{{ nomeCompleto | json | safe }},"sku":{{ (marca.slug + "-" + linha.slug + "-" + p.slug) | json | safe }},"description":{{ p.descricao | json | safe }},"brand":{"@type":"Brand","name":{{ marca.nome | json | safe }}},"category":{{ (linha.grupo + " > " + linha.nome) | json | safe }},"url":"{{ p.url | absoluto(site.url) }}"{% if img %},"image":"{{ img | absoluto(site.url) }}"{% endif %}{% if p.tamanhos.length %},"size":{{ p.tamanhos | join(" / ") | json | safe }}{% endif %}{% if marca.loja and p.preco %},"offers":{% if p.precos and p.precos.length > 1 %}{"@type":"AggregateOffer","lowPrice":"{{ p.preco }}","highPrice":"{{ (p.precos | last).preco }}","offerCount":"{{ p.precos.length }}","priceCurrency":"EUR","availability":"https://schema.org/InStock","url":"{{ p.url | absoluto(site.url) }}","seller":{"@type":"Organization","name":"SALE.ON"}}{% else %}{"@type":"Offer","price":"{{ p.preco }}","priceCurrency":"EUR","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","url":"{{ p.url | absoluto(site.url) }}","seller":{"@type":"Organization","name":"SALE.ON"}}{% endif %}{% endif %}}
+</script>
+{{ m.schemaMigalhas([{nome: marca.nomeCurto, url: marca.url}, {nome: linha.nome, url: linha.url}, {nome: p.nome, url: p.url}], site.url) }}
+{% endblock %}
+{% block conteudo %}
+<section class="secao secao--produto">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Marcas", url: "/marcas/"}, {nome: marca.nomeCurto, url: marca.url}, {nome: linha.nome, url: linha.url}, {nome: p.nome, url: p.url}]) }}
+    <div class="produto">
+      <div class="produto__img">{{ m.imagem(p, marca, "produto__foto") }}{% set cena = p | imagemCena %}{% if cena %}<img class="produto__cena" src="{{ cena }}" alt="{{ marca.nomeCurto }} {{ p.nome }}: resultado no cabelo" loading="lazy" width="1080" height="1080">{% endif %}</div>
+      <div class="produto__info">
+        <p class="sobretitulo"><a href="{{ marca.url }}">{{ marca.nomeCurto }}</a> · <a href="{{ linha.url }}">{{ linha.nome }}</a></p>
+        <h1>{{ p.nome }}</h1>
+        <p class="lead">{{ p.descricao }}</p>
+        {% if p.tamanhos.length %}
+        <p class="produto__tam"><strong>{{ "Tamanho" if p.tamanhos.length == 1 else "Tamanhos" }}:</strong> {{ p.tamanhos | join(" · ") }}</p>
+        {% endif %}
+        {% if p.uso == "Salão" or linha.profissional %}<p class="selo">Uso profissional, em salão</p>{% endif %}
+        {% if linha.ingredientes.length %}<p><strong>Ingredientes-chave da linha:</strong> {{ linha.ingredientes | join(", ") }}</p>{% endif %}
+
+        <div class="produto__acoes">
+          {% if marca.loja %}
+            {% if p.precos and p.precos.length > 1 %}<ul class="precos">{% for x in p.precos %}<li><span>{{ x.tamanho }}</span><strong>{{ x.preco | euro }}</strong></li>{% endfor %}</ul>{% elif p.preco %}<p class="preco">{{ p.preco | euro }}</p>{% endif %}
+            {% if p.stripe and p.preco %}
+              <a class="botao botao--grande" href="{{ p.stripe }}" rel="noopener">Comprar agora</a>
+              <p class="pequeno">Pagamento seguro com Stripe. Envio para Portugal continental e ilhas.</p>
+            {% else %}
+              <a class="botao botao--grande" href="mailto:{{ site.emailLoja }}?subject={{ ('Encomenda ' + p.nome) | urlencode }}">Encomendar por email</a>
+              <p class="pequeno">Pagamento online disponível em breve.</p>
+            {% endif %}
+          {% elif marca.orcamento %}
+            <a class="botao botao--grande" href="/contacto/?assunto={{ ('Orçamento ' + marca.nomeCurto + ' ' + p.nome) | urlencode }}">Pedir orçamento</a>
+          {% else %}
+            <a class="botao botao--grande" href="/profissionais/?marca={{ marca.nomeCurto | urlencode }}&amp;produto={{ p.nome | urlencode }}">Sou profissional: pedir condições</a>
+            <a class="botao botao--contorno-escuro" href="/contacto/?assunto={{ ('Onde encontrar ' + p.nome) | urlencode }}">Onde encontrar</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% set outros = linha.produtos | reject("equalto", p) %}
+{% if outros | length %}
+<section class="secao secao--clara">
+  <div class="envolve">
+    <h2>Mais da linha {{ linha.nome }}</h2>
+    <div class="grelha grelha--produtos">
+      {% for o in outros %}{% if loop.index <= 4 %}{{ m.cartao(o, marca) }}{% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

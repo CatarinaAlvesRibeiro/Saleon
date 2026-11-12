@@ -1,0 +1,46 @@
+---
+pagination:
+  data: catalogo.linhas
+  size: 1
+  addAllPagesToCollections: true
+  alias: item
+permalink: "{{ item.linha.url }}"
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set linha = item.linha %}{% set marca = item.marca %}
+{% set titulo %}{{ marca.nomeCurto }} {{ linha.nome }}: {{ linha.subtitulo }} | {{ marca.nomeCurto }} Portugal{% endset %}
+{% set descricao %}{{ (marca.nomeCurto + " " + linha.nome + ": " + linha.descricao) | limitar(158) }}{% endset %}
+{% block classe %}pg-linha marca-{{ marca.slug }}{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":{{ (marca.nomeCurto + " " + linha.nome) | json | safe }},"description":{{ linha.descricao | json | safe }},"url":"{{ linha.url | absoluto(site.url) }}","mainEntity":{"@type":"ItemList","numberOfItems":{{ linha.produtos.length }},"itemListElement":[{% for p in linha.produtos %}{"@type":"ListItem","position":{{ loop.index }},"url":"{{ p.url | absoluto(site.url) }}","name":{{ p.nome | json | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]}}
+</script>
+{{ m.schemaMigalhas([{nome: "Marcas", url: "/marcas/"}, {nome: marca.nomeCurto, url: marca.url}, {nome: linha.nome, url: linha.url}], site.url) }}
+{% endblock %}
+{% block conteudo %}
+{% set fl = ("linha-" + marca.slug + "-" + linha.slug) | foto %}
+<section class="heroi heroi--linha{% if fl %} heroi--foto{% endif %}" style="--c: {{ marca.cor }}">
+  {% if fl %}<img class="heroi__fundo" src="{{ fl }}" alt="" fetchpriority="high">{% endif %}
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Marcas", url: "/marcas/"}, {nome: marca.nomeCurto, url: marca.url}, {nome: linha.nome, url: linha.url}]) }}
+    <p class="sobretitulo">{{ marca.nomeCurto }} · {{ linha.grupo }}</p>
+    <h1>{{ linha.nome }}</h1>
+    <p class="heroi__lead">{{ linha.subtitulo }}</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="texto-longo">
+      <p class="lead">{{ linha.descricao }}</p>
+      {% if linha.ingredientes.length %}<p><strong>Ingredientes-chave:</strong> {{ linha.ingredientes | join(", ") }}</p>{% endif %}
+      {% if linha.profissional %}<p class="selo selo--grande">Exclusivo para profissionais</p>{% endif %}
+    </div>
+    <div class="grelha grelha--produtos">
+      {% for p in linha.produtos %}{{ m.cartao(p, marca) }}{% endfor %}
+    </div>
+    <p class="voltar"><a href="{{ marca.url }}#gama">← Todas as linhas {{ marca.nomeCurto }}</a></p>
+  </div>
+</section>
+{% include "cta-marca.njk" %}
+{% endblock %}

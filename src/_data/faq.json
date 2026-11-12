@@ -1,0 +1,21 @@
+[
+  {"tema": "Comprar", "perguntas": [
+    {"p": "Posso comprar online?", "r": "Sim, as marcas CALECIM® e Graham Hill têm loja online, com pagamento seguro e envio para todo o país.", "link": "/loja/", "rotulo": "Ir para a loja"},
+    {"p": "Quanto custa o envio e quanto tempo demora?", "r": "Os portes e prazos aparecem no fim da compra. Para encomendas grandes ou para o salão, fala connosco.", "link": "/termos-loja/", "rotulo": "Ver condições"},
+    {"p": "Sou cliente particular. Onde compro GLYNT ou O&M?", "r": "GLYNT e O&M são marcas profissionais, vendidas nos salões. Diz-nos onde estás e indicamos o salão mais perto.", "link": "/contacto/?assunto=Onde encontrar", "rotulo": "Encontrar um salão"}
+  ]},
+  {"tema": "Para salões", "perguntas": [
+    {"p": "Como passo a trabalhar com a SALE.ON?", "r": "Pede condições profissionais. Um consultor contacta-te para conhecer o salão e propor as marcas certas.", "link": "/profissionais/", "rotulo": "Pedir condições"},
+    {"p": "Há encomenda mínima?", "r": "As condições dependem do salão e das marcas. Falamos contigo para encontrar a melhor proposta.", "link": "/profissionais/", "rotulo": "Falar com um consultor"},
+    {"p": "Que marcas distribuem?", "r": "GLYNT, O&M (Original & Mineral), Graham Hill, CALECIM® e PAHI, em exclusivo para Portugal.", "link": "/marcas/", "rotulo": "Ver as marcas"}
+  ]},
+  {"tema": "Produtos", "perguntas": [
+    {"p": "Procuro coloração sem amoníaco.", "r": "A CØR.color da O&M não tem amoníaco, PPD nem resorcinol, e cobre brancos até ao nível 9.", "link": "/marcas/original-mineral/cor-color/", "rotulo": "Ver CØR.color"},
+    {"p": "Tenho clientes com queda de cabelo.", "r": "O CALECIM® Hair Serum, com PTT-6®, é um programa de 6 semanas, no salão e em casa.", "link": "/categorias/couro-cabeludo/", "rotulo": "Ver couro cabeludo e queda"},
+    {"p": "Não sei que produto escolher.", "r": "Pesquisa pelo nome ou explora por categoria. Se preferires, fala connosco pelo WhatsApp.", "link": "/categorias/", "rotulo": "Explorar por categoria"}
+  ]},
+  {"tema": "Formação", "perguntas": [
+    {"p": "Têm formação para a minha equipa?", "r": "Sim, a SALE.ON Academy faz formação técnica, de cor e de tendências, no salão e em eventos.", "link": "/academy/", "rotulo": "Ver a Academy"},
+    {"p": "Como me torno embaixador SALE.ON?", "r": "Envia-nos o teu trabalho e o salão onde estás. Avaliamos cada candidatura.", "link": "/embaixadores/", "rotulo": "Saber mais"}
+  ]}
+]

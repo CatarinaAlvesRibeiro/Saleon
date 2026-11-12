@@ -1,0 +1,60 @@
+---
+permalink: /aprender/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Aprender | Vídeos de técnicas e aplicação de produtos | SALE.ON{% endset %}
+{% set descricao %}Vídeos explicativos sobre técnicas de cor, cuidado, styling e barbearia, e como aplicar os produtos GLYNT, O&M, CALECIM® e Graham Hill.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Academy", url: "/academy/"}, {nome: "Aprender", url: "/aprender/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Academy", url: "/academy/"}, {nome: "Aprender", url: "/aprender/"}]) }}
+    <p class="sobretitulo">SALE.ON Academy</p>
+    <h1>Aprender</h1>
+    <p class="heroi__lead">Técnicas e aplicação dos produtos, em vídeos curtos.</p>
+  </div>
+</section>
+<nav class="subnav" aria-label="Academy"><div class="envolve"><a href="/academy/">Formações e eventos</a><a href="/aprender/" aria-current="page">Aprender</a><a href="/galeria/">Galeria</a><a href="/modelos/">Modelos</a><a href="/embaixadores/">Embaixadores</a></div></nav>
+<section class="secao secao--portao" data-portao>
+  <div class="envolve portao">
+    <div>
+      <p class="sobretitulo">Acesso gratuito</p>
+      <h2>Vê os tutoriais com o teu email.</h2>
+      <p>Deixa o teu contacto e desbloqueia todos os vídeos neste dispositivo. Avisamos-te quando houver tutoriais novos.</p>
+    </div>
+    <form name="aprender-acesso" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="formulario">
+      <input type="hidden" name="form-name" value="aprender-acesso">
+      <p class="escondido"><label>Não preencher <input name="bot-field"></label></p>
+      <label>Nome<input name="nome" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Salão ou barbearia (opcional)<input name="salao"></label>
+      <label class="caixa"><input type="checkbox" name="consentimento" required> Aceito a <a href="/privacidade/">política de privacidade</a> e receber novidades da SALE.ON Academy.</label>
+      <button class="botao" type="submit">Desbloquear os tutoriais</button>
+    </form>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="filtros-video" role="group" aria-label="Filtrar por marca">
+      <button type="button" class="chip ativo" data-filtro="">Todos</button>
+      {% for marca, itens in videos.videos | groupby("marca") %}<button type="button" class="chip" data-filtro="{{ marca }}">{{ marca }}</button>{% endfor %}
+    </div>
+    <div class="videos">
+      {% for v in videos.videos %}
+      <article class="video" data-marca="{{ v.marca }}">
+        {% if v.youtube %}<button type="button" class="video__capa" data-youtube="{{ v.youtube }}" aria-label="Ver vídeo: {{ v.titulo }}"><img src="https://i.ytimg.com/vi/{{ v.youtube }}/hqdefault.jpg" alt="" loading="lazy"><span class="video__play"></span></button><button type="button" class="video__cadeado" aria-label="Desbloquear com email"><span>Desbloqueia com o teu email</span></button>
+        {% elif v.vimeo %}<div class="video__capa video__capa--vimeo"><iframe src="https://player.vimeo.com/video/{{ v.vimeo }}" title="{{ v.titulo }}" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        {% else %}<div class="video__capa video__capa--breve"><span>Em breve</span></div>{% endif %}
+        <div class="video__corpo">
+          <p class="sobretitulo">{{ v.marca }} · {{ v.tema }}</p>
+          <h3>{{ v.titulo }}</h3>
+          <p>{{ v.resumo }}</p>
+          {% if v.ligacao %}<a class="ligacao" href="{{ v.ligacao }}">Ver os produtos</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

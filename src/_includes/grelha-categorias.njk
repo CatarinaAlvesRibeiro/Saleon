@@ -1,0 +1,13 @@
+{% import "macros.njk" as mc %}
+<div class="categorias__grelha">
+  {% for c in catalogo.categorias %}
+  <a class="categoria" href="{{ c.url }}">
+    {{ mc.visual(("categoria-" + c.slug) | foto, c.imagens, "#3a3a3a", c.nome) }}
+    <span class="categoria__corpo">
+      <span class="categoria__nome">{{ c.nome }}</span>
+      <span class="categoria__pergunta">{{ c.pergunta }}</span>
+      <span class="categoria__marcas">{% for b in c.marcas %}{{ b.nomeCurto }}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+    </span>
+  </a>
+  {% endfor %}
+</div>

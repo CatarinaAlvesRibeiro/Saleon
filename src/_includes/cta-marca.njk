@@ -1,0 +1,38 @@
+<section class="secao secao--clara">
+  <div class="envolve cta-dupla">
+    {% if marca.loja %}
+    <div>
+      <h2>Compra {{ marca.nomeCurto }} em Portugal</h2>
+      <p>A SALE.ON é o distribuidor da {{ marca.nomeCurto }} em Portugal. Encomenda na nossa loja online, com envio para todo o país.</p>
+      <a class="botao" href="/loja/">Ir para a loja</a>
+    </div>
+    <div>
+      <h2>És profissional ou tens uma clínica?</h2>
+      <p>Temos condições para clínicas, esteticistas e salões que queiram trabalhar com {{ marca.nomeCurto }}.</p>
+      <a class="botao botao--contorno-escuro" href="/profissionais/?marca={{ marca.nomeCurto }}">Pedir condições profissionais</a>
+    </div>
+    {% elif marca.orcamento %}
+    <div>
+      <h2>Vais abrir ou renovar o salão?</h2>
+      <p>Diz-nos que modelos te interessam e as medidas do espaço. Preparamos o orçamento e, se quiseres, a visualização 3D do salão.</p>
+      <a class="botao" href="/contacto/?assunto=Orçamento {{ marca.nomeCurto }}">Pedir orçamento</a>
+    </div>
+    <div>
+      <h2>Ver os acabamentos ao vivo</h2>
+      <p>Fala connosco para conhecer amostras de estofos, cores e acabamentos.</p>
+      <a class="botao botao--contorno-escuro" href="/contacto/">Falar com a SALE.ON</a>
+    </div>
+    {% else %}
+    <div>
+      <h2>És cabeleireiro ou barbeiro?</h2>
+      <p>A SALE.ON é o distribuidor exclusivo da {{ marca.nomeCurto }} em Portugal. Pede condições para o teu salão, formação e apoio técnico.</p>
+      <a class="botao" href="/profissionais/?marca={{ marca.nomeCurto }}">Pedir condições profissionais</a>
+    </div>
+    <div>
+      <h2>Queres usar {{ marca.nomeCurto }}?</h2>
+      <p>A {{ marca.nomeCurto }} é uma marca profissional, vendida através de salões. Diz-nos onde estás e indicamos o salão mais perto de ti.</p>
+      <a class="botao botao--contorno-escuro" href="/contacto/?assunto=Onde encontrar {{ marca.nomeCurto }}">Onde encontrar</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

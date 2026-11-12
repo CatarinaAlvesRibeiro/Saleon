@@ -1,0 +1,6 @@
+---
+permalink: /pesquisa.json
+eleventyExcludeFromCollections: true
+---
+[{% for i in catalogo.produtos %}{"n":{{ i.produto.nome | json | safe }},"m":{{ i.marca.nomeCurto | json | safe }},"l":{{ i.linha.nome | json | safe }},"d":{{ (i.produto.descricao or "") | limitar(90) | json | safe }},"u":"{{ i.produto.url }}","i":"{{ i.produto.img }}"}{% if not loop.last %},{% endif %}
+{% endfor %}]

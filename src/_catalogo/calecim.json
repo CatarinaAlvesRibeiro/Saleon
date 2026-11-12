@@ -1,0 +1,143 @@
+{
+  "slug": "calecim",
+  "nome": "CALECIM®",
+  "ordem": 4,
+  "pais": "",
+  "desde": "",
+  "cor": "#231D1D",
+  "loja": true,
+  "tagline": "Cabelo e couro cabeludo, com a ciência do PTT-6®.",
+  "resumo": "Cuidado de cabelo e couro cabeludo construído à volta de um único ativo, o PTT-6®, obtido a partir de células estaminais de origem ética. Disponível na loja online SALE.ON.",
+  "intro": [
+    "A CALECIM® é uma marca de ciência aplicada ao cabelo e ao couro cabeludo, usada por clínicas e profissionais em todo o mundo. Tudo assenta num único ativo patenteado, o PTT-6®, com mais de 3.000 proteínas, entre fatores de crescimento, citocinas e exossomas.",
+    "Segundo a marca, o PTT-6® envia sinais à papila dérmica, a estrutura que comanda o ciclo de crescimento do cabelo. O Hair Serum é o programa de 6 semanas para cabelo fino, frágil e com queda. O shampoo, o condicionador, o cleanser e o mist completam a rotina em casa."
+  ],
+  "pilares": [
+    {
+      "titulo": "Um só ativo, PTT-6®",
+      "texto": "Proteínas, fatores de crescimento, citocinas e exossomas que sinalizam às células do couro cabeludo."
+    },
+    {
+      "titulo": "Programa de 6 semanas",
+      "texto": "Hair Serum aplicado com derma stamp duas vezes por semana, seguido de manutenção semanal."
+    },
+    {
+      "titulo": "Salão, clínica e casa",
+      "texto": "Tratamento profissional e rotina diária com shampoo, condicionador, cleanser e mist."
+    }
+  ],
+  "ciencia": [
+    {
+      "valor": "+3.000",
+      "texto": "proteínas no PTT-6®"
+    },
+    {
+      "valor": "+24%",
+      "texto": "produção de células do folículo, em estudo in vitro"
+    },
+    {
+      "valor": "+16%",
+      "texto": "espessura do cabelo em 12 semanas, em estudo clínico"
+    },
+    {
+      "valor": "6 semanas",
+      "texto": "de programa Hair Serum"
+    }
+  ],
+  "notaCiencia": "Resultados comunicados pela marca CALECIM®. O valor de 24% vem de um estudo in vitro (células em laboratório), não de um estudo em pessoas. O valor de 16% vem de um estudo clínico de 12 semanas indicado pela marca. Produtos cosméticos.",
+  "seo": {
+    "title": "CALECIM® em Portugal | Hair Serum e cuidado capilar com PTT-6® | SALE.ON",
+    "description": "Compra CALECIM® em Portugal: Hair Serum, shampoo, condicionador, cleanser e mist com PTT-6® para cabelo fino, frágil e com queda. Loja online oficial SALE.ON."
+  },
+  "fonte": "https://calecimprofessional.com",
+  "linhas": [
+    {
+      "slug": "cabelo",
+      "nome": "Cabelo",
+      "grupo": "Cabelo",
+      "subtitulo": "Couro cabeludo e densidade",
+      "descricao": "Programa com PTT-6® para cabelo fino, frágil e com queda.",
+      "ingredientes": [
+        "PTT-6®"
+      ],
+      "produtos": [
+        {
+          "nome": "Hair Serum",
+          "tamanhos": [
+            "Programa de 6 semanas"
+          ],
+          "descricao": "Programa de 6 semanas com ampolas de sérum e ativador, aplicado com derma stamp duas vezes por semana, seguido de manutenção semanal. Para cabelo fino, frágil e com queda.",
+          "preco": 388,
+          "stripe": ""
+        },
+        {
+          "nome": "Scalp Detox Cleanser",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Limpeza profunda que esfolia e desintoxica o couro cabeludo, com ácido glicólico, ácido salicílico e carvão ativado. Prepara o couro cabeludo para absorver o PTT-6® do Hair Serum. Adequado para cabelo pintado.",
+          "preco": 30,
+          "stripe": ""
+        },
+        {
+          "nome": "Scalp Nourishing Shampoo",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Shampoo de uso diário com PTT-6® e complexo probiótico, que equilibra o microbioma do couro cabeludo e limpa com suavidade. Adequado para cabelo pintado.",
+          "preco": 64,
+          "stripe": ""
+        },
+        {
+          "nome": "Structure Enhancing Conditioner",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Condicionador leve com PTT-6®, seis proteínas hidrolisadas e ceramidas, que reforça a fibra capilar e reduz a quebra. Aplicar do meio às pontas durante 3 minutos.",
+          "preco": 64,
+          "stripe": ""
+        },
+        {
+          "nome": "Scalp Activating Mist",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Tratamento sem enxaguamento com PTT-6®, complexo probiótico, cafeína e vitamina B12, para o couro cabeludo. Pulverizar só no couro cabeludo, sem enxaguar.",
+          "preco": 110,
+          "stripe": ""
+        }
+      ]
+    }
+  ],
+  "montra": [
+    "cabelo/scalp-nourishing-shampoo",
+    "cabelo/scalp-activating-mist",
+    "cabelo/structure-enhancing-conditioner",
+    "cabelo/scalp-detox-cleanser"
+  ],
+  "lojaOrdem": 1,
+  "alternateName": [
+    "CALECIM Professional",
+    "Calecim",
+    "CALECIM with PTT-6",
+    "CALECIM Hair Serum"
+  ],
+  "pesquisas": [
+    "CALECIM Portugal",
+    "comprar CALECIM",
+    "CALECIM Hair Serum",
+    "PTT-6",
+    "células estaminais cabelo",
+    "tratamento queda de cabelo"
+  ],
+  "faq": [
+    [
+      "O que é o PTT-6®?",
+      "O PTT-6® é o ativo patenteado da CALECIM®, obtido de células estaminais de origem ética, com mais de 3.000 proteínas, fatores de crescimento, citocinas e exossomas."
+    ],
+    [
+      "Como se usa o CALECIM® Hair Serum?",
+      "Aplica-se no couro cabeludo com o derma stamp incluído, duas vezes por semana durante 6 semanas. Segue-se uma aplicação semanal de manutenção. A marca indica 12 semanas na fase inicial para homens."
+    ]
+  ]
+}

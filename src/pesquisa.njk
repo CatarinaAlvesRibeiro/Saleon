@@ -1,0 +1,48 @@
+---
+permalink: /pesquisa/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Pesquisar produtos | SALE.ON{% endset %}
+{% set descricao %}Pesquisa por nome, marca, linha ou necessidade em todo o catálogo SALE.ON.{% endset %}
+{% block schema %}<meta name="robots" content="noindex">{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Pesquisa", url: "/pesquisa/"}]) }}
+    <h1>Pesquisar</h1>
+    <label class="escondido" for="q">Pesquisar produtos</label>
+    <input class="pesquisa__campo" id="q" type="search" placeholder="Ex.: shampoo loiro, pomada, oxidante 6%, cadeira" autocomplete="off" autofocus>
+    <p class="pesquisa__info" id="info">Escreve pelo menos 2 letras.</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="grelha grelha--produtos" id="res"></div>
+    <div id="cats">{% include "grelha-categorias.njk" %}</div>
+  </div>
+</section>
+<script>
+(function () {
+  var dados = [], q = document.getElementById('q'), res = document.getElementById('res'), info = document.getElementById('info'), cats = document.getElementById('cats');
+  function norm(s) { return (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function mostrar() {
+    var t = norm(q.value).trim(); history.replaceState(null, '', t ? '?q=' + encodeURIComponent(q.value) : location.pathname);
+    if (t.length < 2) { res.innerHTML = ''; cats.hidden = false; info.textContent = 'Escreve pelo menos 2 letras.'; return; }
+    var termos = t.split(/\s+/);
+    var r = dados.filter(function (p) { var h = norm(p.n + ' ' + p.m + ' ' + p.l + ' ' + p.d); return termos.every(function (x) { return h.indexOf(x) > -1; }); });
+    cats.hidden = r.length > 0;
+    info.textContent = r.length ? r.length + (r.length === 1 ? ' produto encontrado.' : ' produtos encontrados.') : 'Sem resultados. Experimenta procurar por categoria.';
+    res.innerHTML = r.slice(0, 60).map(function (p) {
+      var img = p.i ? '<img class="cartao__img" src="' + p.i + '" alt="" loading="lazy" width="600" height="600">' : '<div class="marcador cartao__img"><span class="marcador__marca">' + esc(p.m) + '</span><span class="marcador__nome">' + esc(p.n) + '</span></div>';
+      return '<a class="cartao" href="' + p.u + '">' + img + '<span class="cartao__corpo"><span class="cartao__nome">' + esc(p.n) + '</span><span class="cartao__desc">' + esc(p.m) + ' · ' + esc(p.l) + '</span></span></a>';
+    }).join('');
+  }
+  fetch('/pesquisa.json').then(function (r) { return r.json(); }).then(function (d) {
+    dados = d; var u = new URLSearchParams(location.search).get('q'); if (u) q.value = u; mostrar();
+  });
+  q.addEventListener('input', mostrar);
+})();
+</script>
+{% endblock %}

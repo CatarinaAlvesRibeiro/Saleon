@@ -1,0 +1,48 @@
+---
+permalink: /academy/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}SALE.ON Academy | Formação para cabeleireiros e eventos{% endset %}
+{% set descricao %}Formação profissional em coloração, loiros, corte e styling com as marcas GLYNT e O&M. Workshops, masterclasses e eventos SALE.ON para cabeleireiros em Portugal.{% endset %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Event","name":"Masterclass Internacional GLYNT com Anne Haist","startDate":"2026-11-16","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Lisboa","address":{"@type":"PostalAddress","addressLocality":"Lisboa","addressCountry":"PT"}},"organizer":{"@type":"Organization","name":"SALE.ON","url":"{{ site.url }}"}}
+</script>
+{{ m.schemaMigalhas([{nome: "Academy", url: "/academy/"}], site.url) }}
+{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Academy", url: "/academy/"}]) }}
+    <h1>SALE.ON Academy</h1>
+    <p class="heroi__lead">Formação técnica, cor e tendências, com formadores e embaixadores das marcas.</p>
+  </div>
+</section>
+<nav class="subnav" aria-label="Academy"><div class="envolve"><a href="/academy/" aria-current="page">Formações e eventos</a><a href="/aprender/">Aprender</a><a href="/galeria/">Galeria</a><a href="/modelos/">Modelos</a><a href="/embaixadores/">Embaixadores</a></div></nav>
+<section class="secao">
+  <div class="envolve">
+    <h2>Próximo evento</h2>
+    <article class="evento">
+      <p class="evento__data"><strong>16</strong><span>nov. 2026</span></p>
+      <div>
+        <h3>Masterclass Internacional GLYNT com Anne Haist</h3>
+        <p>Lisboa. Uma masterclass internacional GLYNT, com a formadora Anne Haist.</p>
+        <a class="botao" href="/contacto/?assunto=Inscrição Masterclass GLYNT">Pedir inscrição</a>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="secao secao--clara">
+  <div class="envolve">
+    <h2>Formações</h2>
+    <ul class="servicos">
+      <li><h3>Coloração SHADOWS</h3><p>O sistema de cor GLYNT, das fórmulas às ferramentas digitais.</p></li>
+      <li><h3>Cor limpa CØR.color</h3><p>Coloração sem amoníaco da O&amp;M: técnica e cobertura de brancos.</p></li>
+      <li><h3>Loiros</h3><p>Descoloração e tonalização com o Blond System e a ICE BLOND.</p></li>
+      <li><h3>Corte e styling</h3><p>Técnicas de corte e finalização com a gama de styling.</p></li>
+    </ul>
+    <div class="botoes"><a class="botao" href="/contacto/?assunto=Calendário de formações">Receber o calendário de formações</a></div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,65 @@
+---
+permalink: /loja/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set cal = catalogo.marcas | marcaPorSlug("calecim") %}
+{% set titulo %}Loja online SALE.ON | CALECIM® e Graham Hill em Portugal{% endset %}
+{% set descricao %}Compra online CALECIM® (cabelo e couro cabeludo com PTT-6®) e Graham Hill (grooming masculino) na loja oficial SALE.ON, com envio para todo o país.{% endset %}
+{% block classe %}pg-loja marca-calecim{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"OnlineStore","name":"Loja online SALE.ON","url":"{{ '/loja/' | absoluto(site.url) }}","areaServed":"PT"}
+</script>
+{{ m.schemaMigalhas([{nome: "Loja online", url: "/loja/"}], site.url) }}
+{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Loja online", url: "/loja/"}]) }}
+    <p class="sobretitulo">Loja online · envio para todo o país</p>
+    <h1>Loja online<span class="tom2">SALE.ON</span></h1>
+    <p class="heroi__lead">Compra diretamente as marcas com venda online: CALECIM® e Graham Hill.</p>
+    <ul class="filtros">{% for b in (catalogo.marcas | sort(false, false, "lojaOrdem")) %}{% if b.loja %}<li><a href="#{{ b.slug }}">{{ b.nomeCurto }}</a></li>{% endif %}{% endfor %}</ul>
+  </div>
+</section>
+{% for b in (catalogo.marcas | sort(false, false, "lojaOrdem")) %}{% if b.loja %}{% set lg = b.slug | logo %}
+<section class="secao" id="{{ b.slug }}">
+  <div class="envolve">
+    <div class="secao__topo">
+      <div>{% if lg %}<h2 class="loja-marca"><img src="{{ lg }}" alt="{{ b.nome }}"><span class="escondido">{{ b.nomeCurto }}</span></h2>{% else %}<h2>{{ b.nomeCurto }}</h2>{% endif %}</div>
+      <p>{{ b.tagline }} <a href="{{ b.url }}">Conhecer a marca</a></p>
+    </div>
+    {% for l in b.linhas %}{% set vendaveis = l.produtos | rejectattr("uso", "equalto", "Salão") %}{% if vendaveis | length %}
+    <div class="bloco-linha">
+      <div class="bloco-linha__topo"><h2><small>{{ b.nomeCurto }}</small>{{ l.nome }}</h2><a class="ligacao" href="{{ l.url }}">Ver linha</a></div>
+      <div class="grelha grelha--loja">
+        {% for p in vendaveis %}
+        <article class="loja-item">
+          <a href="{{ p.url }}">{{ m.imagem(p, b, "cartao__img") }}</a>
+          <div class="loja-item__corpo">
+            <h3><a href="{{ p.url }}">{{ p.nome }}</a></h3>
+            <p>{{ p.descricao | limitar(110) }}</p>
+            {% if p.tamanhos.length %}<p class="cartao__tam">{{ p.tamanhos | join(" · ") }}</p>{% endif %}
+            {% if p.preco %}<p class="preco">{% if p.precos and p.precos.length > 1 %}<small>desde</small> {% endif %}{{ p.preco | euro }}</p>{% endif %}
+            {% if p.stripe and p.preco %}
+              <a class="botao" href="{{ p.stripe }}" rel="noopener">Comprar</a>
+            {% else %}
+              <a class="botao botao--contorno-escuro" href="mailto:{{ site.emailLoja }}?subject={{ ('Encomenda ' + b.nomeCurto + ' ' + p.nome) | urlencode }}">Encomendar por email</a>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}{% endfor %}
+    {% if b.notaCiencia %}<p class="nota nota--marca">{{ b.notaCiencia }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}{% endfor %}
+<section class="secao secao--clara">
+  <div class="envolve texto-longo">
+    <p class="nota">Consulta os <a href="/termos-loja/">termos da loja</a> para envios, devoluções e pagamento.</p>
+  </div>
+</section>
+{% endblock %}

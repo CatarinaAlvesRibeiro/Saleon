@@ -1,0 +1,82 @@
+---
+permalink: /modelos/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Modelos para formações e eventos | SALE.ON Academy{% endset %}
+{% set descricao %}Candidata-te a modelo de cabelo nas formações e eventos SALE.ON: cor, corte, descoloração, penteado e barba, com profissionais das marcas GLYNT, O&M e Graham Hill.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Academy", url: "/academy/"}, {nome: "Modelos", url: "/modelos/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Academy", url: "/academy/"}, {nome: "Modelos", url: "/modelos/"}]) }}
+    <p class="sobretitulo">SALE.ON Academy</p>
+    <h1>Sê modelo nas nossas formações.</h1>
+    <p class="heroi__lead">Um novo visual, feito por profissionais de referência, com produtos das nossas marcas. Sem custos para ti.</p>
+    <div class="botoes"><a class="botao" href="#candidatura">Candidatar-me</a></div>
+  </div>
+</section>
+<nav class="subnav" aria-label="Academy"><div class="envolve"><a href="/academy/">Formações e eventos</a><a href="/aprender/">Aprender</a><a href="/galeria/">Galeria</a><a href="/modelos/" aria-current="page">Modelos</a><a href="/embaixadores/">Embaixadores</a></div></nav>
+{% if modelos.chamadas.length %}
+<section class="secao">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="sobretitulo">Agora</p><h2>Procuramos modelos</h2></div></div>
+    {% for c in modelos.chamadas %}
+    <article class="evento"><p class="evento__data"><strong>{{ c.dia }}</strong><span>{{ c.mes }}</span></p><div><h3>{{ c.evento }}</h3><p>{{ c.local }}. {{ c.procuramos }}</p><a class="botao" href="#candidatura">Candidatar-me</a></div></article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+<section class="secao">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="sobretitulo">Como funciona</p><h2>Três passos</h2></div><p>Cada evento pede perfis diferentes. Guardamos a tua candidatura e falamos contigo quando houver um trabalho para o teu cabelo.</p></div>
+    <ul class="capitulos">
+      <li><p class="num">01</p><h3>Candidata-te</h3><p>Preenche o formulário e envia duas fotografias atuais do teu cabelo.</p></li>
+      <li><p class="num">02</p><h3>Falamos contigo</h3><p>Quando um evento precisar do teu perfil, combinamos o serviço, a data e o local.</p></li>
+      <li><p class="num">03</p><h3>No dia</h3><p>O serviço é feito por profissionais das marcas. Sais com o visual pronto.</p></li>
+    </ul>
+  </div>
+</section>
+<section class="secao secao--clara">
+  <div class="envolve">
+    <ul class="servicos servicos--icones">
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="34" r="6"/><circle cx="34" cy="34" r="6"/><path d="M18.500 30 40 6M29.500 30 8 6"/></svg><h3>Corte</h3><p>Disponível para mudar o comprimento ou a forma.</p></li>
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5c8 9.500 13 16.500 13 24a13 13 0 0 1-26 0C11 21.500 16 14.500 24 5Z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg><h3>Cor e loiros</h3><p>Coloração, tonalização e descoloração.</p></li>
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 42c0-12 3-20 3-27a11 11 0 0 1 22 0c0 7 3 15 3 27"/><path d="M19 42c0-8 2-13 2-20M29 42c0-8-2-13-2-20"/></svg><h3>Penteado</h3><p>Styling, brushing e penteados de evento.</p></li>
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 14c0 16 5 28 15 28s15-12 15-28"/><path d="M9 14c5 4 10 4 15 1 5 3 10 3 15-1"/><path d="M19 27c3 2 7 2 10 0"/></svg><h3>Barba</h3><p>Barbear clássico e desenho de barba.</p></li>
+    </ul>
+  </div>
+</section>
+<section class="secao" id="candidatura">
+  <div class="envolve formulario-envolve">
+    <h2>Candidatura a modelo</h2>
+    <p>Para maiores de 18 anos. Respondemos quando houver um evento para o teu perfil.</p>
+    <form name="modelos" method="POST" action="/obrigado/" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" class="formulario">
+      <input type="hidden" name="form-name" value="modelos">
+      <p class="escondido"><label>Não preencher <input name="bot-field"></label></p>
+      <label>Nome<input name="nome" required autocomplete="name"></label>
+      <label>Localidade<input name="localidade" required></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Telemóvel<input type="tel" name="telefone" required autocomplete="tel"></label>
+      <label>Instagram (opcional)<input name="instagram" placeholder="@"></label>
+      <fieldset><legend>Estou disponível para</legend>
+        {% for s in ["Corte", "Cor", "Descoloração e loiros", "Penteado", "Barba"] %}<label class="caixa"><input type="checkbox" name="servicos" value="{{ s }}"> {{ s }}</label>{% endfor %}
+      </fieldset>
+      <fieldset><legend>Comprimento do cabelo</legend>
+        {% for s in ["Curto", "Médio", "Comprido"] %}<label class="caixa"><input type="radio" name="comprimento" value="{{ s }}" required> {{ s }}</label>{% endfor %}
+      </fieldset>
+      <fieldset><legend>O teu cabelo está</legend>
+        {% for s in ["Natural", "Pintado", "Descolorado"] %}<label class="caixa"><input type="radio" name="estado" value="{{ s }}" required> {{ s }}</label>{% endfor %}
+      </fieldset>
+      <label>Cor atual e histórico (opcional)<textarea name="historico" rows="3" placeholder="Ex.: castanho natural, madeixas há 6 meses"></textarea></label>
+      <label>Disponibilidade<input name="disponibilidade" placeholder="Ex.: segundas, zona de Lisboa"></label>
+      <label>Fotografia do cabelo, de frente<input type="file" name="foto-frente" accept="image/*" required></label>
+      <label>Fotografia do cabelo, de costas<input type="file" name="foto-costas" accept="image/*"></label>
+      <label class="caixa"><input type="checkbox" name="maior-de-idade" required> Tenho 18 anos ou mais.</label>
+      <label class="caixa"><input type="checkbox" name="imagem" required> Autorizo a captação e o uso de fotografias e vídeos do serviço pela SALE.ON e pelas marcas.</label>
+      <label class="caixa"><input type="checkbox" name="consentimento" required> Aceito a <a href="/privacidade/">política de privacidade</a>.</label>
+      <button class="botao" type="submit">Enviar candidatura</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% macro migalhas(itens) %}
+<nav class="migalhas" aria-label="Estás aqui">
+  <ol>
+    <li><a href="/">Início</a></li>
+    {% for i in itens %}<li>{% if loop.last %}<span aria-current="page">{{ i.nome }}</span>{% else %}<a href="{{ i.url }}">{{ i.nome }}</a>{% endif %}</li>{% endfor %}
+  </ol>
+</nav>
+{% endmacro %}
+
+{% macro schemaMigalhas(itens, base) %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"{{ '/' | absoluto(base) }}"}{% for i in itens %},{"@type":"ListItem","position":{{ loop.index + 1 }},"name":{{ i.nome | json | safe }},"item":"{{ i.url | absoluto(base) }}"}{% endfor %}]}
+</script>
+{% endmacro %}
+
+{% macro imagem(p, marca, classe="") %}
+{% set src = p | imagemProduto %}
+{% if src %}
+<img class="{{ classe }}" src="{{ src }}" alt="{{ marca.nomeCurto }} {{ p.nome }}" loading="lazy" decoding="async" width="600" height="600">
+{% else %}
+<div class="marcador {{ classe }}" style="--c: {{ marca.cor }}" role="img" aria-label="{{ marca.nomeCurto }} {{ p.nome }}">
+  <span class="marcador__marca">{{ marca.nomeCurto }}</span>
+  <span class="marcador__nome">{{ p.nome }}</span>
+</div>
+{% endif %}
+{% endmacro %}
+
+{% macro cartao(p, marca) %}
+{% set cena = p | imagemCena %}
+<a class="cartao{% if cena %} cartao--troca{% endif %}" href="{{ p.url }}">
+  {% if cena %}<span class="cartao__troca"><img class="cartao__cena" src="{{ cena }}" alt="{{ marca.nomeCurto }} {{ p.nome }}: resultado no cabelo" loading="lazy" width="600" height="600">{{ imagem(p, marca, "cartao__img") }}</span>{% else %}{{ imagem(p, marca, "cartao__img") }}{% endif %}
+  <span class="cartao__corpo">
+    <span class="cartao__nome">{{ p.nome }}</span>
+    <span class="cartao__desc">{{ p.descricao }}</span>
+    {% if p.tamanhos.length %}<span class="cartao__tam">{{ p.tamanhos | join(" · ") }}</span>{% endif %}
+    {% if p.uso == "Salão" %}<span class="selo">Uso profissional</span>{% endif %}
+  </span>
+</a>
+{% endmacro %}
+
+{% macro montra(imagens, cor="", rotulo="") %}
+{% if imagens and imagens.length %}
+<span class="montra montra--{{ imagens.length }}" style="--n: {{ imagens.length }}" aria-hidden="true">{% for i in imagens %}<img src="{{ i }}" alt="" loading="lazy" decoding="async" width="400" height="400">{% endfor %}</span>
+{% else %}
+<span class="montra montra--vazia" style="--c: {{ cor }}" aria-hidden="true"><span>{{ rotulo }}</span></span>
+{% endif %}
+{% endmacro %}
+
+{# Fotografia de ambiente quando existe; senão, a montra de produtos #}
+{% macro visual(foto, imagens, cor="", rotulo="", classe="") %}
+{% if foto %}<span class="cena {{ classe }}" aria-hidden="true"><img src="{{ foto }}" alt="" loading="lazy" decoding="async"></span>
+{% else %}{{ montra(imagens, cor, rotulo) }}{% endif %}
+{% endmacro %}

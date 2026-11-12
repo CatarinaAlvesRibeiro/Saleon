@@ -1,0 +1,664 @@
+{
+  "slug": "pahi",
+  "nome": "PAHI Barcelona",
+  "nomeCurto": "PAHI",
+  "ordem": 5,
+  "pais": "Espanha",
+  "desde": "1975",
+  "cor": "#3A3632",
+  "orcamento": true,
+  "tagline": "Mobiliário de salão feito à medida, desde 1975.",
+  "resumo": "Mobiliário e acessórios para salões de cabeleireiro, de Barcelona: cadeiras, lavatórios, toucadores, receções e salas de espera, com design, acabamentos de qualidade e fabrico artesanal.",
+  "intro": [
+    "A PAHI desenha e fabrica mobiliário para salões de cabeleireiro em Barcelona desde 1975. Junta funcionalidade e estética, acabamentos de qualidade, fabrico artesanal e uma abordagem sustentável.",
+    "Cada projeto é feito à medida: escolhem-se modelos, cores, texturas e acabamentos, e a PAHI pode preparar uma visualização 3D do salão antes da encomenda."
+  ],
+  "pilares": [
+    {
+      "titulo": "Design e função",
+      "texto": "Peças pensadas para o conforto do cliente e para a ergonomia de quem trabalha."
+    },
+    {
+      "titulo": "Feito à medida",
+      "texto": "Estofos em várias cores, texturas e acabamentos, adaptados a cada salão."
+    },
+    {
+      "titulo": "Projeto 3D",
+      "texto": "Visualização 3D do espaço antes de decidir."
+    }
+  ],
+  "seo": {
+    "title": "PAHI Barcelona em Portugal | Mobiliário para salões de cabeleireiro",
+    "description": "Mobiliário PAHI Barcelona para salões: cadeiras de corte, lavatórios, toucadores, receções e head spa VITA. Pede orçamento à SALE.ON, distribuidor em Portugal."
+  },
+  "fonte": "https://pahi.com/en/",
+  "linhas": [
+    {
+      "slug": "vita-head-spa",
+      "nome": "VITA Spa Ritual Experience",
+      "grupo": "Destaque",
+      "subtitulo": "O lavatório transformado em ritual de bem-estar",
+      "descricao": "Lavatório de head spa que transforma a lavagem num momento de relaxamento profundo para o cliente e num posto confortável para o profissional.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "VITA Spa Ritual Experience",
+          "tamanhos": [],
+          "descricao": "Chuveiro de dupla função, filtro de cabelos, apoio de cabeça ergonómico, almofada lombar ajustável, sistema de cascata sobre a testa e kit Aqua Bubble com três intensidades de massagem. Inclui banco VITA para o profissional."
+        }
+      ]
+    },
+    {
+      "slug": "cadeiras-de-corte",
+      "nome": "Cadeiras de corte",
+      "grupo": "Mobiliário",
+      "subtitulo": "Cadeiras de styling",
+      "descricao": "Cadeiras de corte de linhas retas a formas envolventes, incluindo modelos reclináveis e para criança.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Henri",
+          "tamanhos": [],
+          "descricao": "Linhas retas e design intemporal."
+        },
+        {
+          "nome": "Elma",
+          "tamanhos": [],
+          "descricao": "Formas suaves e arredondadas."
+        },
+        {
+          "nome": "Marsella",
+          "tamanhos": [],
+          "descricao": "Reclinável, de linhas retas e detalhes equilibrados."
+        },
+        {
+          "nome": "Citron",
+          "tamanhos": [],
+          "descricao": "Assento e encosto arredondados, estrutura metálica e braços estofados."
+        },
+        {
+          "nome": "Catar",
+          "tamanhos": [],
+          "descricao": "Formas quadradas com detalhes metálicos."
+        },
+        {
+          "nome": "Eurostile",
+          "tamanhos": [],
+          "descricao": "Estrutura contínua e linhas modernas."
+        },
+        {
+          "nome": "Georgia",
+          "tamanhos": [],
+          "descricao": "Formas arredondadas e envolventes."
+        },
+        {
+          "nome": "Bay",
+          "tamanhos": [],
+          "descricao": "Estrutura leve e encosto personalizável."
+        },
+        {
+          "nome": "Bay Relax",
+          "tamanhos": [],
+          "descricao": "Versão reclinável da Bay, com apoio de pés."
+        },
+        {
+          "nome": "Versa",
+          "tamanhos": [],
+          "descricao": "Formas generosas e curvas."
+        },
+        {
+          "nome": "Lider",
+          "tamanhos": [],
+          "descricao": "Braços curvos em metal e design clássico."
+        },
+        {
+          "nome": "Cloe",
+          "tamanhos": [],
+          "descricao": "Braços curvos e linhas suaves."
+        },
+        {
+          "nome": "Denis",
+          "tamanhos": [],
+          "descricao": "Linhas retas com pespontos."
+        },
+        {
+          "nome": "Lima",
+          "tamanhos": [],
+          "descricao": "Compacta, com remate decorativo opcional."
+        },
+        {
+          "nome": "Kosmo",
+          "tamanhos": [],
+          "descricao": "Linhas retas e braços largos."
+        },
+        {
+          "nome": "Kim",
+          "tamanhos": [],
+          "descricao": "Exterior arredondado e formas interiores retas."
+        },
+        {
+          "nome": "Matic",
+          "tamanhos": [],
+          "descricao": "Estrutura cúbica e braços quadrados."
+        },
+        {
+          "nome": "Ginca",
+          "tamanhos": [],
+          "descricao": "Braços arredondados e formas simples."
+        },
+        {
+          "nome": "Max",
+          "tamanhos": [],
+          "descricao": "Formas curvas e envolventes."
+        },
+        {
+          "nome": "Anton",
+          "tamanhos": [],
+          "descricao": "Forma quadrada com estrutura traseira metálica."
+        },
+        {
+          "nome": "Caravelle",
+          "tamanhos": [],
+          "descricao": "Formas suaves e braços arredondados."
+        },
+        {
+          "nome": "Eyre",
+          "tamanhos": [],
+          "descricao": "Reclinável, para maquilhagem ou tratamentos longos."
+        },
+        {
+          "nome": "Nubla",
+          "tamanhos": [],
+          "descricao": "Remate decorativo e detalhes clássicos."
+        },
+        {
+          "nome": "Valentino",
+          "tamanhos": [],
+          "descricao": "Cadeira de criança em forma de carro, em três cores."
+        }
+      ]
+    },
+    {
+      "slug": "lavatorios",
+      "nome": "Lavatórios",
+      "grupo": "Mobiliário",
+      "subtitulo": "Lavatórios e postos de lavagem",
+      "descricao": "Lavatórios estofados, de coluna e reclináveis, em várias estruturas e acabamentos.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Creta + Henri",
+          "tamanhos": [],
+          "descricao": "Lavatório em polietileno preto ou branco com cadeira estofada de linhas retas."
+        },
+        {
+          "nome": "Creta + Elma",
+          "tamanhos": [],
+          "descricao": "Lavatório em polietileno com cadeira estofada arredondada."
+        },
+        {
+          "nome": "Oslo",
+          "tamanhos": [],
+          "descricao": "Estofado, com estrutura metálica pintada em preto ou branco."
+        },
+        {
+          "nome": "Umita",
+          "tamanhos": [],
+          "descricao": "Lavatório de dois postos, linhas retas e corpo estofado."
+        },
+        {
+          "nome": "Breton",
+          "tamanhos": [],
+          "descricao": "Moderno e arredondado, com corpo estofado."
+        },
+        {
+          "nome": "Corint + Henri",
+          "tamanhos": [],
+          "descricao": "Base sólida e assento estofado de linhas retas."
+        },
+        {
+          "nome": "Corint + Henri Relax",
+          "tamanhos": [],
+          "descricao": "Base sólida, assento estofado e apoio de pés."
+        },
+        {
+          "nome": "Corint + Elma",
+          "tamanhos": [],
+          "descricao": "Estrutura em ABS texturado preto e assento arredondado."
+        },
+        {
+          "nome": "Brom",
+          "tamanhos": [],
+          "descricao": "Linhas retas, estrutura metálica e braços estofados."
+        },
+        {
+          "nome": "Brom Relax",
+          "tamanhos": [],
+          "descricao": "Versão da Brom com apoio de pés integrado."
+        },
+        {
+          "nome": "Tarn",
+          "tamanhos": [],
+          "descricao": "Metal pintado de preto, assento com pespontos e braços estofados."
+        },
+        {
+          "nome": "Eddmond",
+          "tamanhos": [],
+          "descricao": "Linhas curvas, estrutura em preto, branco ou prata."
+        },
+        {
+          "nome": "Frey",
+          "tamanhos": [],
+          "descricao": "Arredondado, estrutura em preto, branco ou prata."
+        },
+        {
+          "nome": "Alum",
+          "tamanhos": [],
+          "descricao": "Arredondado, estrutura em preto, branco ou prata."
+        },
+        {
+          "nome": "Belina",
+          "tamanhos": [],
+          "descricao": "Clássico e arredondado, com corpo estofado."
+        },
+        {
+          "nome": "Forty",
+          "tamanhos": [],
+          "descricao": "Robusto e estofado, estrutura metálica preta ou branca."
+        },
+        {
+          "nome": "Bold",
+          "tamanhos": [],
+          "descricao": "Reclina até quase à horizontal; design minimalista e assento em espuma macia."
+        },
+        {
+          "nome": "Keops",
+          "tamanhos": [],
+          "descricao": "Robusto, base retangular, braços arredondados e topo metálico."
+        },
+        {
+          "nome": "Aurea",
+          "tamanhos": [],
+          "descricao": "Arredondado e estofado."
+        },
+        {
+          "nome": "Marina",
+          "tamanhos": [],
+          "descricao": "Arredondado, com toques clássicos."
+        },
+        {
+          "nome": "Podium",
+          "tamanhos": [],
+          "descricao": "Lavatório de coluna, de design arredondado."
+        },
+        {
+          "nome": "Ibis",
+          "tamanhos": [],
+          "descricao": "Lavatório de coluna, de linhas retas."
+        }
+      ]
+    },
+    {
+      "slug": "toucadores",
+      "nome": "Toucadores",
+      "grupo": "Mobiliário",
+      "subtitulo": "Postos de trabalho e espelhos",
+      "descricao": "Toucadores verticais, horizontais, de mesa, ilhas e postos de barbearia, com espelhos redondos, ovais ou com LED.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Tok",
+          "tamanhos": [],
+          "descricao": "Intemporal, linhas retas, tampo cromado ou laminado."
+        },
+        {
+          "nome": "York",
+          "tamanhos": [],
+          "descricao": "Vertical, linhas retas e estrutura metálica preta."
+        },
+        {
+          "nome": "Nidda",
+          "tamanhos": [],
+          "descricao": "Horizontal e minimalista."
+        },
+        {
+          "nome": "Drop",
+          "tamanhos": [],
+          "descricao": "Circular e minimalista."
+        },
+        {
+          "nome": "Minuit",
+          "tamanhos": [],
+          "descricao": "Linhas retas com o espelho ao centro."
+        },
+        {
+          "nome": "Linda",
+          "tamanhos": [],
+          "descricao": "Refinado, com painel estofado opcional a condizer com a cadeira."
+        },
+        {
+          "nome": "Amber",
+          "tamanhos": [],
+          "descricao": "Oval e moderno, com espelho arredondado."
+        },
+        {
+          "nome": "Lapis",
+          "tamanhos": [],
+          "descricao": "Grande espelho redondo em estrutura tubular preta."
+        },
+        {
+          "nome": "Vanadi",
+          "tamanhos": [],
+          "descricao": "Linhas retas, com tampo em vidro opcional."
+        },
+        {
+          "nome": "Joy",
+          "tamanhos": [],
+          "descricao": "Linhas retas com espelho circular."
+        },
+        {
+          "nome": "Mesa",
+          "tamanhos": [],
+          "descricao": "Tipo mesa, com prateleiras para arrumação."
+        },
+        {
+          "nome": "Baus",
+          "tamanhos": [],
+          "descricao": "Tipo mesa, com espelhos redondos."
+        },
+        {
+          "nome": "Clark",
+          "tamanhos": [],
+          "descricao": "Tipo mesa, com espelhos ovais."
+        },
+        {
+          "nome": "Clay",
+          "tamanhos": [],
+          "descricao": "Espelhos ovais e linhas horizontais."
+        },
+        {
+          "nome": "Split",
+          "tamanhos": [],
+          "descricao": "Espelho em destaque sobre superfície horizontal."
+        },
+        {
+          "nome": "Gio",
+          "tamanhos": [],
+          "descricao": "Espelho oval e superfície laminada larga."
+        },
+        {
+          "nome": "Turim",
+          "tamanhos": [],
+          "descricao": "Espelho com efeito flutuante."
+        },
+        {
+          "nome": "Mayer",
+          "tamanhos": [],
+          "descricao": "Espelho com LED e cantos arredondados."
+        },
+        {
+          "nome": "Odin",
+          "tamanhos": [],
+          "descricao": "Posto de barbearia com arrumação e espelho."
+        },
+        {
+          "nome": "Beto",
+          "tamanhos": [],
+          "descricao": "Posto de barbearia, linhas atuais."
+        },
+        {
+          "nome": "Byron",
+          "tamanhos": [],
+          "descricao": "Posto de barbearia com espelho redondo largo."
+        },
+        {
+          "nome": "Mem",
+          "tamanhos": [],
+          "descricao": "Espelho redondo largo."
+        },
+        {
+          "nome": "Sunset",
+          "tamanhos": [],
+          "descricao": "Espelho oval flutuante em painel."
+        },
+        {
+          "nome": "Baltic",
+          "tamanhos": [],
+          "descricao": "Ilha circular de 4 postos, oval com detalhes pretos."
+        },
+        {
+          "nome": "Romantic",
+          "tamanhos": [],
+          "descricao": "Inspirado nos espelhos clássicos de camarim."
+        },
+        {
+          "nome": "Stencil",
+          "tamanhos": [],
+          "descricao": "Posto auxiliar de 2 lugares, móvel."
+        }
+      ]
+    },
+    {
+      "slug": "rececoes",
+      "nome": "Receções",
+      "grupo": "Mobiliário",
+      "subtitulo": "Balcões de receção",
+      "descricao": "Balcões de receção retos, curvos, iluminados e em L.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Nudo",
+          "tamanhos": [],
+          "descricao": "Versátil, de linhas retas."
+        },
+        {
+          "nome": "Atlantic",
+          "tamanhos": [],
+          "descricao": "Linhas retas com frente estofada opcional."
+        },
+        {
+          "nome": "Phantom",
+          "tamanhos": [],
+          "descricao": "Minimalista, com frente iluminada."
+        },
+        {
+          "nome": "Divine",
+          "tamanhos": [],
+          "descricao": "Ligeiramente curvo, cantos arredondados."
+        },
+        {
+          "nome": "Sage",
+          "tamanhos": [],
+          "descricao": "Retangular, tampo em vidro e frente laminada opcional."
+        },
+        {
+          "nome": "Corbel",
+          "tamanhos": [],
+          "descricao": "Curvo e sofisticado."
+        },
+        {
+          "nome": "Box",
+          "tamanhos": [],
+          "descricao": "Linhas retas, com frente que parece flutuar."
+        },
+        {
+          "nome": "Arabic",
+          "tamanhos": [],
+          "descricao": "Painel acrílico que ilumina suavemente a receção."
+        },
+        {
+          "nome": "Elm",
+          "tamanhos": [],
+          "descricao": "Em L, curvo, com frentes estofadas."
+        },
+        {
+          "nome": "Crono",
+          "tamanhos": [],
+          "descricao": "Laterais arredondadas e frente em ripas verticais."
+        },
+        {
+          "nome": "San",
+          "tamanhos": [],
+          "descricao": "Linhas limpas com bloco lateral que serve de balcão."
+        }
+      ]
+    },
+    {
+      "slug": "sala-de-espera",
+      "nome": "Sala de espera",
+      "grupo": "Mobiliário",
+      "subtitulo": "Sofás e apoio",
+      "descricao": "Sofás de espera e mesas de apoio.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Amur",
+          "tamanhos": [],
+          "descricao": "Sofá compacto e de linhas retas."
+        },
+        {
+          "nome": "Soft",
+          "tamanhos": [],
+          "descricao": "Formas arredondadas e acolchoado decorativo, em vários tamanhos."
+        },
+        {
+          "nome": "Tatam",
+          "tamanhos": [],
+          "descricao": "Linhas baixas, de inspiração japonesa."
+        },
+        {
+          "nome": "Hampton",
+          "tamanhos": [],
+          "descricao": "Braços metálicos e linhas retas."
+        },
+        {
+          "nome": "Cruise",
+          "tamanhos": [],
+          "descricao": "Formas arredondadas e inspiração Art Déco."
+        },
+        {
+          "nome": "Seet",
+          "tamanhos": [],
+          "descricao": "Assento leve com rodas."
+        },
+        {
+          "nome": "Kan",
+          "tamanhos": [],
+          "descricao": "Mesa de apoio redonda."
+        }
+      ]
+    },
+    {
+      "slug": "manicure-pedicure",
+      "nome": "Manicure e pedicure",
+      "grupo": "Mobiliário",
+      "subtitulo": "Mesas e cadeiras",
+      "descricao": "Mesas de manicure, cadeira de pedicure e carrinho auxiliar.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Optim",
+          "tamanhos": [],
+          "descricao": "Carrinho auxiliar com gavetas, mesa regulável e assento estofado."
+        },
+        {
+          "nome": "Silene",
+          "tamanhos": [],
+          "descricao": "Mesa de manicure de design limpo."
+        },
+        {
+          "nome": "Mantis",
+          "tamanhos": [],
+          "descricao": "Mesa de manicure elegante e adaptável."
+        },
+        {
+          "nome": "Doris",
+          "tamanhos": [],
+          "descricao": "Cadeira de pedicure confortável e sofisticada."
+        }
+      ]
+    },
+    {
+      "slug": "acessorios",
+      "nome": "Acessórios de salão",
+      "grupo": "Acessórios",
+      "subtitulo": "Bancos, apoios e suportes",
+      "descricao": "Bancos auxiliares, apoios de pés, pufes e suportes de secador.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Dino",
+          "tamanhos": [],
+          "descricao": "Banco auxiliar com base cromada e rodas."
+        },
+        {
+          "nome": "Jockey",
+          "tamanhos": [],
+          "descricao": "Banco ergonómico com base cromada e rodas."
+        },
+        {
+          "nome": "Work",
+          "tamanhos": [],
+          "descricao": "Banco funcional com base cromada e rodas."
+        },
+        {
+          "nome": "Domino",
+          "tamanhos": [],
+          "descricao": "Pufe estofado."
+        },
+        {
+          "nome": "Relax",
+          "tamanhos": [],
+          "descricao": "Apoio de pés estofado com base cromada."
+        },
+        {
+          "nome": "Rex",
+          "tamanhos": [],
+          "descricao": "Apoio de pés minimalista."
+        },
+        {
+          "nome": "Zurich",
+          "tamanhos": [],
+          "descricao": "Apoio de pés minimalista."
+        },
+        {
+          "nome": "Jok",
+          "tamanhos": [],
+          "descricao": "Apoio de pés de parede."
+        },
+        {
+          "nome": "Bull",
+          "tamanhos": [],
+          "descricao": "Suporte de secador cromado."
+        },
+        {
+          "nome": "Unifur",
+          "tamanhos": [],
+          "descricao": "Suporte de secador discreto."
+        }
+      ]
+    }
+  ],
+  "alternateName": [
+    "PAHI Barcelona",
+    "Pahi",
+    "PAHI mobiliário"
+  ],
+  "pesquisas": [
+    "PAHI Portugal",
+    "mobiliário cabeleireiro",
+    "cadeiras de cabeleireiro",
+    "lavatórios de cabeleireiro",
+    "PAHI Barcelona Portugal"
+  ],
+  "faq": [
+    [
+      "Como peço um orçamento PAHI?",
+      "Fala com a SALE.ON pelo formulário de contacto ou pelo WhatsApp. Preparamos uma proposta à medida do teu salão."
+    ],
+    [
+      "O mobiliário PAHI é feito à medida?",
+      "Sim. A PAHI fabrica mobiliário de salão em Barcelona desde 1975, com acabamentos e configurações à medida."
+    ]
+  ]
+}

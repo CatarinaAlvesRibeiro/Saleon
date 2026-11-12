@@ -1,0 +1,25 @@
+<div class="assistente" data-assistente>
+  <div class="assistente__intro">
+    <p class="sobretitulo">Encontra o produto certo</p>
+    <h3>Diz-nos o que precisas.<br>Nós dizemos-te o produto.</h3>
+    <p>Duas perguntas. No fim, o produto mais recomendado para ti.</p>
+  </div>
+  <div class="assistente__perguntas">
+    <label class="assistente__p"><span>Pergunta 1</span><strong>Para que é?</strong>
+      <select data-p1>
+        <option value="">Escolhe uma opção</option>
+        <option value="Cabelo">Cuidar do cabelo</option>
+        <option value="Couro cabeludo">Couro cabeludo e queda</option>
+        <option value="Cor">Cor e loiros</option>
+        <option value="Styling">Pentear e finalizar</option>
+        <option value="Homem">Homem e barba</option>
+        <option value="Salão">Serviço técnico no salão</option>
+      </select>
+    </label>
+    <label class="assistente__p" data-p2w hidden><span>Pergunta 2</span><strong>O que precisas?</strong>
+      <select data-p2><option value="">Escolhe uma opção</option></select>
+    </label>
+  </div>
+  <div class="assistente__res" aria-live="polite" hidden></div>
+  <script type="application/json" data-opcoes>[{% for n in assistente %}{"id":"{{ n.id }}","g":{{ n.g | json | safe }},"n":{{ n.n | json | safe }}}{% if not loop.last %},{% endif %}{% endfor %}]</script>
+</div>

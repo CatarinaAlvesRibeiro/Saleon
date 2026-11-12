@@ -1,0 +1,290 @@
+{
+ "_nota": "Formações por ano, da mais recente para a mais antiga. album = nome da pasta em src/assets/img/galeria/. Fonte: Apresentação SALE.ON 2026.",
+ "anos": [
+  {
+   "ano": "2026",
+   "formacoes": [
+    {
+     "data": "22 jun.",
+     "titulo": "Loiros",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "18 mai.",
+     "titulo": "Loiros O&M",
+     "formador": "Juan Leal",
+     "album": "2026-05-18-loiros-om"
+    },
+    {
+     "data": "11 mai.",
+     "titulo": "GLYNT Discovery",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "20 abr.",
+     "titulo": "Curls, do aclaramento à finalização",
+     "formador": "Ana e os Cachos",
+     "album": ""
+    },
+    {
+     "data": "30 mar.",
+     "titulo": "O&M Color",
+     "formador": "Juan Leal",
+     "album": "2026-03-30-om-color"
+    },
+    {
+     "data": "23 mar.",
+     "titulo": "Colorimetria 2.0",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "16 mar.",
+     "titulo": "Colorimetria & Cachos",
+     "formador": "Ana Madureira e Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "2 mar.",
+     "titulo": "Salão Lucrativo",
+     "formador": "Ricardo Ferreira",
+     "album": "2026-03-02-salao-lucrativo"
+    },
+    {
+     "data": "9 fev.",
+     "titulo": "GLYNT Discovery",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "5 jan.",
+     "titulo": "Lançamento do Programa de Embaixadores",
+     "formador": "SALE.ON",
+     "album": "2026-01-05-embaixadores"
+    }
+   ]
+  },
+  {
+   "ano": "2025",
+   "formacoes": [
+    {
+     "data": "24 nov.",
+     "titulo": "Colorimetria & Cachos",
+     "formador": "Ana Madureira e Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "nov.",
+     "titulo": "Colorimetria & Cachos",
+     "formador": "Ana Madureira e Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "out.",
+     "titulo": "Full Blond",
+     "formador": "Juan Carlos",
+     "album": ""
+    },
+    {
+     "data": "out.",
+     "titulo": "GLYNT Discovery",
+     "formador": "Carla Guedes",
+     "album": "2025-10-glynt-discovery-carla-guedes"
+    },
+    {
+     "data": "out.",
+     "titulo": "Ana e os Cachos",
+     "formador": "Ana Madureira",
+     "album": "2025-10-ana-e-os-cachos"
+    },
+    {
+     "data": "29 set.",
+     "titulo": "Lançamento O&M em Portugal",
+     "formador": "Gustavo Pereira",
+     "album": "2025-09-29-om-lancamento-palaphita"
+    },
+    {
+     "data": "set.",
+     "titulo": "Colorimetria GLYNT",
+     "formador": "Filipa Martins",
+     "album": ""
+    },
+    {
+     "data": "set.",
+     "titulo": "GLYNT Discovery",
+     "formador": "",
+     "album": ""
+    },
+    {
+     "data": "jul.",
+     "titulo": "Colorimetria GLYNT",
+     "formador": "Gustavo Pereira",
+     "album": "2025-07-21-colorimetria-glynt"
+    },
+    {
+     "data": "jun.",
+     "titulo": "Tutorial colorimetria",
+     "formador": "Gustavo Pereira",
+     "album": "2025-06-30-tutorial-colorimetria"
+    },
+    {
+     "data": "jun.",
+     "titulo": "Onboarding O&M",
+     "formador": "",
+     "album": "2025-om-onboarding"
+    },
+    {
+     "data": "mai.",
+     "titulo": "Balayage Express",
+     "formador": "Filipa Martins",
+     "album": ""
+    },
+    {
+     "data": "mai.",
+     "titulo": "Power Blond",
+     "formador": "",
+     "album": ""
+    },
+    {
+     "data": "mai.",
+     "titulo": "Vendas na Beleza",
+     "formador": "SALE.ON",
+     "album": "2025-05-vendas-na-beleza"
+    },
+    {
+     "data": "abr.",
+     "titulo": "Segredos do corte",
+     "formador": "Jean Soares",
+     "album": ""
+    },
+    {
+     "data": "mar.",
+     "titulo": "Segredos dos ruivos",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "mar.",
+     "titulo": "Masterclass Madrid",
+     "formador": "Gustavo Pereira",
+     "album": "2025-03-masterclass-madrid"
+    },
+    {
+     "data": "fev.",
+     "titulo": "GLYNT Marsala Vibes",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "jan.",
+     "titulo": "Tudo sobre penteados",
+     "formador": "Sónia Lopes",
+     "album": ""
+    }
+   ]
+  },
+  {
+   "ano": "2024",
+   "formacoes": [
+    {
+     "data": "nov.",
+     "titulo": "Styling que vende",
+     "formador": "Jean Soares",
+     "album": ""
+    },
+    {
+     "data": "nov.",
+     "titulo": "GLYNT Discovery Open Day",
+     "formador": "",
+     "album": ""
+    },
+    {
+     "data": "out.",
+     "titulo": "Vendas em salão",
+     "formador": "Equipa SALE.ON",
+     "album": ""
+    },
+    {
+     "data": "out.",
+     "titulo": "Balayage Express",
+     "formador": "Filipa Martins",
+     "album": ""
+    },
+    {
+     "data": "set.",
+     "titulo": "Coloração avançada",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "jul.",
+     "titulo": "Balayage Express",
+     "formador": "Filipa Martins",
+     "album": ""
+    },
+    {
+     "data": "jul.",
+     "titulo": "SALE.ON Breakfast Open Day",
+     "formador": "",
+     "album": ""
+    },
+    {
+     "data": "jul.",
+     "titulo": "Webinar Color",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "jun.",
+     "titulo": "Colorimetria",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "abr.",
+     "titulo": "Tudo sobre penteados",
+     "formador": "Sónia Lopes",
+     "album": ""
+    },
+    {
+     "data": "abr.",
+     "titulo": "Balayage Express",
+     "formador": "Filipa Martins",
+     "album": ""
+    },
+    {
+     "data": "abr.",
+     "titulo": "Balayage Express",
+     "formador": "Filipa Martins",
+     "album": ""
+    },
+    {
+     "data": "mar.",
+     "titulo": "Colorimetria",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "mar.",
+     "titulo": "Colorimetria",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "mar.",
+     "titulo": "Colorimetria",
+     "formador": "Gustavo Pereira",
+     "album": ""
+    },
+    {
+     "data": "jan.",
+     "titulo": "Onboarding SALE.ON",
+     "formador": "SALE.ON",
+     "album": "2024-01-onboarding"
+    }
+   ]
+  }
+ ]
+}

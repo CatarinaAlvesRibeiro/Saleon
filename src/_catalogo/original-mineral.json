@@ -1,0 +1,995 @@
+{
+  "slug": "original-mineral",
+  "nome": "O&M Original & Mineral",
+  "nomeCurto": "O&M",
+  "ordem": 2,
+  "pais": "Austrália",
+  "desde": "",
+  "cor": "#604459",
+  "tagline": "Cor limpa. Cuidado consciente. Nascida na Austrália.",
+  "resumo": "Marca australiana pioneira da coloração limpa: CØR.color sem amoníaco, PPD nem resorcinol, e cuidado capilar vegan com extratos nativos australianos.",
+  "intro": [
+    "A O&M Original & Mineral nasceu na Austrália com uma ideia simples: a cor do cabelo também é uma escolha de saúde. É pioneira da chamada tecnologia de cor limpa (Clean Colour Technology).",
+    "A coloração CØR.color não leva amoníaco, PPD nem resorcinol, e mesmo assim entrega desempenho profissional e cobertura de brancos. O cuidado e o styling são vegan, aprovados pela PETA e feitos na Austrália, com ingredientes nativos como o quandong, a lima do deserto e a semente de wattle."
+  ],
+  "pilares": [
+    {
+      "titulo": "Cor sem amoníaco",
+      "texto": "CØR.color livre de amoníaco, PPD e resorcinol: menos odor, menos irritação, mais conforto para o cliente e para o colorista."
+    },
+    {
+      "titulo": "Cobertura de brancos",
+      "texto": "Tecnologia Molecular Blend (MBT) com cobertura de brancos até ao nível 9, sem amoníaco."
+    },
+    {
+      "titulo": "Ingredientes australianos",
+      "texto": "Desert Harvest (quandong, lima do deserto, semente de wattle) e óleos biológicos de macadâmia e coco."
+    },
+    {
+      "titulo": "Vegan e responsável",
+      "texto": "Vegan, aprovado pela PETA, sem sulfatos, parabenos, ftalatos, MIT, triclosan nem propilenoglicol."
+    }
+  ],
+  "destaqueCor": {
+    "titulo": "CØR.color: a coloração limpa da O&M",
+    "texto": [
+      "Na CØR.color, o amoníaco é substituído por MEA, um agente alcalino que atua de forma semelhante sem o odor, os olhos vermelhos e a irritação. O PPD é substituído por níveis baixos de PTDS, o que, segundo a marca, permite que até 50% dos clientes e cabeleireiros alérgicos ao PPD possam usar cor. O resorcinol é substituído por alternativas consoante o tom.",
+      "A Molecular Blend Technology (MBT) liga em laboratório os pigmentos de base e de reflexo, para uma cor que se desenvolve de forma uniforme e com menos irritação do couro cabeludo."
+    ],
+    "pontos": [
+      "Sem amoníaco, PPD nem resorcinol",
+      "Cobertura de brancos até ao nível 9",
+      "Molecular Blend Technology (MBT)",
+      "Desert Harvest + óleos biológicos de macadâmia e coco",
+      "Vegan, certificada PETA, embalagem reciclável"
+    ]
+  },
+  "seo": {
+    "title": "O&M Original & Mineral em Portugal | Coloração sem amoníaco CØR.color",
+    "description": "O&M Original & Mineral: coloração profissional CØR.color sem amoníaco, PPD nem resorcinol, e cuidado capilar vegan australiano. Distribuição SALE.ON em Portugal."
+  },
+  "fonte": "https://originalmineral.eu",
+  "linhas": [
+    {
+      "slug": "cor-color",
+      "nome": "CØR.color",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Coloração limpa, sem amoníaco",
+      "descricao": "Coloração profissional livre de amoníaco, PPD e resorcinol, com Molecular Blend Technology e cobertura de brancos até ao nível 9. Exclusiva para salões.",
+      "ingredientes": [
+        "Desert Harvest (quandong, lima do deserto, semente de wattle)",
+        "Óleo biológico de macadâmia",
+        "Óleo biológico de coco"
+      ],
+      "profissional": true,
+      "produtos": [
+        {
+          "nome": "CØR.color Coloração Permanente",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Coloração permanente sem amoníaco, PPD nem resorcinol.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CØR.color Semi Activator 1.5% 5 Vol",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Ativador semipermanente, para tonalizar sem clarear.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CØR.color Deposit Activator 3% 10 Vol",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Ativador para depositar cor tom sobre tom ou mais escuro.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CØR.color Coverage Activator 6% 20 Vol",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Ativador para cobertura de brancos e clareamento até 2 tons.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CØR.color Lift Activator 9% 30 Vol",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Ativador para clarear até 3 tons.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CØR.color High Lift Blonde Activator 12% 40 Vol",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Ativador para as séries de loiros de alto clareamento.",
+          "uso": "Salão"
+        }
+      ]
+    },
+    {
+      "slug": "cor-restore",
+      "nome": "CØR.restore",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Proteger e prolongar a cor",
+      "descricao": "Cuidado para depois da coloração, que ajuda a selar e a prolongar a cor.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "CØR.restore Colour Lock Milk",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Leite que ajuda a fixar a cor depois da coloração."
+        },
+        {
+          "nome": "CØR.restore Leave-In Treatment",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Tratamento sem enxaguamento para cabelo pintado."
+        }
+      ]
+    },
+    {
+      "slug": "descolorantes",
+      "nome": "Descolorantes",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Pós descolorantes veganos, sem pó em suspensão",
+      "descricao": "Três pós descolorantes O&M para madeixas e clareamento em cabelo natural ou pintado: alto clareamento, clareamento até 7 tons e uma opção sem amoníaco.",
+      "ingredientes": [],
+      "profissional": true,
+      "produtos": [
+        {
+          "nome": "SUPERBLONDE 7",
+          "tamanhos": [
+            "50 g",
+            "500 g",
+            "1000 g"
+          ],
+          "descricao": "Clareia até 7 tons. Pó descolorante sem pó em suspensão, de fórmula vegana. Mistura 1 parte de pó para 2 partes de ativador O&M (1.5%, 3%, 6% ou 9%), até 50 minutos de pausa.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SUPERBLONDE 9 High Level Lift",
+          "tamanhos": [
+            "50 g",
+            "500 g",
+            "1000 g"
+          ],
+          "descricao": "Alto clareamento, até 9 tons. Pó descolorante sem pó em suspensão, de fórmula vegana. Mistura 1 parte de pó para 2 partes de ativador O&M (1.5%, 3%, 6% ou 9%), até 50 minutos de pausa.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CLEANBLONDE Ammonia Free",
+          "tamanhos": [
+            "50 g",
+            "500 g",
+            "1000 g"
+          ],
+          "descricao": "Sem amoníaco, clareia até 7 tons. Pó descolorante sem pó em suspensão, de fórmula vegana. Mistura 1 parte de pó para 2 partes de ativador O&M (1.5%, 3%, 6% ou 9%), até 50 minutos de pausa.",
+          "uso": "Salão"
+        }
+      ]
+    },
+    {
+      "slug": "clean-liquid",
+      "nome": "CLEAN.liquid",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Coloração líquida de alto brilho",
+      "descricao": "Coloração líquida de alto brilho para gloss, tonalização e correção de cor no salão.",
+      "ingredientes": [],
+      "profissional": true,
+      "produtos": [
+        {
+          "nome": "CLEAN.liquid High Gloss Colour",
+          "tamanhos": [
+            "60 ml"
+          ],
+          "descricao": "Coloração líquida de alto brilho, em vários tons.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CLEAN.liquid 0.00 Clear",
+          "tamanhos": [
+            "500 ml"
+          ],
+          "descricao": "Tom transparente para dar brilho e diluir os tons CLEAN.liquid.",
+          "uso": "Salão"
+        }
+      ]
+    },
+    {
+      "slug": "clean-tones",
+      "nome": "CLEAN.tones",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Tratamentos tonalizantes",
+      "descricao": "Tratamentos com pigmento para refrescar, corrigir ou intensificar a cor entre colorações.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "CLEAN.tone Clear",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Tratamento de cor transparente, para dar brilho e diluir os tons CLEAN.tone.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CLEAN.tone Cool Blonde",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante para loiros frios."
+        },
+        {
+          "nome": "CLEAN.tone Platinum",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante platinado."
+        },
+        {
+          "nome": "CLEAN.tone Light Platinum",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante platinado claro."
+        },
+        {
+          "nome": "CLEAN.tone Beige",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante bege."
+        },
+        {
+          "nome": "CLEAN.tone Caramel",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante caramelo."
+        },
+        {
+          "nome": "CLEAN.tone Copper",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante cobre."
+        },
+        {
+          "nome": "CLEAN.tone Red",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante vermelho."
+        },
+        {
+          "nome": "CLEAN.tone Chocolate",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Tratamento tonalizante chocolate."
+        }
+      ]
+    },
+    {
+      "slug": "original-pigment",
+      "nome": "ORIGINAL.pigment",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Coloração direta em cores vivas",
+      "descricao": "Coloração direta (direct dye) da O&M em 12 cores vivas, para cores fantasia e criativas sobre cabelo previamente clareado.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "ORIGINAL.pigment Atonic Orange",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom laranja."
+        },
+        {
+          "nome": "ORIGINAL.pigment Bronte Blue",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom azul."
+        },
+        {
+          "nome": "ORIGINAL.pigment Cherry",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom cereja."
+        },
+        {
+          "nome": "ORIGINAL.pigment Emerald",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom verde esmeralda."
+        },
+        {
+          "nome": "ORIGINAL.pigment Golden Wattle",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom amarelo dourado."
+        },
+        {
+          "nome": "ORIGINAL.pigment Mulberry",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom amora."
+        },
+        {
+          "nome": "ORIGINAL.pigment Queenie Pink",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom rosa."
+        },
+        {
+          "nome": "ORIGINAL.pigment Royal Purple",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom roxo."
+        },
+        {
+          "nome": "ORIGINAL.pigment Sapphire",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom azul safira."
+        },
+        {
+          "nome": "ORIGINAL.pigment Ultra Pink",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom rosa intenso."
+        },
+        {
+          "nome": "ORIGINAL.pigment Vivid Pink",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom rosa vivo."
+        },
+        {
+          "nome": "ORIGINAL.pigment Vivid Red",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Coloração direta O&M, tom vermelho vivo."
+        }
+      ]
+    },
+    {
+      "slug": "cuidado",
+      "nome": "Cuidado capilar",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Shampoos e condicionadores por tipo de cabelo",
+      "descricao": "Shampoos e condicionadores vegan, sem sulfatos, com extratos nativos australianos, organizados pela necessidade do cabelo.",
+      "ingredientes": [
+        "Extratos nativos australianos"
+      ],
+      "produtos": [
+        {
+          "nome": "Hydrate & Conquer Shampoo",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo hidratante para cabelo seco."
+        },
+        {
+          "nome": "Hydrate & Conquer Conditioner",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Condicionador hidratante para cabelo seco."
+        },
+        {
+          "nome": "Fine Intellect Shampoo",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo para cabelo fino, sem pesar."
+        },
+        {
+          "nome": "Fine Intellect Conditioner",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Condicionador leve para cabelo fino."
+        },
+        {
+          "nome": "Original Detox Shampoo",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo de limpeza profunda para couro cabeludo e cabelo."
+        },
+        {
+          "nome": "Original Detox Conditioner",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Condicionador equilibrante para depois da limpeza profunda."
+        },
+        {
+          "nome": "Maintain the Mane Shampoo",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo de uso diário."
+        },
+        {
+          "nome": "Maintain the Mane Conditioner",
+          "tamanhos": [
+            "50 ml",
+            "350 ml",
+            "1000 ml"
+          ],
+          "descricao": "Condicionador de uso diário."
+        },
+        {
+          "nome": "Conquer Blonde Shampoo",
+          "tamanhos": [
+            "250 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo violeta para loiros sem amarelo."
+        },
+        {
+          "nome": "Curl Curl Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo para caracóis."
+        },
+        {
+          "nome": "Curl Curl Conditioner",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Condicionador para caracóis."
+        },
+        {
+          "nome": "Charcoal Shampoo Bar",
+          "tamanhos": [
+            "Barra"
+          ],
+          "descricao": "Shampoo sólido vegano com carvão."
+        },
+        {
+          "nome": "Hydrate Shampoo Bar",
+          "tamanhos": [
+            "Barra"
+          ],
+          "descricao": "Shampoo sólido vegano hidratante."
+        }
+      ]
+    },
+    {
+      "slug": "ps",
+      "nome": "The PS Experience",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "A rotina PS",
+      "descricao": "Gama de cuidado PS: shampoo, condicionador, máscara e finalizadores numa rotina completa.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "PS Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo da gama PS."
+        },
+        {
+          "nome": "PS Conditioner",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Condicionador da gama PS."
+        },
+        {
+          "nome": "PS Masque",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Máscara intensiva da gama PS."
+        },
+        {
+          "nome": "PS Spray",
+          "tamanhos": [
+            "50 ml",
+            "150 ml"
+          ],
+          "descricao": "Spray da gama PS."
+        },
+        {
+          "nome": "PS Balm",
+          "tamanhos": [
+            "100 g"
+          ],
+          "descricao": "Bálsamo da gama PS."
+        }
+      ]
+    },
+    {
+      "slug": "mascaras-tratamentos",
+      "nome": "Máscaras e tratamentos",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Tratamentos intensivos",
+      "descricao": "Máscaras e tratamentos intensivos para hidratação, reparação e brilho.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Seven Day Miracle Moisture Masque",
+          "tamanhos": [
+            "50 ml",
+            "250 ml",
+            "1000 ml"
+          ],
+          "descricao": "Máscara de hidratação intensiva."
+        },
+        {
+          "nome": "The Power Base Protein Masque",
+          "tamanhos": [
+            "50 ml",
+            "250 ml",
+            "1000 ml"
+          ],
+          "descricao": "Máscara de proteínas para fortalecer o cabelo."
+        },
+        {
+          "nome": "Smooth + Shine Shot Treatment",
+          "tamanhos": [
+            "12 x 13 ml"
+          ],
+          "descricao": "Tratamento em doses para suavidade e brilho."
+        },
+        {
+          "nome": "Volume + Shine Shot Treatment",
+          "tamanhos": [
+            "12 x 13 ml"
+          ],
+          "descricao": "Tratamento em doses para volume e brilho."
+        }
+      ]
+    },
+    {
+      "slug": "styling",
+      "nome": "Styling",
+      "grupo": "Styling",
+      "subtitulo": "Textura, volume, fixação e brilho",
+      "descricao": "Styling vegan para textura, volume, fixação e brilho, incluindo os best-sellers Desert Dry, Dry Queen e Atonic.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Desert Dry Texture Spray",
+          "tamanhos": [
+            "100 ml",
+            "300 ml"
+          ],
+          "descricao": "Spray de textura seca."
+        },
+        {
+          "nome": "Dry Queen Dry Shampoo",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Shampoo seco."
+        },
+        {
+          "nome": "Dry Queen Brunette Dry Shampoo",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Shampoo seco com tom para cabelos castanhos."
+        },
+        {
+          "nome": "Atonic Thickening Spritz",
+          "tamanhos": [
+            "50 ml",
+            "250 ml"
+          ],
+          "descricao": "Spray espessante para mais corpo."
+        },
+        {
+          "nome": "Surf Bomb Sea Spray",
+          "tamanhos": [
+            "50 ml",
+            "150 ml"
+          ],
+          "descricao": "Spray de sal marinho para ondas despenteadas."
+        },
+        {
+          "nome": "Rootalicious Root Lift Mousse",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Espuma de volume na raiz."
+        },
+        {
+          "nome": "Thique Volumising Powder",
+          "tamanhos": [
+            "4,5 g"
+          ],
+          "descricao": "Pó de volume."
+        },
+        {
+          "nome": "Style Guru Style Cream",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Creme de styling leve que define sem pesar."
+        },
+        {
+          "nome": "Know Knott Detangler",
+          "tamanhos": [
+            "50 ml",
+            "250 ml"
+          ],
+          "descricao": "Desembaraçador condicionante."
+        },
+        {
+          "nome": "Frizzy Logic Shine Serum",
+          "tamanhos": [
+            "10 ml",
+            "50 ml",
+            "100 ml"
+          ],
+          "descricao": "Sérum anti-frizz e de brilho."
+        },
+        {
+          "nome": "S-Spray Dry Shine Spray",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Spray de brilho leve com óleo de camelina."
+        },
+        {
+          "nome": "C-Spray Dry Conditioner Spray",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Condicionador seco em spray."
+        },
+        {
+          "nome": "W-Spray Dry Wax Spray",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Cera seca em spray."
+        },
+        {
+          "nome": "Original Queenie Firm Hold Hairspray",
+          "tamanhos": [
+            "100 ml",
+            "300 ml"
+          ],
+          "descricao": "Laca de fixação firme."
+        },
+        {
+          "nome": "Flexible Queenie Flexible Hold Hairspray",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Laca de fixação flexível."
+        },
+        {
+          "nome": "Curl Curl Cream",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Creme definidor de caracóis."
+        },
+        {
+          "nome": "Curl Curl Gel",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Gel para caracóis definidos."
+        },
+        {
+          "nome": "Curl Curl Spray",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Spray para caracóis."
+        },
+        {
+          "nome": "Paste Matte Texture",
+          "tamanhos": [
+            "100 g"
+          ],
+          "descricao": "Pasta de textura mate."
+        },
+        {
+          "nome": "Pomade Gel",
+          "tamanhos": [
+            "100 g"
+          ],
+          "descricao": "Pomada-gel com brilho."
+        },
+        {
+          "nome": "Clay Strong Hold",
+          "tamanhos": [
+            "100 g"
+          ],
+          "descricao": "Argila de fixação forte."
+        },
+        {
+          "nome": "Desert Rose Hair Perfume",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Perfume para o cabelo."
+        }
+      ]
+    },
+    {
+      "slug": "acessorios",
+      "nome": "Escovas e acessórios",
+      "grupo": "Acessórios",
+      "subtitulo": "Ferramentas",
+      "descricao": "Escovas e pentes O&M.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Detangler Brush",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Escova desembaraçadora."
+        },
+        {
+          "nome": "Paddle Brush",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Escova raquete."
+        },
+        {
+          "nome": "PS Shower Comb",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Pente para o duche."
+        },
+        {
+          "nome": "Spray Bottle",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pulverizador de névoa contínua O&M.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Sectioning Clips",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pack de molas de secção para cortar e colorir.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Tail Comb",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pente de cauda para secções precisas.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Cutting Comb",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pente de corte.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Tint Bowl Small",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Taça de coloração pequena.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Tint Bowl Large",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Taça de coloração grande, com pega.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Tint Brush Small",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pincel de coloração pequeno.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Tint Brush Medium",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pincel de coloração médio.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Tint Brush Large",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pincel de coloração grande.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Silicone Tint Brush",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pincel de coloração em silicone.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Balayage Brush",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pincel para balayage.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Paddle Tint Brush",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Pincel de coloração largo, para aplicações rápidas.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Applicator Bottle",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Frasco aplicador com bico.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Colour Whisk",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Batedor para misturar a cor.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Colour Scale",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Balança digital para pesar fórmulas de cor.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CØR Key",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Chave para espremer bisnagas de cor até ao fim.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Colour Cape",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Capa de coloração O&M.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Cutting Cape",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Capa de corte O&M.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Apron",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Avental O&M.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "CØR.color Colour Chart",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Carta de cores CØR.color.",
+          "uso": "Salão"
+        }
+      ]
+    }
+  ],
+  "montra": [
+    "cor-color/cor-color-coloracao-permanente",
+    "clean-liquid/clean-liquid-high-gloss-colour",
+    "clean-tones/clean-tone-platinum",
+    "original-pigment/original-pigment-vivid-pink"
+  ],
+  "alternateName": [
+    "O&M",
+    "Original Mineral",
+    "Original & Mineral",
+    "O and M haircare",
+    "CØR.color",
+    "COR.color"
+  ],
+  "pesquisas": [
+    "O&M Portugal",
+    "Original & Mineral Portugal",
+    "CØR.color Portugal",
+    "coloração sem amoníaco",
+    "CLEAN.tone"
+  ],
+  "faq": [
+    [
+      "A coloração CØR.color tem amoníaco?",
+      "Não. A CØR.color da O&M é uma coloração profissional sem amoníaco, PPD nem resorcinol, com cobertura de brancos até ao nível 9."
+    ],
+    [
+      "A O&M é vegan?",
+      "Os cuidados e o styling O&M são vegan e aprovados pela PETA, sem sulfatos, parabenos nem ftalatos."
+    ]
+  ],
+  "selos": [
+    {
+      "icone": "om-cor-limpa",
+      "titulo": "Tecnologia de cor limpa",
+      "texto": "CØR.color sem amoníaco, sem PPD e sem resorcinol."
+    },
+    {
+      "icone": "om-vegan",
+      "titulo": "Vegan, certificado PETA",
+      "texto": "Fórmulas veganas e sem testes em animais."
+    },
+    {
+      "icone": "om-reciclavel",
+      "titulo": "Reciclável",
+      "texto": "Embalagens recicláveis."
+    }
+  ]
+}

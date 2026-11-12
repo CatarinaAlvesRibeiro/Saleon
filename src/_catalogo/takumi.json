@@ -1,0 +1,211 @@
+{
+  "slug": "takumi",
+  "nome": "TAKUMI",
+  "nomeCurto": "TAKUMI",
+  "ordem": 6,
+  "pais": "Espanha",
+  "desde": "2025",
+  "cor": "#1E1E24",
+  "orcamento": true,
+  "tagline": "Mobiliário profissional para salões e espaços de beleza, concebido e fabricado de raiz.",
+  "resumo": "Mobiliário TAKUMI para salões de cabeleireiro e barbearias: cadeiras de styling, lavatórios, toucadores, sofás de espera, mobiliário de apoio e acessórios, com design contemporâneo e fabrico próprio.",
+  "intro": [
+    "A TAKUMI (Takumi Beauty Group, Barcelona) concebe e fabrica mobiliário profissional para salões de cabeleireiro, barbearias e espaços de beleza, controlando todo o processo, do design à produção.",
+    "A coleção Aurora junta cadeiras de styling, lavatórios, toucadores, sofás de espera, mobiliário de apoio e acessórios, com linhas contemporâneas pensadas para durar e elevar a experiência no salão."
+  ],
+  "pilares": [
+    {
+      "titulo": "Fabrico próprio",
+      "texto": "Design e produção controlados de ponta a ponta, sem intermediários."
+    },
+    {
+      "titulo": "Coleção Aurora",
+      "texto": "Cadeiras, lavatórios, toucadores e mobiliário pensados como um conjunto coerente."
+    },
+    {
+      "titulo": "Feito à medida",
+      "texto": "Cores e acabamentos adaptados à identidade de cada salão."
+    }
+  ],
+  "seo": {
+    "title": "TAKUMI em Portugal | Mobiliário para salões de cabeleireiro",
+    "description": "Mobiliário TAKUMI para salões: cadeiras de styling, lavatórios, toucadores, sofás de espera e acessórios. Pede orçamento à SALE.ON, distribuidor em Portugal."
+  },
+  "fonte": "https://takumi.es/pt/",
+  "linhas": [
+    {
+      "slug": "cadeiras-de-styling",
+      "nome": "Cadeiras de styling",
+      "grupo": "Mobiliário",
+      "subtitulo": "Cadeiras da coleção Aurora",
+      "descricao": "Cadeiras de styling de linhas contemporâneas, em pele sintética, com base giratória ou cruzeta.",
+      "ingredientes": [],
+      "produtos": [
+        { "nome": "Yuki", "tamanhos": [], "descricao": "Preta, braços largos e retos." },
+        { "nome": "Tamiko", "tamanhos": [], "descricao": "Tom areia, braços grossos e retos." },
+        { "nome": "Davis", "tamanhos": [], "descricao": "Azul-marinho, braços em metal cromado." },
+        { "nome": "Riki", "tamanhos": [], "descricao": "Azul-claro, base em cruzeta preta." },
+        { "nome": "Yu", "tamanhos": [], "descricao": "Verde, braços em metal." },
+        { "nome": "Yu-R", "tamanhos": [], "descricao": "Castanho-caramelo, braços em madeira." },
+        { "nome": "Yu-T", "tamanhos": [], "descricao": "Preta, braços em madeira escura." },
+        { "nome": "Tam", "tamanhos": [], "descricao": "Cinzento-escuro, sem braços, minimalista." },
+        { "nome": "Mei", "tamanhos": [], "descricao": "Castanha, encosto vazado e arredondado." },
+        { "nome": "Adele", "tamanhos": [], "descricao": "Castanho-escuro, linhas retas." },
+        { "nome": "Vik", "tamanhos": [], "descricao": "Bordeaux, encosto vazado." },
+        { "nome": "Nara", "tamanhos": [], "descricao": "Verde-azeitona, linhas retas." },
+        { "nome": "Lea", "tamanhos": [], "descricao": "Bege, braços em madeira clara." },
+        { "nome": "Picta", "tamanhos": [], "descricao": "Tom areia, com apoio de cabeça." },
+        { "nome": "Taiki", "tamanhos": [], "descricao": "Bege, com apoio de cabeça." }
+      ]
+    },
+    {
+      "slug": "sofas-de-espera",
+      "nome": "Sofás de espera",
+      "grupo": "Mobiliário",
+      "subtitulo": "Assentos para a zona de espera",
+      "descricao": "Sofás e pufes modulares para a zona de espera, em uma, duas ou três partes.",
+      "ingredientes": [],
+      "produtos": [
+        { "nome": "Nao", "tamanhos": ["1S", "2S"], "descricao": "Pufe modular em tom areia." },
+        { "nome": "Haruka", "tamanhos": ["1S", "2S"], "descricao": "Estrutura em madeira e linhas retas." },
+        { "nome": "Nuan", "tamanhos": ["1S", "2S"], "descricao": "Cinzento-escuro, estrutura metálica." },
+        { "nome": "Bux", "tamanhos": ["1S", "2S", "3S"], "descricao": "Rosa envelhecido, formas volumosas e modulares." }
+      ]
+    },
+    {
+      "slug": "lavatorios",
+      "nome": "Lavatórios",
+      "grupo": "Mobiliário",
+      "subtitulo": "Postos de lavagem",
+      "descricao": "Lavatórios de lavagem estofados e de coluna, incluindo modelos modulares e reclináveis.",
+      "ingredientes": [],
+      "produtos": [
+        { "nome": "Kai + Yuki", "tamanhos": [], "descricao": "Estofo verde-lima." },
+        { "nome": "Kai + Davis", "tamanhos": [], "descricao": "Estofo preto." },
+        { "nome": "Kai + Riki", "tamanhos": [], "descricao": "Estofo azul-claro." },
+        { "nome": "Jin", "tamanhos": ["1S", "2S"], "descricao": "Castanho, compacto e modular." },
+        { "nome": "Yuto", "tamanhos": [], "descricao": "Preto, linhas retas." },
+        { "nome": "Yuto-T", "tamanhos": [], "descricao": "Tom areia, braços em metal preto." },
+        { "nome": "Yuto-R", "tamanhos": [], "descricao": "Verde, braços em metal preto." },
+        { "nome": "Dock", "tamanhos": [], "descricao": "Cinzento-escuro, linhas retas." },
+        { "nome": "Yoma", "tamanhos": [], "descricao": "Tom areia, formas arredondadas." },
+        { "nome": "Bob", "tamanhos": [], "descricao": "Castanho, compacto." },
+        { "nome": "Arca", "tamanhos": [], "descricao": "Preto, linhas retas." },
+        { "nome": "Vela", "tamanhos": [], "descricao": "Tom areia, formas arredondadas." },
+        { "nome": "Dorset", "tamanhos": [], "descricao": "Reclinável, estrutura em madeira." },
+        { "nome": "Guss", "tamanhos": [], "descricao": "Verde-azeitona, linhas retas." }
+      ]
+    },
+    {
+      "slug": "toucadores",
+      "nome": "Toucadores",
+      "grupo": "Mobiliário",
+      "subtitulo": "Postos de trabalho e espelhos",
+      "descricao": "Toucadores individuais, ilhas e postos com espelho, em várias configurações.",
+      "ingredientes": [],
+      "produtos": [
+        { "nome": "Junko", "tamanhos": [], "descricao": "Espelho sobre painel em madeira." },
+        { "nome": "Tenka", "tamanhos": [], "descricao": "Espelho retangular com prateleira." },
+        { "nome": "Brio", "tamanhos": [], "descricao": "Espelho sobre estrutura metálica escura." },
+        { "nome": "Volo", "tamanhos": [], "descricao": "Espelho sobre base cúbica." },
+        { "nome": "Kento", "tamanhos": ["1S", "2S"], "descricao": "Postos duplos com espelhos articulados." },
+        { "nome": "Edge", "tamanhos": [], "descricao": "Espelho retangular com consola branca." },
+        { "nome": "Bola", "tamanhos": [], "descricao": "Espelho redondo sobre consola escura." },
+        { "nome": "Kensi", "tamanhos": ["1S", "2S"], "descricao": "Toucador branco com espelhos retangulares." },
+        { "nome": "Coly", "tamanhos": [], "descricao": "Espelho em arco, estrutura em madeira." },
+        { "nome": "Oreo", "tamanhos": [], "descricao": "Espelho oval, estrutura em madeira." },
+        { "nome": "Jovis", "tamanhos": [], "descricao": "Espelho branco sobre base estreita." },
+        { "nome": "Lyco", "tamanhos": [], "descricao": "Espelho redondo sobre consola branca." },
+        { "nome": "Takao", "tamanhos": [], "descricao": "Posto escuro com espelho integrado." },
+        { "nome": "Dai", "tamanhos": [], "descricao": "Espelho de pé, estrutura metálica." },
+        { "nome": "Vico", "tamanhos": ["1S+2S Island", "2S+4S Island"], "descricao": "Ilha de espelhos em arco, estrutura em madeira." },
+        { "nome": "Nebu", "tamanhos": [], "descricao": "Composição de espelhos redondos sobrepostos." },
+        { "nome": "Tori", "tamanhos": [], "descricao": "Espelho vertical com moldura em madeira." },
+        { "nome": "Milo", "tamanhos": [], "descricao": "Toucador com espelho e prateleiras em madeira." }
+      ]
+    },
+    {
+      "slug": "mobiliario-de-apoio",
+      "nome": "Mobiliário de apoio e receção",
+      "grupo": "Mobiliário",
+      "subtitulo": "Arrumação, carrinhos e receção",
+      "descricao": "Móveis de arrumação, carrinhos auxiliares e balcões de receção.",
+      "ingredientes": [],
+      "produtos": [
+        { "nome": "Jonka", "tamanhos": [], "descricao": "Módulo branco com gaveta." },
+        { "nome": "Akito", "tamanhos": [], "descricao": "Coluna em madeira com prateleiras abertas." },
+        { "nome": "Milson", "tamanhos": [], "descricao": "Carrinho auxiliar com rodas." },
+        { "nome": "Den", "tamanhos": [], "descricao": "Coluna preta com gaveta." },
+        { "nome": "Matsu", "tamanhos": [], "descricao": "Coluna aberta em madeira." },
+        { "nome": "Kumi", "tamanhos": [], "descricao": "Móvel baixo com gaveta e prateleiras." },
+        { "nome": "Meki", "tamanhos": [], "descricao": "Armário em madeira com porta." },
+        { "nome": "Maro", "tamanhos": [], "descricao": "Módulo escuro com compartimentos abertos." },
+        { "nome": "Dina", "tamanhos": [], "descricao": "Módulo branco com prateleiras." },
+        { "nome": "Corbo", "tamanhos": [], "descricao": "Balcão de receção em madeira." },
+        { "nome": "Brisa", "tamanhos": [], "descricao": "Balcão de receção curvo." },
+        { "nome": "Gen", "tamanhos": [], "descricao": "Secretária branca com gavetas." },
+        { "nome": "Rico", "tamanhos": [], "descricao": "Armário em madeira com prateleiras e porta." }
+      ]
+    },
+    {
+      "slug": "acessorios",
+      "nome": "Acessórios",
+      "grupo": "Acessórios",
+      "subtitulo": "Complementos para lavatórios e postos",
+      "descricao": "Bancos, apoios de pés, suportes de secador e acessórios para lavatórios.",
+      "ingredientes": [],
+      "produtos": [
+        { "nome": "Fuyu", "tamanhos": [], "descricao": "Banco auxiliar com pistão a gás." },
+        { "nome": "Seki", "tamanhos": [], "descricao": "Banco em sela, com pistão a gás e rodas." },
+        { "nome": "Emi", "tamanhos": [], "descricao": "Pufe de apoio de pés." },
+        { "nome": "Dot", "tamanhos": [], "descricao": "Pufe redondo, estofado." },
+        { "nome": "Oko", "tamanhos": [], "descricao": "Banco elevatório com rodas." },
+        { "nome": "Cover", "tamanhos": [], "descricao": "Capa de proteção transparente para cadeiras." },
+        { "nome": "Atama", "tamanhos": [], "descricao": "Apoio de cabeça ajustável." },
+        { "nome": "Yuto Link Unit", "tamanhos": [], "descricao": "Módulo de ligação entre dois ou mais lavatórios Yuto." },
+        { "nome": "Dorset Shampoo Holder", "tamanhos": [], "descricao": "Suporte para champô, em branco ou preto." },
+        { "nome": "Anti-drop System", "tamanhos": [], "descricao": "Sistema antigoto para a lavagem." },
+        { "nome": "Waterfall", "tamanhos": [], "descricao": "Sistema de cascata de água para lavatórios." },
+        { "nome": "Kubi", "tamanhos": [], "descricao": "Apoio de silicone para a nuca." },
+        { "nome": "Biku", "tamanhos": [], "descricao": "Apoio de silicone para a nuca, versão almofadada." },
+        { "nome": "Oki & Aki", "tamanhos": [], "descricao": "Suporte de parede para secador." },
+        { "nome": "Unifur", "tamanhos": [], "descricao": "Argola de parede para o fio do secador." }
+      ]
+    },
+    {
+      "slug": "bases",
+      "nome": "Bases para cadeiras",
+      "grupo": "Acessórios",
+      "subtitulo": "Bases giratórias e fixas",
+      "descricao": "Bases de substituição para cadeiras de styling, em cruzeta ou fixas.",
+      "ingredientes": [],
+      "produtos": [
+        { "nome": "Suta", "tamanhos": [], "descricao": "Base em cruzeta, preta." },
+        { "nome": "Rondo", "tamanhos": [], "descricao": "Base redonda, cromada." },
+        { "nome": "Solid", "tamanhos": [], "descricao": "Base quadrada, maciça e preta." }
+      ]
+    }
+  ],
+  "alternateName": [
+    "TAKUMI Beauty Group",
+    "Takumi mobiliário",
+    "Takumi Aurora"
+  ],
+  "pesquisas": [
+    "TAKUMI Portugal",
+    "mobiliário de salão",
+    "cadeiras de styling",
+    "lavatórios de cabeleireiro",
+    "TAKUMI mobiliário Portugal"
+  ],
+  "faq": [
+    [
+      "Como peço um orçamento TAKUMI?",
+      "Fala com a SALE.ON pelo formulário de contacto ou pelo WhatsApp. Preparamos uma proposta à medida do teu salão."
+    ],
+    [
+      "A TAKUMI fabrica o mobiliário próprio?",
+      "Sim. A TAKUMI (Takumi Beauty Group, Barcelona) concebe e fabrica o seu mobiliário de raiz, do design à produção."
+    ]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+ "_nota": "Conteúdo da área de membro. Campanhas e materiais marcados com exemplo=true são exemplos para a demonstração.",
+ "campanhas": [
+  {
+   "titulo": "Campanha de exemplo: cor de inverno",
+   "marca": "O&M",
+   "texto": "Exemplo de campanha. Aqui entra a descrição, as condições e as datas.",
+   "ate": "2026-12-31",
+   "ligacao": "/marcas/original-mineral/cor-color/",
+   "exemplo": true
+  },
+  {
+   "titulo": "Campanha de exemplo: MANGALA",
+   "marca": "GLYNT",
+   "texto": "Exemplo de campanha. Aqui entra a descrição, as condições e as datas.",
+   "ate": "2026-12-31",
+   "ligacao": "/marcas/glynt/mangala/",
+   "exemplo": true
+  }
+ ],
+ "materiais": [
+  {
+   "titulo": "Material de exemplo: cartaz de montra",
+   "tipo": "PDF",
+   "exemplo": true
+  },
+  {
+   "titulo": "Material de exemplo: imagens para redes sociais",
+   "tipo": "ZIP",
+   "exemplo": true
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+[
+  {
+    "slug": "coloracao",
+    "nome": "Coloração",
+    "pergunta": "Cor, tonalização e cobertura de brancos",
+    "descricao": "Coloração permanente e sem amoníaco, tonalizantes, gloss, cores diretas e camuflagem de brancos para homem.",
+    "linhas": [
+      "glynt/shadows",
+      "glynt/mangala",
+      "original-mineral/cor-color",
+      "original-mineral/clean-liquid",
+      "original-mineral/clean-tones",
+      "original-mineral/original-pigment",
+      "original-mineral/cor-restore",
+      "graham-hill/cor"
+    ],
+    "montra": [
+      "glynt/shadows/shadows-coloracao-permanente",
+      "glynt/mangala/mangala-rosegold",
+      "original-mineral/clean-tones/clean-tone-copper",
+      "graham-hill/cor/loop-grey-colour-shampoo"
+    ]
+  },
+  {
+    "slug": "descoloracao",
+    "nome": "Descoloração e loiros",
+    "pergunta": "Pós descolorantes, oxidantes e cuidado de loiros",
+    "descricao": "Pós descolorantes, reveladores e o cuidado para manter os loiros frios e brilhantes.",
+    "linhas": [
+      "original-mineral/descolorantes",
+      "glynt/ice-blond"
+    ],
+    "montra": [
+      "original-mineral/descolorantes/superblonde-9-high-level-lift",
+      "glynt/ice-blond/ice-blond-shampoo",
+      "glynt/shadows/platinum-blond"
+    ]
+  },
+  {
+    "slug": "cuidado-capilar",
+    "nome": "Cuidado capilar",
+    "pergunta": "Shampoos, condicionadores e máscaras",
+    "descricao": "Shampoos, condicionadores, máscaras e tratamentos por tipo de cabelo, para o serviço e para a revenda.",
+    "linhas": [
+      "glynt/hydro",
+      "glynt/volume",
+      "glynt/revital",
+      "glynt/nutri",
+      "glynt/refresh",
+      "glynt/pure",
+      "glynt/sun",
+      "glynt/trijuven",
+      "original-mineral/cuidado",
+      "original-mineral/ps",
+      "original-mineral/mascaras-tratamentos",
+      "graham-hill/limpeza-vitalidade"
+    ],
+    "montra": [
+      "glynt/revital/revital-shampoo",
+      "original-mineral/cuidado/hydrate-e-conquer-shampoo",
+      "glynt/nutri/nutri-mask",
+      "graham-hill/limpeza-vitalidade/stowe-wax-out-charcoal-shampoo"
+    ]
+  },
+  {
+    "slug": "couro-cabeludo",
+    "nome": "Couro cabeludo e queda",
+    "pergunta": "Queda de cabelo, densidade e couro cabeludo sensível",
+    "descricao": "Tratamentos para a queda, a densidade e o equilíbrio do couro cabeludo, incluindo o sistema CALECIM® com PTT-6®.",
+    "linhas": [
+      "calecim/cabelo",
+      "glynt/derma"
+    ],
+    "montra": [
+      "calecim/cabelo/scalp-detox-cleanser",
+      "calecim/cabelo/scalp-activating-mist",
+      "glynt/derma/derma-tonic"
+    ]
+  },
+  {
+    "slug": "styling",
+    "nome": "Styling e finalização",
+    "pergunta": "Volume, textura, caracóis, brilho e fixação",
+    "descricao": "Cremes, pastas, ceras, sprays e espumas para dar forma, textura e fixação.",
+    "linhas": [
+      "glynt/smooth",
+      "glynt/style-effect",
+      "glynt/dry-texture",
+      "glynt/curls",
+      "glynt/blowdry-airdry",
+      "glynt/sprays",
+      "original-mineral/styling",
+      "graham-hill/styling"
+    ],
+    "montra": [
+      "glynt/style-effect/pearl-gloss-gel",
+      "graham-hill/styling/lesmo-moulding-clay",
+      "original-mineral/styling/curl-curl-spray",
+      "glynt/sprays/merak-dynamic-spray"
+    ]
+  },
+  {
+    "slug": "tecnico",
+    "nome": "Ondulação permanente",
+    "pergunta": "Permanentes e volume na raiz",
+    "descricao": "Sistemas de ondulação permanente e de volume na raiz para o salão.",
+    "linhas": [
+      "glynt/ondulacao"
+    ],
+    "montra": [
+      "glynt/ondulacao/biphas-basis-1",
+      "glynt/ondulacao/tri-perm-soft-1-sensitive",
+      "glynt/ondulacao/twister-root-lift-gel"
+    ]
+  },
+  {
+    "slug": "pele",
+    "nome": "Pele e corpo",
+    "pergunta": "Cuidado de rosto, corpo e pele sensível",
+    "descricao": "Cuidado de pele com PTT-6®, pele sensível, corpo e bronzeado sem sol.",
+    "linhas": [
+      "glynt/sensitive",
+      "glynt/sun-tan"
+    ],
+    "montra": [
+      "glynt/sensitive/sensitive-eye-cream",
+      "glynt/sensitive/sensitive-jojoba-fluid",
+      "glynt/sun-tan/sun-face-tan-water"
+    ]
+  },
+  {
+    "slug": "barbearia",
+    "nome": "Barbearia e grooming",
+    "pergunta": "Barbear, barba e cuidado masculino",
+    "descricao": "Barbear, cuidado da barba, fragrância e conjuntos para barbearias e para o cliente masculino.",
+    "linhas": [
+      "graham-hill/barbear-barba",
+      "graham-hill/fragrancia",
+      "graham-hill/conjuntos"
+    ],
+    "montra": [
+      "graham-hill/barbear-barba/mulsanne-relaxing-beard-oil",
+      "graham-hill/barbear-barba/arnage-face-e-beard-balm",
+      "graham-hill/barbear-barba/malmedy-shaving-gel"
+    ]
+  },
+  {
+    "slug": "ferramentas",
+    "nome": "Ferramentas e acessórios",
+    "pergunta": "Pincéis, taças, escovas, máquinas e capas",
+    "descricao": "Tudo o que o profissional usa à volta do serviço: taças, pincéis, balanças, escovas, máquinas, capas e aventais.",
+    "linhas": [
+      "original-mineral/acessorios",
+      "graham-hill/acessorios",
+      "pahi/acessorios",
+      "takumi/acessorios",
+      "takumi/bases"
+    ],
+    "montra": [
+      "original-mineral/acessorios/tint-bowl-large",
+      "original-mineral/acessorios/tint-brush-large",
+      "graham-hill/acessorios/shaving-brush"
+    ]
+  },
+  {
+    "slug": "mobiliario",
+    "nome": "Mobiliário de salão",
+    "pergunta": "Cadeiras, lavatórios, toucadores e receções",
+    "descricao": "Mobiliário PAHI e TAKUMI para montar ou renovar o salão, com orçamento à medida.",
+    "linhas": [
+      "pahi/vita-head-spa",
+      "pahi/cadeiras-de-corte",
+      "pahi/lavatorios",
+      "pahi/toucadores",
+      "pahi/rececoes",
+      "pahi/sala-de-espera",
+      "pahi/manicure-pedicure",
+      "takumi/cadeiras-de-styling",
+      "takumi/sofas-de-espera",
+      "takumi/lavatorios",
+      "takumi/toucadores",
+      "takumi/mobiliario-de-apoio"
+    ],
+    "montra": []
+  }
+]

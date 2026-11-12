@@ -1,0 +1,22 @@
+---
+pagination:
+  data: paginas
+  size: 1
+  addAllPagesToCollections: true
+  alias: pg
+permalink: "{{ pg.url }}"
+paginas:
+  - url: /obrigado/
+    titulo: Obrigado
+    lead: Recebemos a tua mensagem. Respondemos em 48 horas úteis.
+    noindex: true
+    corpo: '<p><a class="botao" href="/marcas/">Continuar a ver as marcas</a></p>'
+---
+{% extends "base.njk" %}
+{% set titulo %}{{ pg.titulo }} | SALE.ON{% endset %}
+{% set descricao %}{{ pg.lead }}{% endset %}
+{% block schema %}{% if pg.noindex %}<meta name="robots" content="noindex">{% endif %}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha"><div class="envolve"><h1>{{ pg.titulo }}</h1><p class="heroi__lead">{{ pg.lead }}</p></div></section>
+<section class="secao"><div class="envolve texto-longo">{{ pg.corpo | safe }}</div></section>
+{% endblock %}

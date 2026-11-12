@@ -1,0 +1,1107 @@
+{
+  "slug": "glynt",
+  "nome": "GLYNT",
+  "ordem": 1,
+  "pais": "Alemanha",
+  "desde": "1954",
+  "cor": "#55575B",
+  "tagline": "Qualidade alemã de topo, a um preço que rentabiliza o salão.",
+  "resumo": "Marca profissional alemã, desde 1954. Cuidado, styling e coloração premium em qualidade e resultados, com um preço acessível face ao que entrega.",
+  "intro": [
+    "A GLYNT nasceu em Hamburgo, em 1954, pela mão da família Conzen, e continua hoje a ser uma empresa familiar alemã, com produção e investigação próprias em Tangstedt, no norte da Alemanha.",
+    "É uma marca com uma aposta clara no salão: produtos altamente premium em qualidade e em resultados, mas com um preço acessível face à qualidade que demonstram. Por isso é uma das melhores opções para rentabilizar o trabalho e a revenda no salão."
+  ],
+  "pilares": [
+    {
+      "titulo": "Origem alemã",
+      "texto": "Empresa familiar desde 1954, com produção e laboratório de I&D próprios na Alemanha."
+    },
+    {
+      "titulo": "Premium em resultados",
+      "texto": "Cuidado, styling e cor desenvolvidos para o uso profissional diário, com resultados visíveis."
+    },
+    {
+      "titulo": "Acessível face à qualidade",
+      "texto": "Um preço justo para o nível de qualidade, que deixa margem ao salão no serviço e na revenda."
+    },
+    {
+      "titulo": "Rentabiliza o salão",
+      "texto": "Sistema de cor SHADOWS com ferramentas digitais de fórmulas e quantidades, para criar mais tons com menos stock."
+    }
+  ],
+  "seo": {
+    "title": "GLYNT em Portugal | Marca profissional alemã de cuidado, styling e cor",
+    "description": "GLYNT, marca profissional alemã desde 1954: cuidado capilar, styling e coloração SHADOWS premium, acessível para o salão. Distribuição exclusiva SALE.ON em Portugal."
+  },
+  "fonte": "https://www.glynt.com",
+  "linhas": [
+    {
+      "slug": "hydro",
+      "nome": "HYDRO",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Hidratação para todos os tipos de cabelo",
+      "descricao": "Hidratação extra para qualquer tipo de cabelo, suave o suficiente para lavagens frequentes. Extrato de algas rico em minerais e aloé vera devolvem ao cabelo maciez, elasticidade e brilho.",
+      "ingredientes": [
+        "Extrato de algas",
+        "Aloé vera"
+      ],
+      "produtos": [
+        {
+          "nome": "HYDRO Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo hidratante para todos os tipos de cabelo."
+        },
+        {
+          "nome": "HYDRO Conditioner",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Condicionador hidratante para todos os tipos de cabelo."
+        },
+        {
+          "nome": "HYDRO Care Spray",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Spray hidratante sem enxaguamento, para todos os tipos de cabelo."
+        },
+        {
+          "nome": "HYDRO Shot",
+          "tamanhos": [
+            "50 ml"
+          ],
+          "uso": "Salão",
+          "descricao": "Tratamento intensivo HYDRO para aplicação no salão."
+        }
+      ]
+    },
+    {
+      "slug": "volume",
+      "nome": "VOLUME",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Corpo e volume para cabelo fino",
+      "descricao": "Cuidado leve para cabelo fino, que dá corpo, brilho e elasticidade sem pesar. Com extrato de bambu, vitamina B5 e queratina líquida.",
+      "ingredientes": [
+        "Extrato de bambu",
+        "Vitamina B5",
+        "Queratina líquida"
+      ],
+      "produtos": [
+        {
+          "nome": "VOLUME Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo que dá corpo e volume ao cabelo fino."
+        },
+        {
+          "nome": "VOLUME Conditioner",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Condicionador leve que dá corpo e volume ao cabelo fino."
+        },
+        {
+          "nome": "VOLUME Energy Spray",
+          "tamanhos": [
+            "30 ml",
+            "100 ml"
+          ],
+          "descricao": "Spray de volume sem peso para cabelo fino."
+        },
+        {
+          "nome": "VOLUME Shot",
+          "tamanhos": [
+            "50 ml"
+          ],
+          "uso": "Salão",
+          "descricao": "Tratamento intensivo VOLUME para aplicação no salão."
+        }
+      ]
+    },
+    {
+      "slug": "revital",
+      "nome": "REVITAL",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Brilho e duração para cabelo pintado",
+      "descricao": "A coloração enfraquece as cadeias de queratina e a cor desvanece mais depressa. A REVITAL junta magnólia e fitoqueratina para reparar a fibra e a superfície do cabelo, com mais força, elasticidade e uma cor brilhante durante mais tempo.",
+      "ingredientes": [
+        "Magnólia",
+        "Fitoqueratina"
+      ],
+      "produtos": [
+        {
+          "nome": "REVITAL Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo para cabelo pintado."
+        },
+        {
+          "nome": "REVITAL Mask",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Máscara que cuida e protege o cabelo pintado."
+        },
+        {
+          "nome": "REVITAL Care Spray",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Spray sem enxaguamento que cuida e protege o cabelo pintado."
+        },
+        {
+          "nome": "REVITAL Shot",
+          "tamanhos": [
+            "50 ml"
+          ],
+          "uso": "Salão",
+          "descricao": "Tratamento intensivo REVITAL para aplicação no salão."
+        }
+      ]
+    },
+    {
+      "slug": "nutri",
+      "nome": "NUTRI",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Brilho e elasticidade para cabelo seco",
+      "descricao": "Cuidado nutritivo para cabelo forte, seco ou quebradiço. Óleos de jojoba e de macadâmia prensados a frio, semelhantes aos lípidos naturais da pele e do cabelo, ajudam a reter a hidratação e dão um toque sedoso.",
+      "ingredientes": [
+        "Óleo de jojoba",
+        "Óleo de macadâmia"
+      ],
+      "produtos": [
+        {
+          "nome": "NUTRI Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo alisante para cabelo forte e seco."
+        },
+        {
+          "nome": "NUTRI Mask",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Máscara alisante para cabelo forte e seco."
+        },
+        {
+          "nome": "NUTRI Elixir",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Óleo capilar para cabelo forte e seco."
+        },
+        {
+          "nome": "NUTRI Shine Spray",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Spray de brilho e suavidade para cabelo forte e seco."
+        }
+      ]
+    },
+    {
+      "slug": "refresh",
+      "nome": "REFRESH",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Frescura e vitalidade para cabelo e corpo",
+      "descricao": "Frescura máxima para cabelo e corpo, com chá verde, mentol, gengibre e cafeína.",
+      "ingredientes": [
+        "Chá verde",
+        "Mentol",
+        "Gengibre",
+        "Cafeína"
+      ],
+      "produtos": [
+        {
+          "nome": "REFRESH Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo refrescante e vitalizante para todos os tipos de cabelo."
+        },
+        {
+          "nome": "REFRESH Body Wash",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Gel de banho refrescante e vitalizante."
+        }
+      ]
+    },
+    {
+      "slug": "ice-blond",
+      "nome": "ICE BLOND",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Loiros frios, sem amarelo",
+      "descricao": "Neutraliza os tons amarelos e mantém o loiro claro e frio. Para cabelo descolorado ou naturalmente loiro, e também para cabelo branco e grisalho.",
+      "ingredientes": [
+        "Pigmentos violeta neutralizantes"
+      ],
+      "produtos": [
+        {
+          "nome": "ICE BLOND Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo prateado para cabelo loiro, branco e grisalho."
+        },
+        {
+          "nome": "ICE BLOND Mask",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Máscara anti-amarelo para cabelo loiro, branco e grisalho."
+        },
+        {
+          "nome": "ICE BLOND Fluid",
+          "tamanhos": [
+            "125 ml"
+          ],
+          "descricao": "Fluido anti-amarelo com proteção térmica."
+        }
+      ]
+    },
+    {
+      "slug": "sun",
+      "nome": "SUN",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Proteção e regeneração no verão",
+      "descricao": "Protege o cabelo do sol, do sal, do cloro e do vento, e devolve hidratação ao cabelo baço e desidratado. Com extrato de folha de agave e pantenol.",
+      "ingredientes": [
+        "Extrato de folha de agave",
+        "Pantenol"
+      ],
+      "produtos": [
+        {
+          "nome": "SUN Shampoo",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Shampoo de proteção e regeneração para o cabelo no verão."
+        },
+        {
+          "nome": "SUN Mask",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Máscara de proteção e regeneração para o cabelo no verão."
+        },
+        {
+          "nome": "SUN Care Spray",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Spray de proteção e regeneração para o cabelo no verão."
+        },
+        {
+          "nome": "SUN Care Set",
+          "tamanhos": [
+            "3 x 100 ml"
+          ],
+          "descricao": "Os três essenciais de verão num só conjunto."
+        },
+        {
+          "nome": "SUN Scalp Protect Spray FPS 15",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Spray de proteção solar para o couro cabeludo e o risco do cabelo, com fator de proteção 15."
+        }
+      ]
+    },
+    {
+      "slug": "pure",
+      "nome": "PURE",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Shampoo em pó, sem água e sem plástico",
+      "descricao": "Shampoo em pó sem água: ganha espuma cremosa no duche. Embalagem 100% em papel. 40 g equivalem a cerca de 250 ml de shampoo líquido.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "PURE Shampoo",
+          "tamanhos": [
+            "40 g"
+          ],
+          "descricao": "Shampoo em pó anidro para todos os tipos de cabelo."
+        }
+      ]
+    },
+    {
+      "slug": "derma",
+      "nome": "DERMA",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Equilíbrio do couro cabeludo",
+      "descricao": "Cuidado para couro cabeludo com comichão, descamação, secura ou oleosidade. Ingredientes calmantes e anticaspa ajudam o couro cabeludo a regular-se.",
+      "ingredientes": [
+        "Extrato de casca de salgueiro",
+        "Zinco",
+        "Ácido salicílico",
+        "Extrato de raiz de bardana"
+      ],
+      "produtos": [
+        {
+          "nome": "DERMA Shampoo",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Shampoo anticaspa para todos os tipos de cabelo."
+        },
+        {
+          "nome": "DERMA E.F.A. Lotion",
+          "tamanhos": [
+            "50 ml"
+          ],
+          "descricao": "Loção que acalma o couro cabeludo."
+        },
+        {
+          "nome": "DERMA Ginkgo Energeticum",
+          "tamanhos": [
+            "30 ml",
+            "100 ml"
+          ],
+          "descricao": "Tónico que favorece um cabelo forte e cheio."
+        },
+        {
+          "nome": "DERMA Tonic",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Tratamento anticaspa para couro cabeludo irritado."
+        }
+      ]
+    },
+    {
+      "slug": "trijuven",
+      "nome": "TRIJUVEN©",
+      "grupo": "Cuidado capilar",
+      "subtitulo": "Terapia de rejuvenescimento capilar em 3 passos",
+      "descricao": "Terapia que reconstrói a fibra capilar por dentro e por fora, para cabelo envelhecido, danificado ou fragilizado pela cor e pelo calor. Os passos 1 e 2 são feitos no salão; o passo 3 prolonga o resultado em casa.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "TRIJUVEN© Step 1 & Step 2",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Tratamento intensivo no salão que estabiliza, fortalece e suaviza a fibra capilar.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "TRIJUVEN© Step 3",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Manutenção em casa, com os mesmos ativos em menor concentração, para prolongar o tratamento do salão."
+        },
+        {
+          "nome": "TRIJUVEN© Smoothing Water",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Cuidado rápido de 10 segundos para cabelo danificado."
+        }
+      ]
+    },
+    {
+      "slug": "smooth",
+      "nome": "SMOOTH",
+      "grupo": "Styling",
+      "subtitulo": "Liso, sedoso e com brilho",
+      "descricao": "Para um acabamento liso e um brilho sedoso: protege do calor, suaviza, facilita o pentear e dá elasticidade.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "MALIBU Smoothing Cream",
+          "tamanhos": [
+            "125 ml"
+          ],
+          "descricao": "Creme anti-frizz alisante com proteção térmica."
+        },
+        {
+          "nome": "BREEZE Smoothing Spray",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Spray de proteção térmica para brilho sedoso e pentear fácil."
+        },
+        {
+          "nome": "KONA Wax Stick",
+          "tamanhos": [
+            "25 g"
+          ],
+          "descricao": "Cera em stick para uma fixação rápida e precisa."
+        }
+      ]
+    },
+    {
+      "slug": "style-effect",
+      "nome": "STYLE EFFECT",
+      "grupo": "Styling",
+      "subtitulo": "Textura e forma para cada corte",
+      "descricao": "Produtos que realçam a textura e a forma de qualquer corte, com fixações de leve a forte e acabamentos de mate sedoso a brilho intenso.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "PEARL Gloss Gel",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Gel modelador com acabamento brilhante nacarado."
+        },
+        {
+          "nome": "SPIDER Cream",
+          "tamanhos": [
+            "85 ml"
+          ],
+          "descricao": "Creme modelador elástico, fixação média."
+        },
+        {
+          "nome": "GRACE Texture Paste",
+          "tamanhos": [
+            "20 ml",
+            "85 ml"
+          ],
+          "descricao": "Pasta para looks mate e com textura."
+        },
+        {
+          "nome": "STEELER Pomade",
+          "tamanhos": [
+            "85 ml"
+          ],
+          "descricao": "Pomada com brilho e fixação extra forte."
+        },
+        {
+          "nome": "JELLY Extreme Styler",
+          "tamanhos": [
+            "125 ml"
+          ],
+          "descricao": "Gel com brilho e fixação extra forte."
+        },
+        {
+          "nome": "MAT Modeler",
+          "tamanhos": [
+            "85 ml"
+          ],
+          "descricao": "Cera que dá volume com efeito mate."
+        }
+      ]
+    },
+    {
+      "slug": "dry-texture",
+      "nome": "DRY TEXTURE",
+      "grupo": "Styling",
+      "subtitulo": "Volume e textura com acabamento mate",
+      "descricao": "Para looks leves, arejados e naturais, com acabamento mate e empoado. Dão volume e aderência para um cabelo mais cheio e descontraído.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "BLIZZARD Dry Shampoo",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Shampoo seco em spray."
+        },
+        {
+          "nome": "NEVIS Dry Shampoo Foam",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Shampoo seco em espuma."
+        },
+        {
+          "nome": "YUMA Volume Powder",
+          "tamanhos": [
+            "6 g"
+          ],
+          "descricao": "Pó de volume para cabelo com textura."
+        },
+        {
+          "nome": "KHAMSIN Invisible Spray",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Spray de volume para corpo e estrutura naturais."
+        },
+        {
+          "nome": "VENICE Sea Salt Spray",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Spray de sal marinho para mais aderência e textura."
+        },
+        {
+          "nome": "BORA Paste",
+          "tamanhos": [
+            "85 ml"
+          ],
+          "descricao": "Pasta mate para looks naturais com textura."
+        }
+      ]
+    },
+    {
+      "slug": "curls",
+      "nome": "CURLS",
+      "grupo": "Styling",
+      "subtitulo": "Definição para caracóis e ondas",
+      "descricao": "Para caracóis naturais e ondas modeladas: mais definição, elasticidade e brilho.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "ELASTIC Curl Spray",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Gel líquido de brilho para ondas e caracóis generosos."
+        },
+        {
+          "nome": "DEFINE Curl Cream",
+          "tamanhos": [
+            "125 ml"
+          ],
+          "descricao": "Creme para caracóis definidos e suaves."
+        },
+        {
+          "nome": "CARIBBEAN Spray Wax",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Cera em spray para caracóis."
+        }
+      ]
+    },
+    {
+      "slug": "blowdry-airdry",
+      "nome": "BLOWDRY | AIRDRY",
+      "grupo": "Styling",
+      "subtitulo": "Para brushing, rolos e secagem ao ar",
+      "descricao": "Dão fixação, elasticidade e corpo; alguns reduzem o tempo de secagem. Para brushings expressivos ou looks suaves que secam ao ar.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "ROK Root Lifting Foam",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Espuma para volume na raiz."
+        },
+        {
+          "nome": "VELVET Mousse Soft",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Espuma de fixação flexível e natural."
+        },
+        {
+          "nome": "VELVET Mousse Strong",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Espuma de fixação forte e corpo extra."
+        },
+        {
+          "nome": "ALPHA Setting Lotion",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Fixador de brushing para elasticidade e força."
+        },
+        {
+          "nome": "VITA Blowdry Cream",
+          "tamanhos": [
+            "125 ml"
+          ],
+          "descricao": "Creme de brushing para hidratação, corpo e brilho."
+        }
+      ]
+    },
+    {
+      "slug": "sprays",
+      "nome": "SPRAYS",
+      "grupo": "Styling",
+      "subtitulo": "Acabamento e fixação",
+      "descricao": "Lacas de acabamento para fixar o look final, dar textura, volume e brilho, da fixação leve à extra forte.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "MERAK Dynamic Spray",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Laca de fixação natural e com movimento."
+        },
+        {
+          "nome": "VENTO Texture Spray",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Laca de fixação forte e estrutura."
+        },
+        {
+          "nome": "MISTRAL Build up Spray",
+          "tamanhos": [
+            "300 ml"
+          ],
+          "descricao": "Laca de fixação extra forte."
+        },
+        {
+          "nome": "SCIROCCO Lac Spray",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Laca de bomba para modelação elástica."
+        }
+      ]
+    },
+    {
+      "slug": "shadows",
+      "nome": "SHADOWS",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Sistema de coloração profissional",
+      "descricao": "Sistema de coloração profissional GLYNT: colorações permanentes, tonalizações intensivas, gloss líquido e sistema de loiros. Com menos tubos cobre-se uma gama muito vasta de tons, o que reduz stock e desperdício. As ferramentas digitais SHADOWS (assistente de fórmulas e calculadora de quantidades) ajudam o colorista a criar tons à medida com rigor.",
+      "ingredientes": [],
+      "profissional": true,
+      "produtos": [
+        {
+          "nome": "SHADOWS Coloração Permanente",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Coloração em creme permanente, com cobertura uniforme e brilho intenso.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Soft Permanent",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Tonalização intensiva para reflexos e brilho com menor agressividade.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Mix Tones",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Tons de mistura para corrigir, intensificar ou criar nuances à medida.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Liquid Colour Gloss",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Gloss líquido que dá força de cor e brilho.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Brilliant Eyes",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Coloração para sobrancelhas e pestanas, em Black, Blue Black, Graphite, Brown e Light Brown.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Liquid Colour Gloss Clear Tone",
+          "tamanhos": [
+            "500 ml"
+          ],
+          "descricao": "Tom transparente do gloss líquido, para dar brilho e diluir a cor.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Liquid Colour Gloss Developer",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Revelador para o gloss líquido SHADOWS.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Cream Oxydant 6%",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Oxidante em creme a 6% para a coloração SHADOWS.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Cream Oxydant 9%",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Oxidante em creme a 9% para a coloração SHADOWS.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "Cream Oxydant 12%",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Oxidante em creme a 12% para a coloração SHADOWS.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Energizer 2%",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Ativador a 2% para a tonalização SHADOWS.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Colour Ex",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Remove manchas de coloração da pele.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS Thickener Additive",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Aditivo para engrossar a mistura de cor.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "SHADOWS pH Transformer Additive",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Aditivo que ajusta o pH da mistura de cor.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "MAGNUM BLOND",
+          "tamanhos": [
+            "450 g"
+          ],
+          "descricao": "Pó descolorante GLYNT.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "PLATINUM BLOND",
+          "tamanhos": [
+            "450 g"
+          ],
+          "descricao": "Pó descolorante GLYNT para loiros platinados.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "ULTRALIFT Developer 3%",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Revelador a 3% para descoloração.",
+          "uso": "Salão"
+        }
+      ]
+    },
+    {
+      "slug": "mangala",
+      "nome": "MANGALA",
+      "grupo": "Coloração profissional",
+      "subtitulo": "Tratamento tonalizante: cuidado e cor num só passo",
+      "descricao": "Refresca a cor entre visitas ao salão, intensifica um tom ou acrescenta uma nuance subtil. Aplica-se como um condicionador, depois do shampoo, durante 5 a 15 minutos. Não precisa de mistura. 11 tons, que o salão pode também combinar numa fórmula personalizada.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "MANGALA Snow",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Neutraliza o amarelo em loiros claros, com efeito prateado."
+        },
+        {
+          "nome": "MANGALA Platin Blond",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Brilho platinado frio em cabelos claros."
+        },
+        {
+          "nome": "MANGALA Beige Blond",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Reflexo bege suave no loiro."
+        },
+        {
+          "nome": "MANGALA Sun Blond",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Calor dourado e solar no loiro."
+        },
+        {
+          "nome": "MANGALA Rosegold",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Reflexo rose gold em cabelos claros."
+        },
+        {
+          "nome": "MANGALA Aurora",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Rosa pastel em cabelos claros; tom bago em cabelos escuros."
+        },
+        {
+          "nome": "MANGALA Copper",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Do loiro acobreado ao cobre intenso."
+        },
+        {
+          "nome": "MANGALA Fire Red",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Vermelho intenso e brilhante."
+        },
+        {
+          "nome": "MANGALA Cherry",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Cereja intenso com reflexos frios; bordeaux em tons escuros."
+        },
+        {
+          "nome": "MANGALA Brunette",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Intensifica os reflexos castanhos quentes."
+        },
+        {
+          "nome": "MANGALA Espresso",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Castanho escuro frio e saturado, com brilho."
+        },
+        {
+          "nome": "MANGALA Stones Shampoo",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Shampoo de cuidado da cor da linha MANGALA."
+        }
+      ]
+    },
+    {
+      "slug": "sun-tan",
+      "nome": "SUN TAN",
+      "grupo": "Pele",
+      "subtitulo": "Bronzeado sem sol",
+      "descricao": "Um tom bronzeado durante todo o ano, sem exposição UV.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "SUN Face Tan Water",
+          "tamanhos": [
+            "30 ml"
+          ],
+          "descricao": "Autobronzeador para rosto, pescoço e decote."
+        },
+        {
+          "nome": "SUN Body Tan Mousse",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Mousse autobronzeadora para o corpo."
+        }
+      ]
+    },
+    {
+      "slug": "sensitive",
+      "nome": "SENSITIVE",
+      "grupo": "Pele",
+      "subtitulo": "Cuidado para pele sensível",
+      "descricao": "Linha suave para pele sensível, com óleos de jojoba e de meadowfoam que protegem o manto ácido e a barreira da pele. Pensada também para as mãos de quem trabalha no salão.",
+      "ingredientes": [
+        "Óleo de jojoba",
+        "Óleo de meadowfoam"
+      ],
+      "produtos": [
+        {
+          "nome": "SENSITIVE Shower Gel",
+          "tamanhos": [
+            "250 ml"
+          ],
+          "descricao": "Gel de limpeza para pele seca e sensível."
+        },
+        {
+          "nome": "SENSITIVE Jojoba Fluid",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Óleo para pele seca e sensível."
+        },
+        {
+          "nome": "SENSITIVE Hand & Nail Balm",
+          "tamanhos": [
+            "125 ml"
+          ],
+          "descricao": "Creme de mãos para mãos secas e sensíveis."
+        },
+        {
+          "nome": "SENSITIVE Eye Cream",
+          "tamanhos": [
+            "15 ml"
+          ],
+          "descricao": "Creme de olhos para pele seca e sensível."
+        }
+      ]
+    },
+    {
+      "slug": "ondulacao",
+      "nome": "Ondulação permanente",
+      "grupo": "Técnico",
+      "subtitulo": "BiPhas, TRI-PERM e TWISTER",
+      "descricao": "Sistemas GLYNT de ondulação permanente para o salão: BiPhas, TRI-PERM (versões soft para cabelo sensível) e TWISTER, para volume na raiz.",
+      "ingredientes": [],
+      "profissional": true,
+      "produtos": [
+        {
+          "nome": "BiPhas Basis 0+",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Loção de ondulação BiPhas para cabelo forte ou difícil de ondular.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "BiPhas Basis 1+",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Loção de ondulação BiPhas para cabelo normal.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "BiPhas Basis 2+",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Loção de ondulação BiPhas para cabelo poroso ou pintado.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "BiPhas Activator",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Ativador do sistema BiPhas.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "BiPhas Neutraliser",
+          "tamanhos": [
+            "500 ml"
+          ],
+          "descricao": "Fixador do sistema BiPhas.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "TRI-PERM Soft 0 sensitive",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Ondulação suave TRI-PERM para cabelo natural resistente.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "TRI-PERM Soft 1 sensitive",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Ondulação suave TRI-PERM para cabelo normal.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "TRI-PERM Soft 2 sensitive",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Ondulação suave TRI-PERM para cabelo pintado ou sensibilizado.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "TRI-PERM Neutraliser",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Fixador do sistema TRI-PERM.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "TWISTER Root Lift Gel",
+          "tamanhos": [
+            "500 ml"
+          ],
+          "descricao": "Gel para ondulação na raiz, para volume duradouro.",
+          "uso": "Salão"
+        },
+        {
+          "nome": "TWISTER Express Neutraliser",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Fixador rápido do sistema TWISTER.",
+          "uso": "Salão"
+        }
+      ]
+    }
+  ],
+  "montra": [
+    "revital/revital-shampoo",
+    "hydro/hydro-conditioner",
+    "style-effect/pearl-gloss-gel",
+    "mangala/mangala-rosegold"
+  ],
+  "alternateName": [
+    "GLYNT Haircare",
+    "GLYNT Professional",
+    "Glynt"
+  ],
+  "pesquisas": [
+    "GLYNT Portugal",
+    "comprar GLYNT",
+    "distribuidor GLYNT Portugal",
+    "GLYNT SHADOWS",
+    "GLYNT MANGALA",
+    "produtos GLYNT para cabeleireiro"
+  ],
+  "faq": [
+    [
+      "De onde é a GLYNT?",
+      "A GLYNT é uma marca profissional alemã, criada em 1954, com cuidado capilar, styling e coloração SHADOWS para salões."
+    ],
+    [
+      "A GLYNT é cara?",
+      "A GLYNT é premium em qualidade e resultados, mas acessível face à qualidade que demonstra. É uma das melhores opções para rentabilizar o serviço e a revenda no salão."
+    ]
+  ]
+}

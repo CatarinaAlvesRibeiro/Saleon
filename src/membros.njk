@@ -1,0 +1,116 @@
+---
+permalink: /membros/
+eleventyExcludeFromCollections: true
+---
+{% extends "base.njk" %}
+{% set titulo %}Área de membro | SALE.ON{% endset %}
+{% set descricao %}Área reservada aos salões e barbearias clientes da SALE.ON.{% endset %}
+{% block classe %}pg-membros{% endblock %}
+{% block schema %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block conteudo %}
+<p class="demo-aviso">Versão de demonstração. Ainda não há login real: o que escreveres fica só neste browser.</p>
+
+<section class="secao membro-entrada" data-entrada>
+  <div class="envolve porta__grelha">
+    <div>
+      <p class="sobretitulo">Área de membro</p>
+      <h1>Entra na tua área SALE.ON.</h1>
+      <p class="lead">Campanhas, tutoriais, materiais e encomendas, reservados aos salões clientes.</p>
+      <p>Ainda não tens acesso? <a href="/area-cliente/#acesso">Pede acesso</a>.</p>
+    </div>
+    <form class="formulario" data-entrar>
+      <label>Nome do salão<input name="salao" required placeholder="Ex.: Salão Exemplo"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <button class="botao" type="submit">Entrar</button>
+      <p class="pequeno">Na versão final recebes uma ligação de acesso no email. A SALE.ON aprova cada conta.</p>
+    </form>
+  </div>
+</section>
+
+<div data-area hidden>
+<section class="heroi heroi--linha membro-topo">
+  <div class="envolve">
+    <p class="sobretitulo">Área de membro</p>
+    <h1>Olá, <span data-salao></span>.</h1>
+    <p class="heroi__lead">O que precisas hoje?</p>
+    <nav class="membro-nav" aria-label="Área de membro">
+      <a href="#lista">A minha lista</a><a href="#campanhas">Campanhas</a><a href="#tutoriais">Tutoriais</a><a href="#materiais">Materiais</a><a href="#historico">Encomendas</a>
+      <button type="button" class="ligacao" data-sair>Sair</button>
+    </nav>
+  </div>
+</section>
+
+<section class="secao membro-alertas" data-alertas hidden>
+  <div class="envolve"><ul class="alertas" data-alertas-lista></ul></div>
+</section>
+
+<section class="secao" id="lista">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="num">01</p><p class="sobretitulo">A minha lista</p><h2>Regista o que precisas. Encomenda depois.</h2></div><p>Vai juntando produtos ao longo da semana. Quando a lista estiver pronta, envia a encomenda de uma vez.</p></div>
+    <div class="lista-grelha">
+      <div>
+        <label class="lista-procura"><span class="escondido">Procurar produto</span><input type="search" data-procura placeholder="Procurar produto para juntar à lista" autocomplete="off"></label>
+        <ul class="lista-resultados" data-resultados></ul>
+        <div data-recomenda hidden>
+          <p class="sobretitulo">Se encomendas isto, vais querer</p>
+          <ul class="lista-resultados" data-recomenda-lista></ul>
+        </div>
+      </div>
+      <div class="lista-caixa">
+        <h3>Lista de encomenda</h3>
+        <p class="lista-vazia" data-vazia>A lista está vazia. Procura um produto e junta-o.</p>
+        <ul class="lista-itens" data-itens></ul>
+        <form name="encomenda-membro" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-encomenda hidden>
+          <input type="hidden" name="form-name" value="encomenda-membro">
+          <p class="escondido"><label>Não preencher <input name="bot-field"></label></p>
+          <input type="hidden" name="salao"><input type="hidden" name="email"><input type="hidden" name="lista">
+          <label>Nota para a SALE.ON (opcional)<textarea name="nota" rows="2"></textarea></label>
+          <button class="botao" type="submit">Enviar encomenda</button>
+          <p class="pequeno">A SALE.ON confirma a encomenda, os preços e a entrega por email.</p>
+        </form>
+        <p class="lista-ok" data-ok hidden>Encomenda enviada. Entramos em contacto para confirmar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao secao--clara" id="campanhas">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="num">02</p><p class="sobretitulo">Campanhas</p><h2>Reservado aos clientes SALE.ON</h2></div></div>
+    <div class="videos">
+      {% for c in membros.campanhas %}
+      <article class="video"><div class="video__corpo"><p class="sobretitulo">{{ c.marca }}{% if c.ate %} · até {{ c.ate }}{% endif %}</p><h3>{{ c.titulo }}</h3><p>{{ c.texto }}</p>{% if c.ligacao %}<a class="ligacao" href="{{ c.ligacao }}">Ver os produtos</a>{% endif %}</div></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="tutoriais">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="num">03</p><p class="sobretitulo">Tutoriais</p><h2>Técnicas e aplicação dos produtos</h2></div><p><a href="/aprender/">Ver todos os tutoriais</a></p></div>
+    <div class="videos">
+      {% for v in videos.videos | limitar_lista(4) %}
+      <article class="video"><div class="video__capa video__capa--breve"><span>{% if v.youtube or v.vimeo %}Ver vídeo{% else %}Em breve{% endif %}</span></div><div class="video__corpo"><p class="sobretitulo">{{ v.marca }} · {{ v.tema }}</p><h3>{{ v.titulo }}</h3><p>{{ v.resumo }}</p></div></article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="secao secao--clara" id="materiais">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="num">04</p><p class="sobretitulo">Materiais</p><h2>Para comunicares no teu salão</h2></div></div>
+    <ul class="materiais">
+      {% for x in membros.materiais %}<li><span class="materiais__tipo">{{ x.tipo }}</span><strong>{{ x.titulo }}</strong>{% if x.ficheiro %}<a class="ligacao" href="{{ x.ficheiro }}" download>Descarregar</a>{% else %}<span class="pequeno">Em breve</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="secao" id="historico">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="num">05</p><p class="sobretitulo">Encomendas</p><h2>Histórico de encomendas</h2></div></div>
+    <div class="breve-caixa"><p class="sobretitulo">Brevemente disponível</p><p>Aqui vais poder ver as tuas encomendas e faturas, repetir uma encomenda e receber sugestões com base no que compras.</p></div>
+  </div>
+</section>
+</div>
+<script src="/assets/js/membros.js?v={{ versao }}" defer></script>
+{% endblock %}

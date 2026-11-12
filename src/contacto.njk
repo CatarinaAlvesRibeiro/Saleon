@@ -1,0 +1,41 @@
+---
+permalink: /contacto/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Contacto | SALE.ON, Cascais{% endset %}
+{% set descricao %}Fala com a SALE.ON: encomendas, orçamentos PAHI, onde encontrar as nossas marcas, formação e parcerias. Cascais, Portugal.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Contacto", url: "/contacto/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Contacto", url: "/contacto/"}]) }}
+    <h1>Fala connosco</h1>
+    <p class="heroi__lead">Encomendas, orçamentos, formação ou onde encontrar as nossas marcas.</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve duas-colunas">
+    <form name="contacto" method="POST" action="/obrigado/" data-netlify="true" netlify-honeypot="bot-field" class="formulario" data-prefill>
+      <input type="hidden" name="form-name" value="contacto">
+      <p class="escondido"><label>Não preencher <input name="bot-field"></label></p>
+      <label>Nome<input name="nome" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Telemóvel<input type="tel" name="telefone" autocomplete="tel"></label>
+      <label>Localidade<input name="localidade"></label>
+      <label>Assunto<input name="assunto" data-param="assunto" required></label>
+      <label>Mensagem<textarea name="mensagem" rows="5" required></textarea></label>
+      <label class="caixa"><input type="checkbox" name="consentimento" required> Aceito a <a href="/privacidade/">política de privacidade</a>.</label>
+      <button class="botao" type="submit">Enviar mensagem</button>
+    </form>
+    <div class="texto-longo">
+      <h2>SALE.ON</h2>
+      <address>{{ site.morada.rua }}<br>{{ site.morada.codigoPostal }} {{ site.morada.localidade }}</address>
+      {% for c in site.contactos %}
+      <p><strong>{{ c.nome }}</strong><br><a href="mailto:{{ c.email }}">{{ c.email }}</a><br><a href="tel:{{ c.telefone | replace(' ', '') }}">{{ c.telefone }}</a></p>
+      {% endfor %}
+      <p><a href="{{ site.social.instagram }}" rel="noopener">Instagram SALE.ON</a> · <a href="{{ site.social.instagramAcademy }}" rel="noopener">SALE.ON Academy</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}

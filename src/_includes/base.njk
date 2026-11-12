@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% set _titulo = (titulo or site.nome) | striptags | trim | tituloSeo %}
+{% set _descricao = (descricao or site.descricao) | striptags | trim | texto | limitar(156) %}
+<title>{{ _titulo }}</title>
+<meta name="description" content="{{ _descricao }}">
+{% set urlCanonico = page.url | absoluto(site.url) %}
+<link rel="canonical" href="{{ urlCanonico }}">
+<link rel="alternate" hreflang="pt-PT" href="{{ urlCanonico }}">
+<link rel="alternate" hreflang="x-default" href="{{ urlCanonico }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="{{ (ogtipo or 'website') | trim }}">
+<meta property="og:site_name" content="{{ site.nome }}">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="{{ _titulo }}">
+<meta property="og:description" content="{{ _descricao }}">
+<meta property="og:url" content="{{ urlCanonico }}">
+<meta property="og:image" content="{{ (ogimagem or (site.ogImage | absoluto(site.url))) | trim }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F3EEE7">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/arimo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css?v={{ versao }}">
+{% block schema %}{% endblock %}
+</head>
+<body class="{% block classe %}{% endblock %}">
+<a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+<header class="topo">
+  <div class="envolve topo__barra">
+    {% set logoSite = "saleon" | logo %}
+    <a class="logo" href="/" aria-label="SALE.ON, página inicial">{% set logoSiteBranco = "saleon-branco" | logo %}{% if logoSite %}<img class="logo__escuro" src="{{ logoSite }}" alt="SALE.ON — Gestão e vendas na beleza" height="44">{% if logoSiteBranco %}<img class="logo__claro" src="{{ logoSiteBranco }}" alt="" aria-hidden="true" height="44">{% endif %}{% else %}SALE<span>.</span>ON{% endif %}</a>
+    <button class="menu-botao" aria-expanded="false" aria-controls="menu" type="button">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <ul>
+        <li class="menu__marcas mega">
+          <a href="/marcas/">Marcas</a>
+          <ul class="submenu">
+            {% for m in catalogo.marcas %}{% set lgm = m.slug | logo %}<li><a class="submenu__marca" href="{{ m.url }}">{% if lgm %}<img src="{{ lgm }}" alt="{{ m.nome }}">{% endif %}<span><strong{% if lgm %} class="escondido"{% endif %}>{{ m.nomeCurto }}</strong><small>{{ m.tagline }}</small></span></a></li>{% endfor %}
+          </ul>
+        </li>
+        <li class="menu__marcas mega">
+          <a href="/categorias/">Categorias</a>
+          <ul class="submenu">
+            {% for c in catalogo.categorias %}<li><a href="{{ c.url }}"><strong>{{ c.nome }}</strong><small>{{ c.pergunta }}</small></a></li>{% endfor %}
+          </ul>
+        </li>
+        <li><a href="/loja/">Loja online</a></li>
+        <li><a href="/profissionais/">Para salões</a></li>
+        <li class="menu__sub"><a href="/academy/">Academy</a><ul class="submenu"><li><a href="/academy/">Formações e eventos</a></li><li><a href="/aprender/">Aprender</a></li><li><a href="/galeria/">Galeria</a></li><li><a href="/modelos/">Modelos</a></li><li><a href="/embaixadores/">Embaixadores</a></li></ul></li>
+        <li><a href="/sobre/">Sobre</a></li>
+        <li><a class="menu__pesquisa" href="/pesquisa/" aria-label="Pesquisar produtos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a></li>
+        <li><a class="menu__cliente" href="/area-cliente/">Área de cliente</a></li>
+        <li><a class="menu__cta" href="/contacto/">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+{% block conteudo %}{% endblock %}
+</main>
+
+<footer class="rodape">
+  <div class="envolve rodape__grelha">
+    <div>
+      {% set logoBranco = "saleon-branco" | logo %}<p class="logo logo--claro">{% if logoBranco %}<img src="{{ logoBranco }}" alt="SALE.ON" height="56">{% else %}SALE<span>.</span>ON{% endif %}</p>
+      <p class="rodape__texto">Distribuidor exclusivo em Portugal de marcas profissionais para salões e barbearias, com formação e apoio ao negócio do salão.</p>
+    </div>
+    <div>
+      <p class="rodape__titulo">Marcas</p>
+      <ul>{% for m in catalogo.marcas %}<li><a href="{{ m.url }}">{{ m.nome }}</a></li>{% endfor %}</ul>
+    </div>
+    <div>
+      <p class="rodape__titulo">SALE.ON</p>
+      <ul>
+        <li><a href="/categorias/">Comprar por categoria</a></li>
+        <li><a href="/loja/">Loja online</a></li>
+        <li><a href="/profissionais/">Para salões</a></li>
+        <li><a href="/area-cliente/">Área de cliente</a></li>
+        <li><a href="/embaixadores/">Embaixadores</a></li>
+        <li><a href="/academy/">Academy e eventos</a></li>
+        <li><a href="/aprender/">Aprender</a></li>
+        <li><a href="/galeria/">Galeria</a></li>
+        <li><a href="/modelos/">Modelos</a></li>
+        <li><a href="/encontrar/">Encontra o produto certo</a></li>
+        <li><a href="/sobre/">Sobre nós</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="rodape__titulo">Contacto</p>
+      <address>
+        {{ site.morada.rua }}<br>{{ site.morada.codigoPostal }} {{ site.morada.localidade }}<br>
+        {% for c in site.contactos %}<a href="tel:{{ c.telefone | replace(' ', '') }}">{{ c.telefone }}</a><br>{% endfor %}
+      </address>
+      <p><a href="{{ site.social.instagram }}" rel="noopener">Instagram</a> · <a href="{{ site.social.instagramAcademy }}" rel="noopener">Academy</a></p>
+    </div>
+  </div>
+  <div class="envolve rodape__base">
+    <p>© {{ ano }} SALE.ON. Todos os direitos reservados.</p>
+    <p><a href="/privacidade/">Política de privacidade</a> · <a href="/termos-loja/">Termos da loja</a> · <a href="/cookies/">Cookies</a></p>
+  </div>
+</footer>
+<div class="ajuda" data-ajuda>
+  <div class="ajuda__painel" id="ajuda-painel" hidden>
+    <div class="ajuda__topo"><strong>Como podemos ajudar?</strong><button type="button" class="ajuda__fechar" data-ajuda-fechar aria-label="Fechar">×</button></div>
+    <div class="ajuda__corpo" data-ajuda-corpo>
+      {% for t in faq %}<details class="ajuda__tema"{% if loop.first %} open{% endif %}><summary>{{ t.tema }}</summary>
+        {% for q in t.perguntas %}<details class="ajuda__q"><summary>{{ q.p }}</summary><p>{{ q.r }}</p><a href="{{ q.link }}">{{ q.rotulo }} →</a></details>{% endfor %}
+      </details>{% endfor %}
+    </div>
+    <a class="ajuda__wa" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Olá SALE.ON, preciso de ajuda.' | urlencode }}" target="_blank" rel="noopener">Falar connosco no WhatsApp</a>
+  </div>
+  <button type="button" class="ajuda__botao" data-ajuda-abrir aria-expanded="false" aria-controls="ajuda-painel"><span aria-hidden="true">?</span> Ajuda</button>
+  <a class="whatsapp" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Olá SALE.ON, vim pelo site.' | urlencode }}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.5L3 29l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.5c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.3 10 10.1 5.3 16 5.3S26.7 10 26.7 15.9 21.9 26.5 16 26.5zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg></a>
+</div>
+<script src="/assets/js/site.js?v={{ versao }}" defer></script>
+</body>
+</html>

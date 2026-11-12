@@ -1,0 +1,33 @@
+{
+ "_nota": "Um vídeo por entrada. Campo youtube = ID do vídeo (ex.: dQw4w9WgXcQ) ou vimeo = ID. Sem vídeo, o cartão aparece como Em breve.",
+ "videos": [
+  {
+   "titulo": "MANGALA: cuidado e cor num só passo",
+   "marca": "GLYNT",
+   "tema": "Cor",
+   "resumo": "Escolha do tom, tempo de pose e mistura de tons.",
+   "ligacao": "/marcas/glynt/mangala/"
+  },
+  {
+   "titulo": "CØR.color: mistura, aplicação e cobertura de brancos",
+   "marca": "O&M",
+   "tema": "Cor",
+   "resumo": "Coloração sem amoníaco, sem PPD e sem resorcinol.",
+   "ligacao": "/marcas/original-mineral/cor-color/"
+  },
+  {
+   "titulo": "Hair Serum com derma stamp",
+   "marca": "CALECIM®",
+   "tema": "Couro cabeludo",
+   "resumo": "O programa de 6 semanas, passo a passo.",
+   "ligacao": "/marcas/calecim/cabelo/"
+  },
+  {
+   "titulo": "Barbear clássico",
+   "marca": "Graham Hill",
+   "tema": "Barbearia",
+   "resumo": "Preparação, barbear e cuidado final.",
+   "ligacao": "/marcas/graham-hill/barbear-barba/"
+  }
+ ]
+}

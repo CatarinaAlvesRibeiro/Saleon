@@ -1,0 +1,146 @@
+---
+permalink: /
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set glynt = catalogo.marcas[0] %}
+{% set titulo %}SALE.ON | Marcas profissionais de cabeleireiro em Portugal{% endset %}
+{% set descricao %}{{ site.descricao }}{% endset %}
+{% block classe %}pg-capa{% endblock %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"SALE.ON","url":"{{ site.url }}","logo":"{{ '/assets/img/logo-saleon.png' | absoluto(site.url) }}","description":{{ site.descricao | json | safe }},"address":{"@type":"PostalAddress","streetAddress":{{ site.morada.rua | json | safe }},"postalCode":"{{ site.morada.codigoPostal }}","addressLocality":"{{ site.morada.localidade }}","addressCountry":"PT"},"contactPoint":[{% for c in site.contactos %}{"@type":"ContactPoint","telephone":"{{ c.telefone | replace(' ', '') }}","email":"{{ c.email }}","contactType":"sales","areaServed":"PT","availableLanguage":"Portuguese"}{% if not loop.last %},{% endif %}{% endfor %}],"sameAs":["{{ site.social.instagram }}","{{ site.social.instagramAcademy }}"],"foundingDate":"2023","knowsAbout":["GLYNT","O&M Original & Mineral","Graham Hill","CALECIM","PAHI","coloração profissional","produtos para cabeleireiro"],"brand":[{% for b in catalogo.marcas %}{"@type":"Brand","name":{{ b.nome | json | safe }},"url":"{{ b.url | absoluto(site.url) }}"}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"SALE.ON","alternateName":["SALEON","Sale On","SALE.ON Portugal"],"url":"{{ site.url }}","inLanguage":"pt-PT","publisher":{"@type":"Organization","name":"SALE.ON"},"potentialAction":{"@type":"SearchAction","target":"{{ site.url }}/pesquisa/?q={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% set primeiro = true %}{% for t in faq %}{% for q in t.perguntas %}{% if not (loop.first and loop.parentLoop is undefined) %}{% endif %}{"@type":"Question","name":{{ q.p | json | safe }},"acceptedAnswer":{"@type":"Answer","text":{{ q.r | json | safe }}}}{% if not (loop.last and t == faq | last) %},{% endif %}{% endfor %}{% endfor %}]}
+</script>
+{% endblock %}
+{% block conteudo %}
+{% set glynt = catalogo.marcas | marcaPorSlug("glynt") %}
+{% set om = catalogo.marcas | marcaPorSlug("original-mineral") %}
+{% set cal = catalogo.marcas | marcaPorSlug("calecim") %}
+{% set gh = catalogo.marcas | marcaPorSlug("graham-hill") %}
+<section class="capa">
+  <picture>
+    <source media="(max-width: 700px)" srcset="/assets/img/fotos/equipa-mobile.webp">
+    <img class="capa__img" src="/assets/img/fotos/equipa.webp" alt="Ricardo Ferreira e Francisco Vieira, fundadores da SALE.ON" width="2400" height="1350" fetchpriority="high">
+  </picture>
+  <div class="capa__texto">
+    <div class="envolve">
+      <p class="sobretitulo">Distribuidor exclusivo em Portugal</p>
+      <h1><a class="capa__ligacao" href="#universo">Explora as nossas marcas.</a><a class="capa__ligacao tom3" href="/academy/">Inscreve-te em formações.</a><a class="capa__ligacao" href="/loja/">Compra online.</a></h1>
+    </div>
+  </div>
+</section>
+
+<section class="secao universo" id="universo">
+  <div class="envolve">
+    <div class="secao__topo">
+      <div><p class="num">01</p><p class="sobretitulo">Marcas</p><h2>Universo SALE.ON</h2></div>
+      <p>Cinco marcas, um parceiro. Cuidado, cor, grooming, couro cabeludo e mobiliário para o salão.</p>
+    </div>
+    <div class="universo__grelha">
+      {% for b in catalogo.marcas %}{% set lg = b.slug | logo %}
+      <a class="mundo" href="{{ b.url }}" style="--c: {{ b.cor }}">
+        {% set fu = ("universo-" + b.slug) | foto %}{{ m.visual(fu or (b.slug | foto), b.imagens, b.cor, b.nomeCurto) }}
+        <span class="mundo__logo">{% if lg %}<img src="{{ lg }}" alt="{{ b.nome }}" loading="lazy">{% else %}<span class="texto-logo">{{ b.nomeCurto }}</span>{% endif %}</span>
+        <span class="mundo__corpo">
+          <span class="mundo__selo">{% if b.loja or b.slug == "graham-hill" %}Loja online{% elif b.orcamento %}Orçamento à medida{% else %}Profissional{% endif %}</span>
+          <p>{{ b.tagline }}</p>
+          <span class="ligacao">Ver marca</span>
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="envolve">
+    <div class="secao__topo">
+      <div><p class="num">02</p><p class="sobretitulo">Categorias</p><h2>O que procuras?</h2></div>
+      <p>Responde a duas perguntas ou escolhe uma categoria. Também podes <a href="/pesquisa/">pesquisar pelo nome</a>.</p>
+    </div>
+    {% include "assistente.njk" %}
+    {% include "grelha-categorias.njk" %}
+  </div>
+</section>
+
+<section class="secao secao--clara">
+  <div class="envolve">
+    <div class="secao__topo">
+      <div><p class="num">03</p><p class="sobretitulo">Em destaque</p><h2>Cuidado e cor</h2></div>
+      <p>GLYNT para rentabilizar o salão. O&amp;M para uma cor sem amoníaco, sem PPD e sem resorcinol.</p>
+    </div>
+  </div>
+  <div class="envolve faixas">
+    <div class="faixa" style="--c: {{ glynt.cor }}">
+      <div class="faixa__texto">
+        {% set gb = "glynt-branco" | logo %}{% if gb %}<img src="{{ gb }}" alt="GLYNT" class="faixa__logo">{% endif %}
+        <p class="sobretitulo">Alemanha · desde 1954</p>
+        <h2>Qualidade alemã de topo, a um preço que rentabiliza o salão.</h2>
+        <p>Produtos altamente premium em qualidade e resultados, mas acessíveis face à qualidade que demonstram. Uma das melhores opções para rentabilizar o serviço e a revenda.</p>
+        <div class="botoes"><a class="botao botao--claro" href="{{ glynt.url }}">Conhecer a GLYNT</a></div>
+      </div>
+      {{ m.visual("faixa-glynt" | foto, glynt.imagens, glynt.cor) }}
+    </div>
+    <div class="faixa" style="--c: {{ om.cor }}">
+      {{ m.visual("original-mineral-modelo" | foto, om.imagens, om.cor) }}
+      <div class="faixa__texto">
+        {% set omb = "original-mineral-branco" | logo %}{% if omb %}<img src="{{ omb }}" alt="O&amp;M" class="faixa__logo">{% endif %}
+        <p class="sobretitulo">Austrália · Cor limpa</p>
+        <h2>Cor sem amoníaco, PPD nem resorcinol.</h2>
+        <p>A CØR.color é a coloração limpa australiana: menos odor, menos irritação e cobertura de brancos até ao nível 9.</p>
+        <div class="botoes"><a class="botao botao--claro" href="{{ om.url }}cor-color/">Conhecer a CØR.color</a><a class="botao botao--contorno" href="{{ om.url }}">Ver a marca</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="envolve">
+    <div class="secao__topo">
+      <div><p class="num">04</p><p class="sobretitulo">Loja online</p><h2>Compra online</h2></div>
+      <p>CALECIM® e Graham Hill, com envio para todo o país.</p>
+    </div>
+    <div class="faixas">
+      <div class="faixa" style="--c: #1E1E1E">
+        <div class="faixa__texto">
+          {% set cab = "calecim-branco" | logo %}{% if cab %}<img src="{{ cab }}" alt="CALECIM®" class="faixa__logo">{% endif %}
+          <p class="sobretitulo">Cabelo · PTT-6®</p>
+          <h2>Ciência para o cabelo fino, frágil e com queda.</h2>
+          <p>Cabelo e couro cabeludo com PTT-6®, o ativo patenteado com mais de 3.000 proteínas. Hair Serum, shampoo, condicionador, cleanser e mist.</p>
+          <div class="botoes"><a class="botao botao--claro" href="/loja/#calecim">Comprar CALECIM®</a><a class="botao botao--contorno" href="{{ cal.url }}">Conhecer a marca</a></div>
+        </div>
+        {{ m.visual("faixa-calecim" | foto, cal.imagens, cal.cor) }}
+      </div>
+      <div class="faixa" style="--c: {{ gh.cor }}">
+        {{ m.visual("faixa-graham-hill" | foto, gh.imagens, gh.cor) }}
+        <div class="faixa__texto">
+          {% set ghb = "graham-hill-branco" | logo %}{% if ghb %}<img src="{{ ghb }}" alt="Graham Hill" class="faixa__logo">{% endif %}
+          <p class="sobretitulo">Grooming masculino</p>
+          <h2>Barbear, barba e styling com espírito de corrida.</h2>
+          <p>Feita na Alemanha, pelo mesmo fabricante da GLYNT. Para barbearias e para o homem que cuida de si.</p>
+          <div class="botoes"><a class="botao botao--claro" href="/loja/#graham-hill">Comprar Graham Hill</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao secao--clara">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="num">05</p><p class="sobretitulo">Mais do que produtos</p><h2>Um parceiro para o teu salão</h2></div></div>
+    <ul class="servicos">
+      <li><h3>Formação</h3><p>SALE.ON Academy: técnica, cor e tendências, com formadores e embaixadores das marcas.</p></li>
+      <li><h3>Apoio técnico</h3><p>Acompanhamento no salão, das primeiras colorações à conversão de fórmulas.</p></li>
+      <li><h3>Marketing</h3><p>Materiais, conteúdos e campanhas para o salão comunicar com os clientes.</p></li>
+      <li><h3>Gestão</h3><p>Consultoria para aumentar a faturação do serviço e da revenda.</p></li>
+    </ul>
+    <div class="botoes"><a class="botao" href="/profissionais/">Trabalhar com a SALE.ON</a><a class="botao botao--contorno-escuro" href="/academy/">Ver a Academy</a><a class="botao botao--contorno-escuro" href="/embaixadores/">Embaixadores</a></div>
+  </div>
+</section>
+{% endblock %}

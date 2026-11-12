@@ -1,0 +1,36 @@
+{
+  "nome": "SALE.ON",
+  "url": "https://www.saleon.pt",
+  "lang": "pt-PT",
+  "descricao": "SALE.ON: distribuidor exclusivo em Portugal de marcas profissionais para salões de cabeleireiro e barbearias. GLYNT, O&M, Graham Hill, CALECIM® e PAHI, com formação e apoio ao negócio do salão.",
+  "razaoSocial": "SALE.ON, Unipessoal Lda",
+  "nif": "517862107",
+  "morada": {
+    "rua": "Avenida Dr. Francisco Lucas Pires, n.º 255, r/c esq.",
+    "codigoPostal": "2775-633",
+    "localidade": "Carcavelos",
+    "pais": "PT"
+  },
+  "contactos": [
+    {
+      "nome": "Ricardo Ferreira",
+      "email": "ricardo.ferreira@saleon.pt",
+      "telefone": "+351 938 039 598"
+    },
+    {
+      "nome": "Francisco Vieira",
+      "email": "francisco.vieira@saleon.pt",
+      "telefone": "+351 937 157 327"
+    }
+  ],
+  "emailLoja": "ricardo.ferreira@saleon.pt",
+  "social": {
+    "instagram": "https://www.instagram.com/saleon.portugal/",
+    "instagramAcademy": "https://www.instagram.com/saleon.academy/"
+  },
+  "ogImage": "/assets/img/og-saleon.jpg",
+  "whatsapp": "351938039598",
+  "areaCliente": {
+    "url": ""
+  }
+}

@@ -1,0 +1,69 @@
+---
+permalink: /sobre/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Sobre a SALE.ON | Parceiro de negócio dos salões em Portugal{% endset %}
+{% set descricao %}A SALE.ON ajuda os profissionais de cabeleireiro a aumentar a faturação, com marcas exclusivas, formação, marketing, eventos e apoio à gestão do salão.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Sobre", url: "/sobre/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Sobre", url: "/sobre/"}]) }}
+    <h1>Sobre a SALE.ON</h1>
+    <p class="heroi__lead">O parceiro que pensa o negócio do salão contigo.</p>
+  </div>
+</section>
+<section class="manifesto">
+  <div class="manifesto__foto"><img src="/assets/img/fotos/equipa.webp" alt="Ricardo Ferreira e Francisco Vieira, fundadores da SALE.ON" width="2400" height="1350" loading="lazy"></div>
+  <div class="manifesto__texto">
+    <p class="sobretitulo">Manifesto</p>
+    <p class="manifesto__frase">Um salão não precisa de mais produtos.</p>
+    <p class="manifesto__frase">Precisa das marcas certas.</p>
+    <p class="manifesto__frase">De formação que se aplica no dia seguinte.</p>
+    <p class="manifesto__frase">E de um parceiro que pensa o negócio contigo.</p>
+    <p class="manifesto__assina">Ricardo Ferreira e Francisco Vieira<span>Fundadores da SALE.ON</span></p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="sobretitulo">Como trabalhamos</p><h2>Marcas, formação e negócio</h2></div></div>
+    <ul class="capitulos">
+      <li><p class="num">01</p><h3>Marcas</h3><p>Representamos em exclusivo GLYNT, O&amp;M, Graham Hill, CALECIM® e PAHI. Escolhemos marcas que dão resultado e margem ao salão.</p><a class="ligacao" href="/marcas/">Ver as marcas</a></li>
+      <li><p class="num">02</p><h3>Formação</h3><p>SALE.ON Academy e embaixadores: técnica, cor e tendências, com quem trabalha as marcas todos os dias.</p><a class="ligacao" href="/academy/">Ver a Academy</a></li>
+      <li><p class="num">03</p><h3>Negócio</h3><p>Consultoria, marketing, eventos e apoio à gestão, para faturar mais no serviço e na revenda.</p><a class="ligacao" href="/profissionais/">Trabalhar com a SALE.ON</a></li>
+    </ul>
+  </div>
+</section>
+<section class="secao percurso-seccao">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="sobretitulo">O percurso</p><h2>Desde 2023, a partir pedra.</h2></div></div>
+    <ol class="percurso" data-percurso>
+      {% for x in percurso %}
+      <li class="percurso__passo{% if x.foto %} percurso__passo--foto{% endif %}">
+        <span class="percurso__num">{{ loop.index }}</span>
+        <div class="percurso__cartao">
+          <p class="percurso__data">{{ x.data }}</p>
+          <h3>{{ x.titulo }}</h3>
+          <p>{{ x.texto }}</p>
+          {% if x.foto %}<img src="/assets/img/percurso/{{ x.foto }}.webp" alt="{{ x.titulo }}, {{ x.data }}" loading="lazy">{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+<section class="secao secao--clara">
+  <div class="envolve duas-colunas">
+    <div class="texto-longo">
+      <h2>Desde 2023</h2>
+      <p class="lead">A SALE.ON nasceu em 2023 para ajudar os profissionais de cabeleireiro a aumentar a faturação de forma estratégica, sem perder a qualidade e a exclusividade dos serviços.</p>
+      <p>A nossa missão é ser um parceiro de confiança, sempre ao lado dos profissionais que querem inovar, crescer e diferenciar-se no mercado português.</p>
+    </div>
+    <ul class="pilares">
+      <li><h3>Missão</h3><p>Ajudar os profissionais da beleza a faturar mais e a rentabilizar melhor, com produtos de alta qualidade e uma comunidade próxima.</p></li>
+      <li><h3>Visão</h3><p>Ser a parceira de referência para salões e cabeleireiros em Portugal, com uma cultura de exclusividade, transparência e qualidade.</p></li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

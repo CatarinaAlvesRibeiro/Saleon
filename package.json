@@ -1,0 +1,15 @@
+{
+  "name": "saleon-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "imagens": "node scripts/imagens.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.0.0",
+    "sharp": "^0.33.5"
+  },
+  "type": "module",
+  "private": true
+}

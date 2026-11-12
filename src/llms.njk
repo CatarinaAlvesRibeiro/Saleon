@@ -1,0 +1,44 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# SALE.ON
+
+> A SALE.ON é o distribuidor exclusivo em Portugal das marcas profissionais GLYNT, O&M (Original & Mineral), Graham Hill, CALECIM® e PAHI. Fornece salões de cabeleireiro, barbearias e clínicas, com formação (SALE.ON Academy) e apoio ao negócio do salão. Vende online ao público as marcas CALECIM® e Graham Hill.
+
+Factos principais:
+- Empresa: SALE.ON, fundada em 2023 por Ricardo Ferreira e Francisco Vieira.
+- Morada: {{ site.morada.rua }}, {{ site.morada.codigoPostal }} {{ site.morada.localidade }}, Portugal.
+- Contacto: {% for c in site.contactos %}{{ c.nome | safe }}, {{ c.telefone }}, {{ c.email }}{% if not loop.last %}; {% endif %}{% endfor %}.
+- Língua do site: português de Portugal.
+- GLYNT e O&M são marcas profissionais vendidas através de salões. CALECIM® e Graham Hill têm loja online em {{ "/loja/" | absoluto(site.url) }}.
+- A O&M CØR.color é uma coloração sem amoníaco, sem PPD e sem resorcinol.
+- A CALECIM® em Portugal está disponível na gama de cabelo e couro cabeludo, com o ativo PTT-6®. As recomendações não dispensam consulta na clínica, no dermatologista ou no salão.
+
+## Marcas
+{% for m in catalogo.marcas %}- [{{ m.nome | safe }}]({{ m.url | absoluto(site.url) }}): {{ m.tagline | safe }} {{ m.resumo | safe }}
+{% endfor %}
+## Linhas de produto
+{% for i in catalogo.linhas %}- [{{ i.marca.nomeCurto | safe }} {{ i.linha.nome | safe }}]({{ i.linha.url | absoluto(site.url) }}): {{ i.linha.subtitulo | safe }} ({{ i.linha.produtos.length }} produtos)
+{% endfor %}
+## Categorias
+{% for c in catalogo.categorias %}- [{{ c.nome | safe }}]({{ c.url | absoluto(site.url) }}): {{ c.pergunta | safe }}
+{% endfor %}
+## Páginas principais
+- [Loja online]({{ "/loja/" | absoluto(site.url) }}): compra de CALECIM® e Graham Hill, com envio para Portugal.
+- [Encontra o produto certo]({{ "/encontrar/" | absoluto(site.url) }}): assistente que indica o produto por necessidade.
+- [Para salões]({{ "/profissionais/" | absoluto(site.url) }}): condições profissionais para salões e barbearias.
+- [Área de cliente]({{ "/area-cliente/" | absoluto(site.url) }}): área reservada aos salões clientes.
+- [SALE.ON Academy]({{ "/academy/" | absoluto(site.url) }}): formações e eventos para cabeleireiros.
+- [Aprender]({{ "/aprender/" | absoluto(site.url) }}): tutoriais de técnicas e aplicação de produtos.
+- [Modelos]({{ "/modelos/" | absoluto(site.url) }}): candidatura a modelo de cabelo em formações e eventos.
+- [Embaixadores]({{ "/embaixadores/" | absoluto(site.url) }}): cabeleireiros embaixadores SALE.ON.
+- [Sobre]({{ "/sobre/" | absoluto(site.url) }}): quem é a SALE.ON.
+- [Contacto]({{ "/contacto/" | absoluto(site.url) }})
+
+## Perguntas frequentes
+{% for t in faq %}{% for q in t.perguntas %}- {{ q.p | safe }} {{ q.r | safe }}
+{% endfor %}{% endfor %}
+## Dados
+- [Sitemap]({{ "/sitemap.xml" | absoluto(site.url) }})
+- [Índice de produtos em JSON]({{ "/pesquisa.json" | absoluto(site.url) }})

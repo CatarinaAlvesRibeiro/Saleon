@@ -1,0 +1,22 @@
+---
+permalink: /categorias/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Comprar por categoria | Produtos profissionais para salões | SALE.ON{% endset %}
+{% set descricao %}Encontra o que o teu salão precisa por categoria: coloração, descoloração, cuidado capilar, couro cabeludo, styling, barbearia, pele, ferramentas e mobiliário. Marcas GLYNT, O&M, Graham Hill, CALECIM® e PAHI.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Categorias", url: "/categorias/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Categorias", url: "/categorias/"}]) }}
+    <h1>O que procuras?<span class="tom2">Escolhe por categoria.</span></h1>
+    <p class="heroi__lead">Todas as marcas SALE.ON organizadas pelo que o salão precisa no dia a dia.</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    {% include "grelha-categorias.njk" %}
+  </div>
+</section>
+{% endblock %}

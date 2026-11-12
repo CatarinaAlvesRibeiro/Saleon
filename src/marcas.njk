@@ -1,0 +1,32 @@
+---
+permalink: /marcas/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Marcas profissionais para salões em Portugal | SALE.ON{% endset %}
+{% set descricao %}As marcas do universo SALE.ON em Portugal: GLYNT (Alemanha), O&M Original & Mineral (Austrália), Graham Hill, CALECIM® e PAHI Barcelona. Catálogo completo por linha e produto.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Marcas", url: "/marcas/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Marcas", url: "/marcas/"}]) }}
+    <h1>As marcas SALE.ON</h1>
+    <p class="heroi__lead">Cinco marcas, um parceiro. Explora cada marca, linha a linha e produto a produto.</p>
+  </div>
+</section>
+{% for b in catalogo.marcas %}{% set lg = b.slug | logo %}
+<section class="secao marca-bloco {% if loop.index is even %}secao--bege{% endif %}" style="--c: {{ b.cor }}">
+  <div class="envolve marca-bloco__grelha">
+    <a class="marca-bloco__montra" href="{{ b.url }}" aria-label="{{ b.nome }}">{% set fu = ("universo-" + b.slug) | foto %}{{ m.visual(fu or (b.slug | foto), b.imagens, b.cor, b.nomeCurto) }}</a>
+    <div>
+      <p class="sobretitulo">{{ b.pais }}{% if b.desde %} · desde {{ b.desde }}{% endif %}</p>
+      <h2 class="marca-bloco__nome">{% if lg %}<img class="logo-marca" src="{{ lg }}" alt="{{ b.nome }}" loading="lazy"><span class="escondido">{{ b.nome }}</span>{% else %}{{ b.nome }}{% endif %}</h2>
+      <p class="lead">{{ b.tagline }}</p>
+      <p>{{ b.resumo }}</p>
+      <div class="familias">{% for g in b.grupos %}<div class="familia">{% if b.grupos.length > 1 %}<p class="familia__nome">{{ g.nome }}</p>{% endif %}<ul class="pilulas">{% for l in g.linhas %}<li><a href="{{ l.url }}">{{ l.nome }}</a></li>{% endfor %}</ul></div>{% endfor %}</div>
+      <div class="botoes"><a class="botao" href="{{ b.url }}">Ver a marca</a>{% if b.loja %}<a class="botao botao--contorno-escuro" href="/loja/">Comprar online</a>{% elif b.orcamento %}<a class="botao botao--contorno-escuro" href="/contacto/?assunto=Orçamento {{ b.nomeCurto }}">Pedir orçamento</a>{% endif %}</div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

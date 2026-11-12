@@ -1,0 +1,50 @@
+---
+permalink: /area-cliente/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Área de cliente para salões e barbearias | SALE.ON{% endset %}
+{% set descricao %}Área reservada aos salões e barbearias clientes da SALE.ON: encomendas, faturas, campanhas, novos produtos e tutoriais num só login.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Área de cliente", url: "/area-cliente/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Área de cliente", url: "/area-cliente/"}]) }}
+    <p class="sobretitulo">Para salões e barbearias</p>
+    <h1>Área de cliente</h1>
+    <p class="heroi__lead">O teu salão, as tuas encomendas e as tuas condições, num só login.</p>
+    <div class="botoes">
+      <a class="botao" href="/membros/">Entrar</a>
+      <a class="botao botao--contorno-escuro" href="#acesso">Pedir acesso</a>
+    </div>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="sobretitulo">O que encontras</p><h2>Tudo o que o teu salão precisa da SALE.ON</h2></div></div>
+    <ul class="capitulos capitulos--4">
+      <li><p class="num">01</p><h3>A tua lista</h3><p>Regista os produtos que precisas ao longo da semana e encomenda de uma vez.</p></li>
+      <li><p class="num">02</p><h3>Alertas e sugestões</h3><p>Lembretes de stock e produtos que combinam com o que encomendas.</p></li>
+      <li><p class="num">03</p><h3>Campanhas</h3><p>Ofertas e novidades reservadas aos clientes SALE.ON.</p></li>
+      <li><p class="num">04</p><h3>Formação</h3><p>Tutoriais, materiais de marketing e inscrição em formações.</p></li>
+    </ul>
+  </div>
+</section>
+<section class="secao secao--clara" id="acesso">
+  <div class="envolve formulario-envolve">
+    <h2>Pedir acesso</h2>
+    <p>Para salões, barbearias e clínicas que já trabalham com a SALE.ON. Ainda não és cliente? <a href="/profissionais/">Pede condições profissionais</a>.</p>
+    <form name="area-cliente" method="POST" action="/obrigado/" data-netlify="true" netlify-honeypot="bot-field" class="formulario">
+      <input type="hidden" name="form-name" value="area-cliente">
+      <p class="escondido"><label>Não preencher <input name="bot-field"></label></p>
+      <label>Nome do salão ou barbearia<input name="salao" required></label>
+      <label>O teu nome<input name="nome" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Telemóvel<input type="tel" name="telefone" autocomplete="tel"></label>
+      <label>NIF do salão (opcional)<input name="nif" inputmode="numeric"></label>
+      <label class="caixa"><input type="checkbox" name="consentimento" required> Aceito a <a href="/privacidade/">política de privacidade</a>.</label>
+      <button class="botao" type="submit">Pedir acesso</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,612 @@
+{
+  "slug": "graham-hill",
+  "nome": "Graham Hill",
+  "ordem": 3,
+  "pais": "Alemanha",
+  "desde": "2017",
+  "cor": "#122C4D",
+  "tagline": "Grooming masculino premium, com espírito de corrida.",
+  "resumo": "Linha premium de cuidado masculino: cabelo, styling, barbear e barba. Uma homenagem ao piloto britânico Graham Hill, produzida na Alemanha pelo fabricante da GLYNT.",
+  "intro": [
+    "A Graham Hill é uma homenagem ao piloto e cavalheiro britânico Graham Hill. Cada produto tem o nome de um circuito ou de uma curva lendária: Brooklands, Mulsanne, Malmedy, Casino.",
+    "É produzida na Alemanha pela Hans Conzen Kosmetik, a mesma casa da GLYNT, e foi lançada em 2017 para homens que valorizam estilo, qualidade e uma imagem cuidada. Trabalha com cabeleireiros e barbearias."
+  ],
+  "pilares": [
+    {
+      "titulo": "Feita na Alemanha",
+      "texto": "Do mesmo fabricante da GLYNT, com a mesma exigência de qualidade."
+    },
+    {
+      "titulo": "Para barbearias e salões",
+      "texto": "Cabelo, styling, barbear e barba numa só linha, com tamanhos profissionais de 1 litro."
+    },
+    {
+      "titulo": "Revenda que funciona",
+      "texto": "Embalagem e nomes com personalidade, conjuntos e tamanhos de viagem para presente."
+    }
+  ],
+  "seo": {
+    "title": "Graham Hill em Portugal | Grooming masculino premium para barbearias",
+    "description": "Graham Hill: cuidado de cabelo, styling, barbear e barba para homem, feito na Alemanha. Distribuição SALE.ON para barbearias e salões em Portugal."
+  },
+  "fonte": "https://www.grahamhill-cosmetics.com",
+  "linhas": [
+    {
+      "slug": "limpeza-vitalidade",
+      "nome": "Cleansing & Vitalising",
+      "grupo": "Cabelo e corpo",
+      "subtitulo": "Limpeza e vitalidade",
+      "descricao": "Shampoos, gel de banho e tónico de couro cabeludo para o cuidado diário.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "BRICKYARD 500 Superfresh Shampoo",
+          "tamanhos": [
+            "100 ml",
+            "250 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo refrescante de uso diário com cafeína e chá verde.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 9
+            },
+            {
+              "tamanho": "250 ml",
+              "preco": 16
+            },
+            {
+              "tamanho": "1000 ml",
+              "preco": 49
+            }
+          ],
+          "preco": 9
+        },
+        {
+          "nome": "STOWE Wax Out Charcoal Shampoo",
+          "tamanhos": [
+            "100 ml",
+            "250 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo de carvão para limpeza profunda de resíduos de styling.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 9
+            },
+            {
+              "tamanho": "250 ml",
+              "preco": 16
+            },
+            {
+              "tamanho": "1000 ml",
+              "preco": 49
+            }
+          ],
+          "preco": 9
+        },
+        {
+          "nome": "ABBEY Refreshing Hair & Body Wash",
+          "tamanhos": [
+            "100 ml",
+            "250 ml",
+            "1000 ml"
+          ],
+          "descricao": "Gel suave para cabelo e corpo, com mentol.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 9
+            },
+            {
+              "tamanho": "250 ml",
+              "preco": 16
+            },
+            {
+              "tamanho": "1000 ml",
+              "preco": 49
+            }
+          ],
+          "preco": 9
+        },
+        {
+          "nome": "FARM Scalp Energy Tonic",
+          "tamanhos": [
+            "100 ml",
+            "1000 ml"
+          ],
+          "descricao": "Tónico estimulante do couro cabeludo com extrato de salgueiro.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        }
+      ]
+    },
+    {
+      "slug": "styling",
+      "nome": "Styling & Finish",
+      "grupo": "Styling",
+      "subtitulo": "Fixação, textura e acabamento",
+      "descricao": "Pomadas, pastas, cremes, gel e sprays para todos os looks, do mate ao brilho.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "CHAPEL Volume Up Pomade",
+          "tamanhos": [
+            "75 ml"
+          ],
+          "descricao": "Pomada de fixação forte para volume, brilho e definição.",
+          "precos": [
+            {
+              "tamanho": "75 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "LESMO Moulding Clay",
+          "tamanhos": [
+            "75 ml"
+          ],
+          "descricao": "Argila flexível com aderência e acabamento acetinado mate.",
+          "precos": [
+            {
+              "tamanho": "75 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "HANGAR Rough Paste",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Pasta mate para looks naturais com textura leve.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "CLUB Defining Cream",
+          "tamanhos": [
+            "75 ml"
+          ],
+          "descricao": "Creme definidor para textura e fixação natural.",
+          "precos": [
+            {
+              "tamanho": "75 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "BECKETTS Shaper Gel",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Gel de fixação forte, também para efeito molhado.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "BROOKLANDS Styling Treatment",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Creme de styling com manteiga de karité, para fixação leve e natural.",
+          "precos": [
+            {
+              "tamanho": "150 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "COLIN Extra Dry Texture Spray",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Spray de textura seca para volume, aderência e acabamento mate."
+        },
+        {
+          "nome": "LUFFIELD Flexible Styling Spray",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Laca extra forte com acabamento brilhante.",
+          "precos": [
+            {
+              "tamanho": "200 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        }
+      ]
+    },
+    {
+      "slug": "barbear-barba",
+      "nome": "Shaving & Beard Care",
+      "grupo": "Barbear e barba",
+      "subtitulo": "Barbear e cuidado da barba",
+      "descricao": "Do sabão de barbear ao óleo de barba e ao bálsamo pós-barba.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "CASINO Shaving Soap Bar",
+          "tamanhos": [
+            "85 g"
+          ],
+          "descricao": "Sabão de barbear suave e cremoso.",
+          "precos": [
+            {
+              "tamanho": "85 g",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "MALMEDY Shaving Gel",
+          "tamanhos": [
+            "150 ml"
+          ],
+          "descricao": "Gel transparente para contornos precisos.",
+          "precos": [
+            {
+              "tamanho": "150 ml",
+              "preco": 16
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "MULSANNE Relaxing Beard Oil",
+          "tamanhos": [
+            "30 ml"
+          ],
+          "descricao": "Óleo de barba que amacia e protege da secura.",
+          "precos": [
+            {
+              "tamanho": "30 ml",
+              "preco": 20
+            }
+          ],
+          "preco": 20
+        },
+        {
+          "nome": "MIRABEAU After Shave Tonic",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Tónico pós-barba calmante com menta e figo-da-índia.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 17.6
+            }
+          ],
+          "preco": 17.6
+        },
+        {
+          "nome": "ARNAGE Face & Beard Balm",
+          "tamanhos": [
+            "100 ml",
+            "200 ml"
+          ],
+          "descricao": "Bálsamo pós-barba que acalma a pele e condiciona a barba.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 12.5
+            },
+            {
+              "tamanho": "200 ml",
+              "preco": 17.6
+            }
+          ],
+          "preco": 12.5
+        },
+        {
+          "nome": "RASCASSE Face & Beard Wash Cleansing Powder",
+          "tamanhos": [
+            "40 g"
+          ],
+          "descricao": "Pó enzimático de limpeza para rosto e barba.",
+          "precos": [
+            {
+              "tamanho": "40 g",
+              "preco": 17.6
+            }
+          ],
+          "preco": 17.6
+        }
+      ]
+    },
+    {
+      "slug": "cor",
+      "nome": "Colouring",
+      "grupo": "Cor",
+      "subtitulo": "Cabelo grisalho com estilo",
+      "descricao": "Pigmentos suaves para tons cinza-ardósia em cabelo branco ou grisalho.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "LOOP Grey Colour Shampoo",
+          "tamanhos": [
+            "200 ml",
+            "1000 ml"
+          ],
+          "descricao": "Shampoo com cor para um tom cinza-ardósia em cabelo branco ou grisalho.",
+          "precos": [
+            {
+              "tamanho": "200 ml",
+              "preco": 16
+            },
+            {
+              "tamanho": "1000 ml",
+              "preco": 49
+            }
+          ],
+          "preco": 16
+        },
+        {
+          "nome": "LOOP Grey Colour Foam",
+          "tamanhos": [
+            "200 ml"
+          ],
+          "descricao": "Espuma com pigmentos subtis para cabelo grisalho.",
+          "precos": [
+            {
+              "tamanho": "200 ml",
+              "preco": 17
+            }
+          ],
+          "preco": 17
+        },
+        {
+          "nome": "COVER GREY Dark 3-4",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Camuflagem de brancos para barba e cabelo escuros (níveis 3 a 4).",
+          "uso": "Salão"
+        },
+        {
+          "nome": "COVER GREY Medium 5",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Camuflagem de brancos para tons médios (nível 5).",
+          "uso": "Salão"
+        },
+        {
+          "nome": "COVER GREY Light 6-7",
+          "tamanhos": [
+            "Uso profissional"
+          ],
+          "descricao": "Camuflagem de brancos para tons claros (níveis 6 a 7).",
+          "uso": "Salão"
+        },
+        {
+          "nome": "COVER GREY Developer",
+          "tamanhos": [
+            "1000 ml"
+          ],
+          "descricao": "Revelador do sistema COVER GREY.",
+          "uso": "Salão"
+        }
+      ]
+    },
+    {
+      "slug": "fragrancia",
+      "nome": "Eau de Toilette",
+      "grupo": "Fragrância",
+      "subtitulo": "Fragrância masculina",
+      "descricao": "A fragrância da Graham Hill.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "BEAU RIVAGE Eau de Toilette",
+          "tamanhos": [
+            "100 ml"
+          ],
+          "descricao": "Fragrância masculina moderna, fresca e autêntica.",
+          "precos": [
+            {
+              "tamanho": "100 ml",
+              "preco": 49
+            }
+          ],
+          "preco": 49
+        }
+      ]
+    },
+    {
+      "slug": "conjuntos",
+      "nome": "Sets",
+      "grupo": "Conjuntos",
+      "subtitulo": "Conjuntos e presentes",
+      "descricao": "Conjuntos para oferecer e para revenda.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Shaving Set",
+          "tamanhos": [
+            "Conjunto"
+          ],
+          "descricao": "Conjunto para um barbear suave e completo."
+        },
+        {
+          "nome": "Beard Care Set",
+          "tamanhos": [
+            "Conjunto"
+          ],
+          "descricao": "Produtos de cuidado da barba com bolsa, para oferecer."
+        },
+        {
+          "nome": "Travel Set Gift Box",
+          "tamanhos": [
+            "3 x 100 ml"
+          ],
+          "descricao": "Caixa com três produtos de cuidado diário em tamanho de viagem."
+        },
+        {
+          "nome": "Trial Set",
+          "tamanhos": [
+            "Conjunto"
+          ],
+          "descricao": "Conjunto de experimentação Graham Hill."
+        }
+      ]
+    },
+    {
+      "slug": "acessorios",
+      "nome": "Shaving Accessories",
+      "grupo": "Acessórios",
+      "subtitulo": "Ferramentas de barbear",
+      "descricao": "Pincéis, navalhas, escovas e máquinas.",
+      "ingredientes": [],
+      "produtos": [
+        {
+          "nome": "Shaving Brush",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Pincel de barbear vegan, com cerdas sintéticas e cabo em resina."
+        },
+        {
+          "nome": "Shaving Bowl",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Taça de barbear em porcelana com pega."
+        },
+        {
+          "nome": "Beard Brush",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Escova de barba em nogueira com cerdas de javali."
+        },
+        {
+          "nome": "Razor",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Lâmina de barbear com cabo em resina, para lâminas Gillette recarregáveis."
+        },
+        {
+          "nome": "Razor & Shaving Brush Set",
+          "tamanhos": [
+            "Conjunto"
+          ],
+          "descricao": "Pincel, lâmina e suporte em aço."
+        },
+        {
+          "nome": "Trimmer",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Aparador de precisão para contornos e barba."
+        },
+        {
+          "nome": "Clipper",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Máquina de corte para cabelo e contornos da barba."
+        },
+        {
+          "nome": "Cosmetic Bag",
+          "tamanhos": [
+            "1 unidade"
+          ],
+          "descricao": "Bolsa de higiene em lona com dois bolsos interiores."
+        },
+        {
+          "nome": "Shaving Towel",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Toalha de barbear Graham Hill, branca."
+        },
+        {
+          "nome": "Trimmer Shaving Head",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Cabeça de substituição para o Trimmer."
+        },
+        {
+          "nome": "Clipper Shaving Head",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Cabeça de substituição para o Clipper."
+        },
+        {
+          "nome": "Cap",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Boné Graham Hill, azul."
+        },
+        {
+          "nome": "Weekender Bag",
+          "tamanhos": [
+            "Unidade"
+          ],
+          "descricao": "Saco de viagem Graham Hill, azul."
+        }
+      ]
+    }
+  ],
+  "montra": [
+    "limpeza-vitalidade/stowe-wax-out-charcoal-shampoo",
+    "styling/becketts-shaper-gel",
+    "barbear-barba/mulsanne-relaxing-beard-oil",
+    "styling/luffield-flexible-styling-spray"
+  ],
+  "loja": true,
+  "lojaOrdem": 2,
+  "alternateName": [
+    "Graham Hill Grooming",
+    "Graham Hill Men"
+  ],
+  "pesquisas": [
+    "Graham Hill Portugal",
+    "comprar Graham Hill",
+    "óleo de barba Graham Hill",
+    "Graham Hill barbearia"
+  ],
+  "faq": [
+    [
+      "Posso comprar Graham Hill online?",
+      "Sim. A SALE.ON vende Graham Hill na loja online, com envio para todo o país, e fornece barbearias e salões."
+    ],
+    [
+      "Quem fabrica a Graham Hill?",
+      "A Graham Hill é produzida na Alemanha pela Hans Conzen Kosmetik, o mesmo fabricante da GLYNT."
+    ]
+  ]
+}

@@ -1,0 +1,31 @@
+# Redirecionamentos 301 dos endereços antigos (Squarespace) para o novo site.
+# Confirmar a lista com as páginas indexadas no Google Search Console antes de mudar o domínio.
+/glynt                 /marcas/glynt/              301
+/glynt-portugal        /marcas/glynt/              301
+/om                    /marcas/original-mineral/   301
+/o-m                   /marcas/original-mineral/   301
+/oem                   /marcas/original-mineral/   301
+/original-mineral      /marcas/original-mineral/   301
+/graham-hill           /marcas/graham-hill/        301
+/grahamhill            /marcas/graham-hill/        301
+/calecim               /marcas/calecim/            301
+/pahi                  /marcas/pahi/               301
+/comfortel             /marcas/                    301
+/acessorios            /marcas/                    301
+/produtos              /marcas/                    301
+/servicos              /profissionais/             301
+/equipa                /sobre/                     301
+/manifesto             /sobre/                     301
+/eventos               /academy/                   301
+/eventos-passados      /academy/                   301
+/futuros-eventos       /academy/                   301
+/brevemente            /                           301
+/blog                  /                           301
+/blog/*                /                           301
+/cart                  /loja/                      301
+
+/marcas/calecim/pele/*   /marcas/calecim/   301
+/marcas/calecim/kits/*   /marcas/calecim/   301
+
+/marcas/original-mineral/color-talent/   /marcas/original-mineral/   302
+/marcas/glynt/shadows/shadows-brilliant-eyes-oxydant/   /marcas/glynt/shadows/   301

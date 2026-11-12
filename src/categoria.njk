@@ -1,0 +1,59 @@
+---
+pagination:
+  data: catalogo.categorias
+  size: 1
+  addAllPagesToCollections: true
+  alias: cat
+permalink: "{{ cat.url }}"
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}{{ cat.nome }} para salões | {% for b in cat.marcas %}{{ b.nomeCurto }}{% if not loop.last %}, {% endif %}{% endfor %} | SALE.ON{% endset %}
+{% set descricao %}{{ (cat.descricao + " " + cat.total + " produtos profissionais em Portugal.") | limitar(158) }}{% endset %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":{{ cat.nome | json | safe }},"description":{{ cat.descricao | json | safe }},"url":"{{ cat.url | absoluto(site.url) }}"}
+</script>
+{{ m.schemaMigalhas([{nome: "Categorias", url: "/categorias/"}, {nome: cat.nome, url: cat.url}], site.url) }}
+{% endblock %}
+{% block conteudo %}
+{% set fc = ("categoria-" + cat.slug) | foto %}
+<section class="heroi heroi--linha{% if fc %} heroi--foto{% endif %}">
+  {% if fc %}<img class="heroi__fundo" src="{{ fc }}" alt="" fetchpriority="high">{% endif %}
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Categorias", url: "/categorias/"}, {nome: cat.nome, url: cat.url}]) }}
+    <h1>{{ cat.nome }}</h1>
+    <p class="heroi__lead">{{ cat.descricao }}</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <ul class="filtros" aria-label="Filtrar por marca">
+      <li><button type="button" class="ativo" data-filtro="">Todas ({{ cat.total }})</button></li>
+      {% for b in cat.marcas %}<li><button type="button" data-filtro="{{ b.slug }}">{{ b.nomeCurto }}</button></li>{% endfor %}
+    </ul>
+    {% for bl in cat.blocos %}
+    <div class="bloco-linha" data-marca="{{ bl.marca.slug }}" id="{{ bl.marca.slug }}-{{ bl.linha.slug }}">
+      <div class="bloco-linha__topo">
+        <h2><small>{{ bl.marca.nomeCurto }}</small>{{ bl.linha.nome }}</h2>
+        <a class="ligacao" href="{{ bl.linha.url }}">Ver linha</a>
+      </div>
+      <div class="grelha grelha--produtos">
+        {% for p in bl.linha.produtos %}{{ m.cartao(p, bl.marca) }}{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    <h2 class="grupo-titulo">Outras categorias</h2>
+    <ul class="filtros">{% for c in catalogo.categorias %}{% if c.slug != cat.slug %}<li><a href="{{ c.url }}">{{ c.nome }}</a></li>{% endif %}{% endfor %}</ul>
+  </div>
+</section>
+<script>
+document.querySelectorAll('[data-filtro]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var f = b.getAttribute('data-filtro');
+    document.querySelectorAll('[data-filtro]').forEach(function (x) { x.classList.toggle('ativo', x === b); });
+    document.querySelectorAll('.bloco-linha').forEach(function (el) { el.hidden = f && el.getAttribute('data-marca') !== f; });
+  });
+});
+</script>
+{% endblock %}

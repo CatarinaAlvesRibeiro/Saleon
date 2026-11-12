@@ -1,0 +1,10 @@
+---
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+{% extends "base.njk" %}
+{% set titulo %}Página não encontrada | SALE.ON{% endset %}
+{% block schema %}<meta name="robots" content="noindex">{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha"><div class="envolve"><h1>Página não encontrada</h1><p class="heroi__lead">Esta página mudou de sítio ou já não existe.</p><div class="botoes"><a class="botao botao--claro" href="/marcas/">Ver as marcas</a><a class="botao botao--contorno" href="/">Página inicial</a></div></div></section>
+{% endblock %}

@@ -1,0 +1,16 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+# SALE.ON: todos os motores de busca e assistentes de IA são bem-vindos.
+User-agent: *
+Allow: /
+Disallow: /obrigado/
+Disallow: /membros/
+
+{% for bot in ["Googlebot", "Bingbot", "Google-Extended", "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "Applebot", "Applebot-Extended", "Amazonbot", "DuckAssistBot", "CCBot", "meta-externalagent"] %}User-agent: {{ bot }}
+{% endfor %}Allow: /
+Disallow: /obrigado/
+Disallow: /membros/
+
+Sitemap: {{ "/sitemap.xml" | absoluto(site.url) }}

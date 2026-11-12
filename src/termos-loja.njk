@@ -1,0 +1,67 @@
+---
+permalink: /termos-loja/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Termos e Condições da Loja Online | SALE.ON{% endset %}
+{% set descricao %}Condições de compra, pagamento, entrega, devoluções e garantia na loja online da SALE.ON.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Termos da Loja", url: "/termos-loja/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Termos da Loja", url: "/termos-loja/"}]) }}
+    <h1>Termos e Condições da Loja Online</h1>
+    <p class="heroi__lead">Última atualização: novembro de 2026</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="texto-longo">
+      <p>Estes Termos e Condições regem a compra de produtos através da loja online disponível em {{ site.url }}/loja/, operada por <strong>{{ site.razaoSocial }}</strong>, NIF {{ site.nif }}, com sede em {{ site.morada.rua }}, {{ site.morada.codigoPostal }} {{ site.morada.localidade }}, Portugal ("SALE.ON", "nós").</p>
+      <p>Ao efetuar uma encomenda através deste website, aceitas os termos descritos nesta página.</p>
+
+      <h2>1. Produtos disponíveis para venda online</h2>
+      <p>A loja online da SALE.ON disponibiliza para venda direta os produtos das marcas <strong>CALECIM®</strong> (gama capilar) e <strong>Graham Hill</strong>. As restantes marcas representadas pela SALE.ON (GLYNT, O&amp;M, PAHI) destinam-se a uso e venda em salões profissionais parceiros, não estando disponíveis para compra direta neste website; contacta-nos para mais informação sobre como adquiri-las.</p>
+
+      <h2>2. Preços</h2>
+      <p>Todos os preços apresentados na loja estão expressos em euros (€) e incluem o IVA à taxa legal em vigor, salvo indicação em contrário. Os custos de envio, quando aplicáveis, são indicados antes da finalização da compra, no processo de checkout. A SALE.ON reserva-se o direito de alterar os preços em qualquer momento, sem efeitos retroativos sobre encomendas já confirmadas.</p>
+
+      <h2>3. Processo de encomenda e pagamento</h2>
+      <p>A encomenda é efetuada através do processo de checkout disponível na loja online. O pagamento é processado de forma segura pela <strong>Stripe</strong>, que aceita os métodos de pagamento indicados no momento da compra (cartão de crédito/débito e outros meios disponíveis). A SALE.ON não tem acesso aos dados completos do teu cartão.</p>
+      <p>A encomenda só é considerada confirmada após a confirmação do pagamento. Receberás um email de confirmação com os detalhes da encomenda.</p>
+
+      <h2>4. Entrega</h2>
+      <p>As encomendas são entregues no endereço indicado no momento da compra. Os prazos e custos de entrega são apresentados no checkout antes da confirmação da compra e podem variar em função do destino e do transportador utilizado. A SALE.ON não se responsabiliza por atrasos causados por terceiros (transportadoras) ou por erros no endereço de entrega fornecido pelo cliente.</p>
+
+      <h2>5. Direito de livre resolução (devolução)</h2>
+      <p>Nos termos do Decreto-Lei n.º 24/2014, tens o direito de resolver o contrato de compra sem necessidade de indicar motivo, no prazo de <strong>14 dias</strong> a contar da data de receção do produto.</p>
+      <p>Para exercer este direito, contacta-nos através de <a href="mailto:{{ site.emailLoja }}">{{ site.emailLoja }}</a>, indicando o número da encomenda. O produto deve ser devolvido na sua embalagem original, não usado e em condições de ser revendido. Os custos de devolução são, salvo indicação em contrário, da responsabilidade do cliente.</p>
+      <p>Após a receção e verificação do produto devolvido, procederemos ao reembolso do valor pago, utilizando o mesmo método de pagamento da compra original, no prazo máximo de 14 dias.</p>
+      <p><strong>Exceções ao direito de devolução:</strong> por razões de higiene e segurança, produtos que tenham sido abertos, usados ou cuja embalagem de proteção de higiene tenha sido retirada não podem ser devolvidos, salvo em caso de defeito do produto.</p>
+
+      <h2>6. Produtos com defeito ou não conformes</h2>
+      <p>Se receberes um produto danificado, com defeito ou diferente do que encomendaste, contacta-nos no prazo de 48 horas através de <a href="mailto:{{ site.emailLoja }}">{{ site.emailLoja }}</a>, com fotografias do produto e da embalagem, para procedermos à substituição ou reembolso, sem custos adicionais para ti.</p>
+
+      <h2>7. Garantia</h2>
+      <p>Os produtos vendidos beneficiam da garantia legal aplicável aos bens de consumo, nos termos da legislação portuguesa em vigor.</p>
+
+      <h2>8. Disponibilidade dos produtos</h2>
+      <p>Apesar dos nossos melhores esforços para manter a informação de stock atualizada, pode ocorrer indisponibilidade de algum produto após a encomenda. Nesse caso, contactar-te-emos para propor uma alternativa, um prazo de entrega diferido ou o reembolso integral do valor pago.</p>
+
+      <h2>9. Dados pessoais</h2>
+      <p>O tratamento dos teus dados pessoais no âmbito de uma compra é feito nos termos descritos na nossa <a href="/privacidade/">Política de Privacidade</a>.</p>
+
+      <h2>10. Resolução de litígios</h2>
+      <p>Em caso de litígio de consumo, podes recorrer a uma entidade de Resolução Alternativa de Litígios (RAL). Podes consultar a lista de entidades disponíveis e mais informação no <a href="https://www.consumidor.gov.pt" rel="noopener">Portal do Consumidor</a> ou na Plataforma Europeia de Resolução de Litígios em Linha, em <a href="https://ec.europa.eu/consumers/odr" rel="noopener">ec.europa.eu/consumers/odr</a>. Podes também apresentar a tua reclamação através do Livro de Reclamações Eletrónico, em <a href="https://www.livroreclamacoes.pt" rel="noopener">livroreclamacoes.pt</a>.</p>
+
+      <h2>11. Lei aplicável e foro competente</h2>
+      <p>Estes termos são regidos pela lei portuguesa. Para a resolução de qualquer litígio emergente destes termos, é competente o foro da comarca de residência do consumidor, nos termos da lei aplicável.</p>
+
+      <h2>12. Contactos</h2>
+      <p>Para qualquer questão sobre a loja online, encomendas ou devoluções, contacta-nos através de <a href="mailto:{{ site.emailLoja }}">{{ site.emailLoja }}</a> ou através da página de <a href="/contacto/">contacto</a>.</p>
+
+      <p class="nota">Esta página tem caráter informativo geral e não substitui aconselhamento jurídico.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

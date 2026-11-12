@@ -1,0 +1,61 @@
+---
+permalink: /embaixadores/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Embaixadores SALE.ON | Cabeleireiros e coloristas GLYNT e O&M em Portugal{% endset %}
+{% set descricao %}Conhece os embaixadores SALE.ON: cabeleireiros e coloristas de referência em Portugal que trabalham com GLYNT, O&M e as marcas SALE.ON. Sabe como te candidatares ao programa.{% endset %}
+{% block schema %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","name":"Embaixadores SALE.ON","itemListElement":[{% for e in embaixadores %}{"@type":"ListItem","position":{{ loop.index }},"item":{"@type":"Person","name":{{ e.nome | json | safe }}{% if e.especialidade %},"jobTitle":{{ e.especialidade | json | safe }}{% endif %},"affiliation":{"@type":"Organization","name":"SALE.ON"}{% if e.foto %},"image":"{{ ('/assets/img/embaixadores/' + e.foto) | absoluto(site.url) }}"{% endif %}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+{{ m.schemaMigalhas([{nome: "Embaixadores", url: "/embaixadores/"}], site.url) }}
+{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Embaixadores", url: "/embaixadores/"}]) }}
+    <p class="sobretitulo">Programa Embaixadores SALE.ON</p>
+    <h1>Profissionais que inspiram o setor.</h1>
+    <p class="heroi__lead">Cabeleireiros e coloristas que se destacam pela qualidade do trabalho, pela consistência e pela forma autêntica como comunicam. Ser Embaixador SALE.ON é um reconhecimento, não um título.</p>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="sobretitulo">A comunidade</p><h2>Os nossos embaixadores</h2></div><p>Usam as marcas SALE.ON todos os dias e mostram os resultados reais no salão.</p></div>
+    <div class="grelha grelha--embaixadores">
+      {% for e in embaixadores %}
+      <article class="embaixador">
+        {% if e.foto %}<img class="embaixador__foto" src="/assets/img/embaixadores/{{ e.foto }}" alt="{{ e.nome }}, Embaixador SALE.ON" loading="lazy" width="900" height="1200">
+        {% else %}<div class="embaixador__foto embaixador__iniciais" aria-hidden="true">{% for parte in e.nome.split(" ") %}{{ parte | first }}{% endfor %}</div>{% endif %}
+        <div class="embaixador__corpo">
+          <h3 class="embaixador__nome">{{ e.nome }}</h3>
+          {% if e.especialidade %}<p class="embaixador__esp">{{ e.especialidade }}</p>{% endif %}
+          {% if e.texto %}<p class="embaixador__texto">{{ e.texto }}</p>{% endif %}
+          {% if e.marcas %}<p class="embaixador__marcas">{% for mc in e.marcas %}{% set b = catalogo.marcas | marcaPorSlug(mc) %}{% if b %}<a href="{{ b.url }}">{{ b.nomeCurto }}</a>{% if not loop.last %} · {% endif %}{% endif %}{% endfor %}</p>{% endif %}
+          {% if e.instagram %}<p class="embaixador__links"><a href="https://www.instagram.com/{{ e.instagram | replace('@','') }}/" rel="noopener">@{{ e.instagram | replace('@','') }}</a></p>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="envolve duas-colunas">
+    <div class="texto-longo">
+      <p class="sobretitulo">Candidatura</p>
+      <h2>Como se tornar Embaixador SALE.ON</h2>
+      <p>Procuramos profissionais apaixonados, criativos e comprometidos com a excelência: cabeleireiros, coloristas, hairstylists ou formadores, com presença digital ativa e que usem e recomendem as marcas SALE.ON com convicção.</p>
+      <div class="botoes"><a class="botao" href="/contacto/?assunto=Candidatura Embaixador SALE.ON">Candidatar-me</a><a class="botao botao--contorno-escuro" href="/academy/">Ver a Academy</a></div>
+    </div>
+    <ol class="passos">
+      <li><h3>Candidata-te</h3><p>Apresenta-te como profissional e partilha as tuas redes sociais.</p></li>
+      <li><h3>Escolhe a tua gama</h3><p>A marca ou linha que melhor representa o teu trabalho: GLYNT, O&amp;M, Graham Hill ou outra do portefólio.</p></li>
+      <li><h3>Mostra o teu talento</h3><p>Uma imagem e um vídeo curto com o teu trabalho real no salão.</p></li>
+      <li><h3>Seleção e boas-vindas</h3><p>Avaliamos qualidade, autenticidade e alinhamento. Se fores selecionado, recebes o teu kit e começas a jornada.</p></li>
+    </ol>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,89 @@
+---
+permalink: /privacidade/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Política de Privacidade | SALE.ON{% endset %}
+{% set descricao %}Como a SALE.ON recolhe, usa e protege os teus dados pessoais, em conformidade com o RGPD.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Política de Privacidade", url: "/privacidade/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Política de Privacidade", url: "/privacidade/"}]) }}
+    <h1>Política de Privacidade</h1>
+    <p class="heroi__lead">Última atualização: novembro de 2026</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="texto-longo">
+      <p>Esta Política de Privacidade explica como a <strong>{{ site.razaoSocial }}</strong>, titular do website {{ site.url }} ("SALE.ON", "nós"), recolhe, utiliza, conserva e protege os dados pessoais dos visitantes e clientes deste website, em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD) e a legislação portuguesa aplicável.</p>
+
+      <h2>1. Quem é o responsável pelo tratamento</h2>
+      <p>{{ site.razaoSocial }}, NIF {{ site.nif }}, com sede em {{ site.morada.rua }}, {{ site.morada.codigoPostal }} {{ site.morada.localidade }}, Portugal.</p>
+      <p>Para qualquer questão sobre esta política ou sobre os teus dados pessoais, podes contactar-nos através de <a href="mailto:{{ site.emailLoja }}">{{ site.emailLoja }}</a>.</p>
+
+      <h2>2. Que dados recolhemos</h2>
+      <p>Recolhemos apenas os dados necessários para prestar os nossos serviços:</p>
+      <ul>
+        <li><strong>Dados de contacto</strong>: nome, email, telefone e nome do salão/empresa, quando preenches um formulário (contacto, pedido de formação, candidatura a embaixador ou modelo, área de cliente).</li>
+        <li><strong>Dados de encomenda</strong>: nome, endereço de entrega e de faturação, email e telefone, quando fazes uma compra na loja online.</li>
+        <li><strong>Dados de pagamento</strong>: os dados do cartão ou método de pagamento são processados diretamente pela Stripe, nosso processador de pagamentos; a SALE.ON não acede nem armazena os dados completos do teu cartão.</li>
+        <li><strong>Dados de navegação</strong>: dados técnicos recolhidos automaticamente pelo alojamento do website (Netlify), como endereço IP, tipo de navegador e páginas visitadas, para fins de segurança e funcionamento do serviço.</li>
+      </ul>
+      <p>Não recolhemos dados sensíveis (saúde, origem étnica, convicções religiosas ou políticas, etc.).</p>
+
+      <h2>3. Para que usamos os teus dados</h2>
+      <ul>
+        <li>Responder a pedidos de contacto, informação, formação ou parceria;</li>
+        <li>Processar e entregar encomendas da loja online, incluindo faturação e assistência pós-venda;</li>
+        <li>Gerir candidaturas ao Programa de Embaixadores e à rede de modelos;</li>
+        <li>Dar acesso à área de cliente, quando aplicável;</li>
+        <li>Enviar comunicações relacionadas com encomendas, formações ou eventos em que te inscreveste;</li>
+        <li>Cumprir obrigações legais, nomeadamente fiscais e contabilísticas.</li>
+      </ul>
+      <p>Não vendemos nem cedemos os teus dados pessoais a terceiros para fins de marketing.</p>
+
+      <h2>4. Fundamento legal do tratamento</h2>
+      <p>Tratamos os teus dados com base: na execução de um contrato (encomendas e prestação de serviços); no teu consentimento (formulários de contacto e candidaturas); e no cumprimento de obrigações legais (faturação e contabilidade).</p>
+
+      <h2>5. Com quem partilhamos os dados</h2>
+      <p>Partilhamos dados apenas com prestadores de serviços que nos ajudam a operar o website e a loja, e apenas na medida do necessário:</p>
+      <ul>
+        <li><strong>Netlify</strong> — alojamento do website e receção de formulários de contacto;</li>
+        <li><strong>Stripe</strong> — processamento seguro de pagamentos da loja online;</li>
+        <li>Transportadoras e serviços de expedição, para entrega das encomendas;</li>
+        <li>Entidades públicas, quando exigido por lei (por exemplo, autoridades fiscais).</li>
+      </ul>
+      <p>Estes prestadores estão contratualmente obrigados a proteger os teus dados e a usá-los apenas para os fins acordados.</p>
+
+      <h2>6. Durante quanto tempo guardamos os teus dados</h2>
+      <p>Conservamos os dados apenas durante o tempo necessário para os fins para que foram recolhidos: os dados de encomendas e faturação são conservados pelo prazo legal aplicável (geralmente 10 anos, para fins contabilísticos e fiscais); os dados de contacto e candidaturas são conservados enquanto a relação se mantiver ativa ou até solicitares a sua eliminação.</p>
+
+      <h2>7. Os teus direitos</h2>
+      <p>Nos termos do RGPD, tens o direito de, em qualquer momento:</p>
+      <ul>
+        <li>Aceder aos dados pessoais que temos sobre ti;</li>
+        <li>Solicitar a correção de dados incorretos ou incompletos;</li>
+        <li>Solicitar a eliminação dos teus dados ("direito ao esquecimento"), quando aplicável;</li>
+        <li>Opor-te ao tratamento ou solicitar a limitação do mesmo;</li>
+        <li>Solicitar a portabilidade dos teus dados;</li>
+        <li>Retirar o consentimento, quando o tratamento se basear nele;</li>
+        <li>Apresentar reclamação junto da Comissão Nacional de Proteção de Dados (CNPD), em <a href="https://www.cnpd.pt" rel="noopener">www.cnpd.pt</a>.</li>
+      </ul>
+      <p>Para exercer qualquer um destes direitos, contacta-nos através de <a href="mailto:{{ site.emailLoja }}">{{ site.emailLoja }}</a>.</p>
+
+      <h2>8. Segurança dos dados</h2>
+      <p>Adotamos medidas técnicas e organizativas adequadas para proteger os teus dados contra acesso não autorizado, perda ou destruição, nomeadamente através de ligação segura (HTTPS) e de prestadores de serviço com garantias de segurança reconhecidas (Netlify, Stripe).</p>
+
+      <h2>9. Cookies</h2>
+      <p>O website utiliza cookies essenciais ao seu funcionamento. Para mais informação, consulta a nossa <a href="/cookies/">Política de Cookies</a>.</p>
+
+      <h2>10. Alterações a esta política</h2>
+      <p>Podemos atualizar esta Política de Privacidade periodicamente. A data da última atualização está indicada no topo desta página. Recomendamos a sua consulta regular.</p>
+
+      <p class="nota">Esta página tem caráter informativo geral e não substitui aconselhamento jurídico.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,50 @@
+---
+permalink: /galeria/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Galeria | Formações e eventos SALE.ON Academy{% endset %}
+{% set descricao %}Fotografias das formações, masterclasses e eventos da SALE.ON Academy com as marcas GLYNT, O&M e Graham Hill.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Academy", url: "/academy/"}, {nome: "Galeria", url: "/galeria/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Academy", url: "/academy/"}, {nome: "Galeria", url: "/galeria/"}]) }}
+    <p class="sobretitulo">SALE.ON Academy</p>
+    <h1>Galeria</h1>
+    <p class="heroi__lead">As formações e os eventos da SALE.ON, por ano.</p>
+  </div>
+</section>
+<nav class="subnav" aria-label="Academy"><div class="envolve"><a href="/academy/">Formações e eventos</a><a href="/aprender/">Aprender</a><a href="/galeria/" aria-current="page">Galeria</a><a href="/modelos/">Modelos</a><a href="/embaixadores/">Embaixadores</a></div></nav>
+{% set albuns = {} %}{% for a in galeria %}{% set albuns = albuns | setAttribute(a.slug, a.fotos) %}{% endfor %}
+<nav class="subnav subnav--anos" aria-label="Anos"><div class="envolve">{% for a in formacoes.anos %}<a href="#ano-{{ a.ano }}">{{ a.ano }}</a>{% endfor %}</div></nav>
+{% if albuns["momentos"] %}
+<section class="secao">
+  <div class="envolve">
+    <div class="galeria galeria--destaque">
+      {% for f in albuns["momentos"] %}<a href="{{ f }}" class="galeria__foto" data-foto><img src="{{ f }}" alt="Formação SALE.ON Academy, fotografia {{ loop.index }}" loading="lazy"></a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% for a in formacoes.anos %}
+<section class="secao{% if loop.index is even %} secao--clara{% endif %}" id="ano-{{ a.ano }}">
+  <div class="envolve">
+    <div class="secao__topo"><div><p class="num">{{ a.ano }}</p><p class="sobretitulo">Formações e eventos</p><h2>{{ a.formacoes.length }} formações em {{ a.ano }}</h2></div></div>
+    <ol class="agenda">
+      {% for f in a.formacoes %}{% set fotos = albuns[f.album] if f.album else [] %}
+      <li class="agenda__item{% if fotos.length %} agenda__item--fotos{% endif %}">
+        <p class="agenda__data">{{ f.data }}</p>
+        <div class="agenda__corpo">
+          <h3>{{ f.titulo }}</h3>
+          {% if f.formador %}<p class="agenda__formador">Com {{ f.formador }}</p>{% endif %}
+          {% if fotos.length %}<a href="{{ fotos[0] }}" class="galeria__capa" data-fotos='{{ fotos | dump | safe }}' aria-label="Ver as {{ fotos.length }} fotografias de {{ f.titulo }}"><img src="{{ fotos[0] }}" alt="{{ f.titulo }}, {{ f.data }} {{ a.ano }}" loading="lazy">{% if fotos.length > 1 %}<span class="galeria__contagem">+{{ fotos.length - 1 }}</span>{% endif %}</a>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endfor %}
+<dialog class="visor" id="visor"><button type="button" class="visor__fechar" aria-label="Fechar">×</button><button type="button" class="visor__seta visor__seta--ant" aria-label="Anterior">‹</button><img alt=""><button type="button" class="visor__seta visor__seta--seg" aria-label="Seguinte">›</button></dialog>
+{% endblock %}

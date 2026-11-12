@@ -1,0 +1,57 @@
+{
+ "exemplo-nome-da-pasta": {
+  "titulo": "Masterclass GLYNT com Anne Haist",
+  "data": "2026-11-16",
+  "local": "Lisboa"
+ },
+ "2026-03-30-om-color": {
+  "titulo": "O&M Color, com Juan Leal",
+  "data": "2026-03-30",
+  "local": "SALE.ON, Cascais"
+ },
+ "2025-10-glynt-discovery-carla-guedes": {
+  "titulo": "GLYNT Discovery, com Carla Guedes",
+  "data": "2025-10",
+  "local": "Peso da Régua"
+ },
+ "2025-10-ana-e-os-cachos": {
+  "titulo": "Ana e os Cachos, com Ana Madureira",
+  "data": "2025-10",
+  "local": "SALE.ON, Cascais"
+ },
+ "2025-09-29-om-lancamento-palaphita": {
+  "titulo": "Lançamento O&M em Portugal",
+  "data": "2025-09-29",
+  "local": "Palaphita, Cascais"
+ },
+ "2025-03-masterclass-madrid": {
+  "titulo": "Masterclass Madrid, com Gustavo Pereira",
+  "data": "2025-03",
+  "local": "Madrid"
+ },
+ "2025-07-21-colorimetria-glynt": {
+  "titulo": "Colorimetria GLYNT, com Gustavo Pereira",
+  "data": "2025-07-21",
+  "local": "SALE.ON, Cascais"
+ },
+ "2025-06-30-tutorial-colorimetria": {
+  "titulo": "Tutorial de Colorimetria, com Gustavo Pereira",
+  "data": "2025-06-30",
+  "local": "SALE.ON, Cascais"
+ },
+ "2025-om-onboarding": {
+  "titulo": "Onboarding O&M",
+  "data": "2025-06",
+  "local": "SALE.ON, Cascais"
+ },
+ "2025-05-vendas-na-beleza": {
+  "titulo": "Vendas na Beleza",
+  "data": "2025-05",
+  "local": "SALE.ON, Cascais"
+ },
+ "2026-03-02-salao-lucrativo": {
+  "titulo": "Salão Lucrativo, com Ricardo Ferreira",
+  "data": "2026-03-02",
+  "local": "SALE.ON, Cascais"
+ }
+}

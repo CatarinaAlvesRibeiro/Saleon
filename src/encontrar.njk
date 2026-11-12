@@ -1,0 +1,23 @@
+---
+permalink: /encontrar/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Encontra o produto certo | Assistente SALE.ON{% endset %}
+{% set descricao %}Diz-nos a necessidade (cabelo seco, loiros, queda, cor sem amoníaco, barba) e mostramos os produtos indicados das marcas GLYNT, O&M, CALECIM® e Graham Hill.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Encontra o produto certo", url: "/encontrar/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Encontra o produto certo", url: "/encontrar/"}]) }}
+    <h1>Encontra o produto certo</h1>
+    <p class="heroi__lead">Duas perguntas e mostramos o produto mais recomendado.</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    {% include "assistente.njk" %}
+    <p class="voltar">Preferes ver tudo? <a href="/categorias/">Explora por categoria</a> ou <a href="/pesquisa/">pesquisa pelo nome</a>.</p>
+  </div>
+</section>
+{% endblock %}

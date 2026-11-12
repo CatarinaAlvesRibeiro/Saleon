@@ -1,0 +1,359 @@
+[
+ {
+  "grupo": "Cabelo",
+  "id": "seco",
+  "nome": "Cabelo seco ou sem brilho",
+  "termos": "seco secos hidratar hidratacao baco aspero sem brilho ressequido nutrir",
+  "alvos": [
+   {
+    "linha": "glynt/nutri"
+   },
+   {
+    "linha": "glynt/hydro"
+   },
+   {
+    "linha": "original-mineral/cuidado",
+    "filtro": "Hydrate & Conquer"
+   },
+   {
+    "linha": "original-mineral/mascaras-tratamentos",
+    "filtro": "Seven Day"
+   }
+  ]
+ },
+ {
+  "grupo": "Cabelo",
+  "id": "fino",
+  "nome": "Cabelo fino ou sem volume",
+  "termos": "fino finos volume sem corpo liso demais raiz achatada",
+  "alvos": [
+   {
+    "linha": "glynt/volume"
+   },
+   {
+    "linha": "original-mineral/cuidado",
+    "filtro": "Fine Intellect"
+   },
+   {
+    "linha": "original-mineral/styling",
+    "filtro": "Rootalicious|Thique|Atonic"
+   }
+  ]
+ },
+ {
+  "grupo": "Cabelo",
+  "id": "pintado",
+  "nome": "Manter a cor do cabelo pintado",
+  "termos": "pintado pintados cor desbota desbotar manter a cor durar brilho coloracao colorido",
+  "alvos": [
+   {
+    "linha": "glynt/revital"
+   },
+   {
+    "linha": "original-mineral/cor-restore"
+   },
+   {
+    "linha": "original-mineral/cuidado",
+    "filtro": "Maintain the Mane"
+   }
+  ]
+ },
+ {
+  "grupo": "Cabelo",
+  "id": "loiro",
+  "nome": "Loiros sem amarelo",
+  "termos": "loiro loiros loira amarelo amarelado amarelados platinado frio matizar matizador descolorado roxo",
+  "alvos": [
+   {
+    "linha": "glynt/ice-blond"
+   },
+   {
+    "linha": "original-mineral/cuidado",
+    "filtro": "Conquer Blonde"
+   },
+   {
+    "linha": "original-mineral/clean-tones",
+    "filtro": "Cool Blonde|Platinum"
+   },
+   {
+    "linha": "glynt/mangala",
+    "filtro": "Snow|Platin"
+   }
+  ]
+ },
+ {
+  "grupo": "Cabelo",
+  "id": "danificado",
+  "nome": "Cabelo danificado ou quebradiço",
+  "termos": "danificado danificados quebra quebradico partido estragado reparar reconstruir fraco pontas espigadas",
+  "alvos": [
+   {
+    "linha": "glynt/trijuven"
+   },
+   {
+    "linha": "original-mineral/mascaras-tratamentos",
+    "filtro": "Power Base"
+   },
+   {
+    "linha": "calecim/cabelo",
+    "filtro": "Structure Enhancing"
+   }
+  ]
+ },
+ {
+  "grupo": "Cabelo",
+  "id": "caracois",
+  "nome": "Caracóis e ondas definidos",
+  "termos": "caracois caracol encaracolado encaracolados ondas ondulado cachos crespo definir",
+  "alvos": [
+   {
+    "linha": "glynt/curls"
+   },
+   {
+    "linha": "original-mineral/cuidado",
+    "filtro": "Curl Curl"
+   },
+   {
+    "linha": "original-mineral/styling",
+    "filtro": "Curl Curl"
+   }
+  ]
+ },
+ {
+  "grupo": "Cabelo",
+  "id": "frizz",
+  "nome": "Controlar o frizz e alisar",
+  "termos": "frizz liso alisar rebelde arrepiado desembaracar nos sedoso",
+  "alvos": [
+   {
+    "linha": "glynt/smooth"
+   },
+   {
+    "linha": "original-mineral/styling",
+    "filtro": "Frizzy Logic|Know Knott"
+   },
+   {
+    "linha": "original-mineral/mascaras-tratamentos",
+    "filtro": "Smooth"
+   }
+  ]
+ },
+ {
+  "grupo": "Cabelo",
+  "id": "sol",
+  "nome": "Proteger do sol, mar e piscina",
+  "termos": "sol praia piscina verao cloro mar protecao solar",
+  "alvos": [
+   {
+    "linha": "glynt/sun"
+   }
+  ]
+ },
+ {
+  "grupo": "Couro cabeludo",
+  "id": "queda",
+  "nome": "Queda de cabelo e falta de densidade",
+  "termos": "queda cair cai caem densidade ralo falhas calvicie enfraquecido crescer crescimento alopecia",
+  "alvos": [
+   {
+    "linha": "calecim/cabelo"
+   },
+   {
+    "linha": "glynt/derma",
+    "filtro": "Ginkgo|Tonic"
+   },
+   {
+    "linha": "graham-hill/limpeza-vitalidade",
+    "filtro": "FARM"
+   }
+  ]
+ },
+ {
+  "grupo": "Couro cabeludo",
+  "id": "couro",
+  "nome": "Couro cabeludo oleoso, sensível ou com caspa",
+  "termos": "oleoso oleosidade caspa comichao sensivel irritado detox purificar couro cabeludo gordura",
+  "alvos": [
+   {
+    "linha": "glynt/derma"
+   },
+   {
+    "linha": "calecim/cabelo",
+    "filtro": "Detox"
+   },
+   {
+    "linha": "original-mineral/cuidado",
+    "filtro": "Original Detox|Charcoal"
+   }
+  ]
+ },
+ {
+  "grupo": "Cor",
+  "id": "brancos",
+  "nome": "Cobrir cabelos brancos",
+  "termos": "brancos branco cobrir cobertura grisalho grisalhos cabelos brancos",
+  "alvos": [
+   {
+    "linha": "original-mineral/cor-color",
+    "filtro": "Coloração"
+   },
+   {
+    "linha": "glynt/shadows",
+    "filtro": "Permanente|Soft"
+   },
+   {
+    "linha": "graham-hill/cor",
+    "filtro": "COVER GREY Dark|LOOP Grey Colour Shampoo"
+   }
+  ],
+  "topLinha": true
+ },
+ {
+  "grupo": "Cor",
+  "id": "limpa",
+  "nome": "Cor sem amoníaco, sem PPD e sem resorcinol",
+  "termos": "amoniaco ppd resorcinol cor limpa alergia sensibilidade sem cheiro vegan clean",
+  "alvos": [
+   {
+    "linha": "original-mineral/cor-color"
+   },
+   {
+    "linha": "original-mineral/clean-liquid"
+   }
+  ],
+  "topLinha": true
+ },
+ {
+  "grupo": "Cor",
+  "id": "tonalizar",
+  "nome": "Refrescar o tom entre colorações",
+  "termos": "tonalizar tonalizante refrescar tom reflexo entre coloracoes mascara de cor gloss banho de cor",
+  "alvos": [
+   {
+    "linha": "glynt/mangala"
+   },
+   {
+    "linha": "original-mineral/clean-tones"
+   }
+  ],
+  "topLinha": true
+ },
+ {
+  "grupo": "Cor",
+  "id": "fantasia",
+  "nome": "Cores vivas e fantasia",
+  "termos": "fantasia cores vivas azul rosa verde roxo laranja direta pigmento",
+  "alvos": [
+   {
+    "linha": "original-mineral/original-pigment"
+   }
+  ],
+  "topLinha": true
+ },
+ {
+  "grupo": "Cor",
+  "id": "descolorar",
+  "nome": "Descolorar e aclarar",
+  "termos": "descolorar descoloracao aclarar madeixas balayage po descolorante oxidante",
+  "alvos": [
+   {
+    "linha": "original-mineral/descolorantes"
+   },
+   {
+    "linha": "glynt/shadows",
+    "filtro": "Blond|Oxydant"
+   }
+  ],
+  "topLinha": true
+ },
+ {
+  "grupo": "Styling",
+  "id": "fixacao",
+  "nome": "Fixar o penteado",
+  "termos": "laca fixar fixacao spray segurar penteado",
+  "alvos": [
+   {
+    "linha": "glynt/sprays"
+   },
+   {
+    "linha": "original-mineral/styling",
+    "filtro": "Queenie"
+   }
+  ]
+ },
+ {
+  "grupo": "Styling",
+  "id": "textura",
+  "nome": "Textura, volume e acabamento mate",
+  "termos": "textura mate po texturizante despenteado dry",
+  "alvos": [
+   {
+    "linha": "glynt/dry-texture"
+   },
+   {
+    "linha": "original-mineral/styling",
+    "filtro": "Dry|Texture|Surf"
+   }
+  ]
+ },
+ {
+  "grupo": "Styling",
+  "id": "brushing",
+  "nome": "Brushing e proteção do calor",
+  "termos": "brushing secador mousse calor espuma rolos secar",
+  "alvos": [
+   {
+    "linha": "glynt/blowdry-airdry"
+   }
+  ]
+ },
+ {
+  "grupo": "Homem",
+  "id": "barba",
+  "nome": "Barbear e cuidar da barba",
+  "termos": "barba barbear after shave oleo de barba balsamo lamina",
+  "alvos": [
+   {
+    "linha": "graham-hill/barbear-barba"
+   }
+  ]
+ },
+ {
+  "grupo": "Homem",
+  "id": "stylinghomem",
+  "nome": "Styling masculino",
+  "termos": "pomada cera homem masculino clay pasta gel",
+  "alvos": [
+   {
+    "linha": "graham-hill/styling"
+   },
+   {
+    "linha": "glynt/style-effect",
+    "filtro": "Pomade|Paste"
+   }
+  ]
+ },
+ {
+  "grupo": "Homem",
+  "id": "grisalhohomem",
+  "nome": "Disfarçar os brancos no homem",
+  "termos": "grisalho homem camuflar brancos homem cinzento",
+  "alvos": [
+   {
+    "linha": "graham-hill/cor"
+   }
+  ]
+ },
+ {
+  "grupo": "Salão",
+  "id": "permanente",
+  "nome": "Ondulação permanente",
+  "termos": "permanente ondulacao permanente perm",
+  "alvos": [
+   {
+    "linha": "glynt/ondulacao"
+   }
+  ],
+  "topLinha": true
+ }
+]

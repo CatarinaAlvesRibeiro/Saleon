@@ -1,0 +1,50 @@
+---
+permalink: /profissionais/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Para salões e barbearias | Condições profissionais SALE.ON{% endset %}
+{% set descricao %}Trabalha com a SALE.ON: marcas profissionais em exclusivo (GLYNT, O&M, Graham Hill, CALECIM®, PAHI), formação, apoio técnico no salão e SALE.ON Club. Pede condições.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Para salões", url: "/profissionais/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Para salões", url: "/profissionais/"}]) }}
+    <h1>Para salões e barbearias</h1>
+    <p class="heroi__lead">Marcas profissionais em exclusivo, e uma equipa que pensa o negócio do salão contigo.</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <ul class="servicos servicos--icones">
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5 8 11v11c0 10 6.5 17.5 16 21 9.500-3.500 16-11 16-21V11L24 5Z"/><path d="m17 24 5 5 9-10"/></svg><h3>Mudar sem risco</h3><p>Acompanhamos as primeiras colorações no teu salão e ajudamos a converter as tuas fórmulas.</p></li>
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18 24 9l20 9-20 9L4 18Z"/><path d="M12 22v9c3.500 3.500 7.500 5 12 5s8.500-1.500 12-5v-9"/><path d="M44 18v11"/></svg><h3>Formação contínua</h3><p>SALE.ON Academy, com formadores e embaixadores das marcas.</p></li>
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 42h36"/><path d="M11 34V24M21 34V16M31 34V21M41 34V8"/><path d="m8 15 10-8 9 6 12-9"/></svg><h3>Rentabilidade</h3><p>Produtos premium a um preço que deixa margem no serviço e na revenda.</p></li>
+      <li><svg class="icone" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="m24 13 3.300 6.700 7.400 1.100-5.350 5.200 1.250 7.350L24 29.900l-6.600 3.450 1.250-7.350-5.350-5.200 7.400-1.100L24 13Z"/></svg><h3>SALE.ON Club</h3><p>Descontos por volume, eventos e materiais exclusivos para os clientes do Club.</p></li>
+    </ul>
+  </div>
+</section>
+<section class="secao secao--clara">
+  <div class="envolve formulario-envolve">
+    <h2>Pedir condições profissionais</h2>
+    <p>Respondemos em 48 horas úteis.</p>
+    <form name="profissionais" method="POST" action="/obrigado/" data-netlify="true" netlify-honeypot="bot-field" class="formulario" data-prefill>
+      <input type="hidden" name="form-name" value="profissionais">
+      <p class="escondido"><label>Não preencher <input name="bot-field"></label></p>
+      <label>Nome do salão ou barbearia<input name="salao" required></label>
+      <label>O teu nome<input name="nome" required autocomplete="name"></label>
+      <label>Localidade<input name="localidade" required></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label>Telemóvel<input type="tel" name="telefone" required autocomplete="tel"></label>
+      <fieldset>
+        <legend>Marcas que te interessam</legend>
+        {% for b in catalogo.marcas %}<label class="caixa"><input type="checkbox" name="marcas" value="{{ b.nomeCurto }}" data-marca="{{ b.nomeCurto }}"> {{ b.nomeCurto }}</label>{% endfor %}
+      </fieldset>
+      <label>Produto (opcional)<input name="produto" data-param="produto"></label>
+      <label>Mensagem<textarea name="mensagem" rows="4"></textarea></label>
+      <label class="caixa"><input type="checkbox" name="consentimento" required> Aceito a <a href="/privacidade/">política de privacidade</a>.</label>
+      <button class="botao" type="submit">Pedir condições</button>
+    </form>
+  </div>
+</section>
+{% endblock %}

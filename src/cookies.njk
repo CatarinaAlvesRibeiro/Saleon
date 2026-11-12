@@ -1,0 +1,50 @@
+---
+permalink: /cookies/
+---
+{% extends "base.njk" %}
+{% import "macros.njk" as m %}
+{% set titulo %}Política de Cookies | SALE.ON{% endset %}
+{% set descricao %}Que cookies o website da SALE.ON utiliza e para quê.{% endset %}
+{% block schema %}{{ m.schemaMigalhas([{nome: "Política de Cookies", url: "/cookies/"}], site.url) }}{% endblock %}
+{% block conteudo %}
+<section class="heroi heroi--linha">
+  <div class="envolve">
+    {{ m.migalhas([{nome: "Política de Cookies", url: "/cookies/"}]) }}
+    <h1>Política de Cookies</h1>
+    <p class="heroi__lead">Última atualização: novembro de 2026</p>
+  </div>
+</section>
+<section class="secao">
+  <div class="envolve">
+    <div class="texto-longo">
+      <p>Esta Política de Cookies explica o que são cookies e que tipos de cookies o website {{ site.url }}, operado pela <strong>{{ site.razaoSocial }}</strong>, NIF {{ site.nif }} ("SALE.ON", "nós"), utiliza.</p>
+
+      <h2>1. O que são cookies</h2>
+      <p>Cookies são pequenos ficheiros de texto guardados no teu dispositivo quando visitas um website. Permitem que o website funcione corretamente, se lembre de certas opções e, em alguns casos, reconheça o teu dispositivo em visitas seguintes.</p>
+
+      <h2>2. Que cookies utilizamos</h2>
+      <p>Neste momento, o website da SALE.ON utiliza apenas cookies <strong>estritamente necessários</strong> ao seu funcionamento. Não utilizamos cookies de análise estatística (como o Google Analytics) nem cookies de publicidade ou redes sociais.</p>
+      <table>
+        <thead><tr><th>Cookie</th><th>Finalidade</th><th>Duração</th></tr></thead>
+        <tbody>
+          <tr><td>Cookies de sessão do Netlify</td><td>Processamento dos formulários de contacto, candidatura e inscrição do website (anti-spam e envio do formulário).</td><td>Sessão</td></tr>
+          <tr><td>Cookies da Stripe</td><td>Necessários para processar o pagamento de forma segura durante o checkout da loja online. São definidos pela Stripe, nosso processador de pagamentos, apenas durante o processo de compra.</td><td>Sessão / conforme definido pela Stripe</td></tr>
+        </tbody>
+      </table>
+      <p>Estes cookies não necessitam de consentimento prévio, por serem essenciais à prestação do serviço que solicitas (enviar um formulário ou concluir uma compra).</p>
+
+      <h2>3. Cookies de terceiros</h2>
+      <p>Algumas páginas do website podem incluir ligações para o Instagram. Se clicares nessas ligações e saíres do nosso website, és redirecionado para o Instagram, que tem a sua própria política de cookies e privacidade, sobre a qual a SALE.ON não tem controlo.</p>
+
+      <h2>4. Cookies futuros</h2>
+      <p>Se, no futuro, passarmos a utilizar cookies de análise de audiência (como o Google Analytics) ou de marketing, atualizaremos esta página e implementaremos um mecanismo de consentimento prévio, em conformidade com a lei portuguesa e o RGPD.</p>
+
+      <h2>5. Como gerir os cookies</h2>
+      <p>Podes gerir ou eliminar os cookies através das definições do teu navegador. Nota que, por serem estritamente necessários, bloquear os cookies descritos nesta página pode impedir o envio de formulários ou a finalização de compras na loja online.</p>
+
+      <h2>6. Mais informação</h2>
+      <p>Para saber mais sobre como tratamos os teus dados pessoais, consulta a nossa <a href="/privacidade/">Política de Privacidade</a>. Para qualquer questão sobre esta Política de Cookies, contacta-nos através de <a href="mailto:{{ site.emailLoja }}">{{ site.emailLoja }}</a>.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
