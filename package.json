@@ -11,5 +11,8 @@
     "sharp": "^0.33.5"
   },
   "type": "module",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@netlify/blobs": "^11.1.9"
+  }
 }

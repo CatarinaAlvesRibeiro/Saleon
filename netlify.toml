@@ -1,9 +1,14 @@
 [build]
   command = "npm run build"
   publish = "_site"
+  functions = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "22"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["netlify/functions/_dados/**"]
 
 # Domínio principal com www: redireciona saleon.pt -> www.saleon.pt
 [[redirects]]

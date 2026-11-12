@@ -1,0 +1,9 @@
+{
+  "_nota": "Lista de salões/barbearias com acesso aprovado à área de membro. A SALE.ON acrescenta uma entrada por cada pedido aprovado em /area-cliente/#acesso. O email é comparado em minúsculas.",
+  "clientes": [
+    {
+      "email": "catarina.ribeiro@brainding.pt",
+      "salao": "SALE.ON (teste)"
+    }
+  ]
+}

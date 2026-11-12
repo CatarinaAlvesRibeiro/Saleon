@@ -8,7 +8,6 @@ eleventyExcludeFromCollections: true
 {% block classe %}pg-membros{% endblock %}
 {% block schema %}<meta name="robots" content="noindex, nofollow">{% endblock %}
 {% block conteudo %}
-<p class="demo-aviso">Versão de demonstração. Ainda não há login real: o que escreveres fica só neste browser.</p>
 
 <section class="secao membro-entrada" data-entrada>
   <div class="envolve porta__grelha">
@@ -18,12 +17,13 @@ eleventyExcludeFromCollections: true
       <p class="lead">Campanhas, tutoriais, materiais e encomendas, reservados aos salões clientes.</p>
       <p>Ainda não tens acesso? <a href="/area-cliente/#acesso">Pede acesso</a>.</p>
     </div>
-    <form class="formulario" data-entrar>
-      <label>Nome do salão<input name="salao" required placeholder="Ex.: Salão Exemplo"></label>
-      <label>Email<input type="email" name="email" required autocomplete="email"></label>
-      <button class="botao" type="submit">Entrar</button>
-      <p class="pequeno">Na versão final recebes uma ligação de acesso no email. A SALE.ON aprova cada conta.</p>
+    <form class="formulario" data-pedir-link>
+      <label>Email<input type="email" name="email" required autocomplete="email" placeholder="o-teu-email@salao.pt"></label>
+      <button class="botao" type="submit">Enviar link de acesso</button>
+      <p class="pequeno">Enviamos-te uma ligação de entrada por email, válida 15 minutos. Sem palavra-passe.</p>
     </form>
+    <p class="pequeno" data-pedir-link-estado hidden></p>
+    <p class="pequeno" data-sessao-invalida hidden>A tua sessão expirou ou foi terminada. Pede um novo link de acesso acima.</p>
   </div>
 </section>
 

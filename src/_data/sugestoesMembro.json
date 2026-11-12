@@ -1,0 +1,7 @@
+{
+  "_nota": "Sugestões manuais da área de membro: 'quem compra X, vê sugestão de Y'. Chave e valores são o campo 'u' (url) do produto em /pesquisa.json. A Catarina/SALE.ON mantém esta lista.",
+  "pares": {
+    "/marcas/calecim/cabelo/scalp-detox-cleanser/": ["/marcas/calecim/cabelo/scalp-activating-mist/"],
+    "/marcas/graham-hill/barbear-barba/mulsanne-relaxing-beard-oil/": ["/marcas/graham-hill/barbear-barba/arnage-face-e-beard-balm/"]
+  }
+}
